@@ -16,7 +16,7 @@ const Header = () => {
               UI/UX Designer
             </h2>
             <p className="mt-2 text-lg text-black-70 font-semibold opacity-80">
-              A minimal, user-centered portfolio blending business insight and artistic vision.
+              Creating user-centered designs where art meets functionality
             </p>
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
               I blend corporate experience with artistic talent to create user-centered designs that balance aesthetics with functionality. My designs follow three core principles: consistency, accessibility, and simplicity.

@@ -6,6 +6,13 @@ const AboutPage = () => {
     <div className="max-w-7xl mx-auto mt-10">
       <Fade bottom cascade>
         <div className="mt-10 px-8">
+          <h2 className="text-black text-4xl font-semibold opacity-70">PROFESSIONAL SUMMARY</h2>
+          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">UI/UX Designer & Business Professional</h3>
+          <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+            With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments—from customer support to procurement—has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
+          </p>
+        </div>
+        <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">DESIGN PHILOSOPHY</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Consistency, Accessibility, Simplicity</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
@@ -13,37 +20,24 @@ const AboutPage = () => {
           </p>
         </div>
         <div className="mt-10 px-8">
-          <h2 className="text-black text-4xl font-semibold opacity-70">CORPORATE EXPERIENCE</h2>
-          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Business Insight Meets Design</h3>
+          <h2 className="text-black text-4xl font-semibold opacity-70">ARTISTIC FOUNDATION</h2>
+          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">From Traditional Art to Digital Design</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My unique professional background includes roles as a Procurement Specialist at IBM, Account Manager at Cisco Software (B2B), Verification Specialist at a payment platform, In-Game Support for mobile gaming, and Customer Support (B2C). This diverse experience has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions. I bring this business acumen to every design project, ensuring that my creative solutions are also practical and aligned with organizational objectives.
+            My journey as a designer began in early childhood, where I developed a passion for drawing and painting landscapes, flowers, animals, and portraits. This artistic foundation gives me a natural advantage in UI design, particularly in creating original visual elements and understanding color theory and composition. Today, I continue to develop these skills digitally using my Wacom tablet with Adobe Illustrator, bringing the freedom of traditional art to digital design.
           </p>
         </div>
         <div className="mt-10 px-8">
-          <h2 className="text-black text-4xl font-semibold text-gradient bg-gradient-to-r from-pink to-purple">Professional Experience</h2>
+          <h2 className="text-black text-4xl font-semibold opacity-70">PROFESSIONAL EXPERIENCE</h2>
+          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">UI/UX Design (2023-Present)</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
             My professional experience includes creating website banners and social media assets while providing UX consultation for website improvement at a digital marketing agency. I've developed complete user flows, wireframes, and high-fidelity prototypes for an e-commerce platform, including original logo, icons, buttons, cards, and backgrounds. I also created a comprehensive event app with advanced animations and component interactions based on user research and persona development. My corporate background as a Procurement Specialist at IBM, Account Manager at Cisco Software, and various customer support roles has given me valuable insights into business requirements and user needs.
           </p>
         </div>
         <div className="mt-10 px-8">
-          <h2 className="text-black text-4xl font-semibold opacity-70">DESIGN STYLES</h2>
-          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Aesthetic Versatility</h3>
+          <h2 className="text-black text-4xl font-semibold opacity-70">CORPORATE EXPERIENCE</h2>
+          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Business Insight Meets Design</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            I specialize in a range of design styles to perfectly match project requirements. My personal affinity for Scandinavian minimalism shows in my clean, functional designs that eliminate clutter and prioritize usability. I'm also skilled in creating neumorphic interfaces that leverage subtle shadows and highlights for a tactile feel, and glassmorphic designs that use transparency and blur effects to create depth and visual hierarchy. While I have my aesthetic preferences, I always prioritize the project requirements and user needs when determining the most appropriate design approach.
-          </p>
-        </div>
-        <div className="mt-10 px-8">
-          <h2 className="text-black text-4xl font-semibold opacity-70">ADDITIONAL STRENGTHS</h2>
-          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Beyond Design Skills</h3>
-          <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My corporate experience has equipped me with valuable skills beyond just design expertise. I'm familiar with agile methodologies and have experience collaborating with cross-functional teams. My analytical approach to identifying and addressing user pain points stems from my diverse professional background. I excel at translating stakeholder requirements into design solutions that balance business goals with user needs. My self-directed study of psychological principles enhances my ability to create intuitive, user-centered experiences that resonate emotionally and functionally with the target audience.
-          </p>
-        </div>
-        <div className="mt-10 px-8">
-          <h2 className="text-black text-4xl font-semibold opacity-70">ARTISTIC FOUNDATION</h2>
-          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">From Traditional Art to Digital Design</h3>
-          <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My journey as a designer began in early childhood, where I developed a passion for drawing and painting landscapes, flowers, animals, and portraits. This artistic foundation gives me a natural advantage in UI design, particularly in creating original visual elements and understanding color theory and composition. Today, I continue to develop these skills digitally using my Wacom tablet with Adobe Illustrator, bringing the freedom of traditional art to digital design.
+            My unique professional background includes roles as a Procurement Specialist at IBM, Account Manager at Cisco Software (B2B), Verification Specialist at a payment platform, In-Game Support for mobile gaming, and Customer Support (B2C). This diverse experience has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions. I bring this business acumen to every design project, ensuring that my creative solutions are also practical and aligned with organizational objectives.
           </p>
         </div>
         <div className="mt-10 px-8">
@@ -58,6 +52,13 @@ const AboutPage = () => {
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Academic & Professional Training</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
             I hold a Bachelor's Degree in Business Administration which provides me with a solid foundation in understanding business requirements. My technical certifications include Figma Essentials, Figma Advanced, Adobe Photoshop, and Adobe Illustrator. I've also completed specialized training in the Principles of UI & UX Design and HTML & CSS Fundamentals. My interest in psychology has led me to self-directed study of psychological principles that enhance user experience design.
+          </p>
+        </div>
+        <div className="mt-10 px-8">
+          <h2 className="text-black text-4xl font-semibold opacity-70">ADDITIONAL STRENGTHS</h2>
+          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Beyond Design Skills</h3>
+          <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+            My corporate experience has equipped me with valuable skills beyond just design expertise. I'm familiar with agile methodologies and have experience collaborating with cross-functional teams. My analytical approach to identifying and addressing user pain points stems from my diverse professional background. I excel at translating stakeholder requirements into design solutions that balance business goals with user needs. My self-directed study of psychological principles enhances my ability to create intuitive, user-centered experiences that resonate emotionally and functionally with the target audience.
           </p>
         </div>
         <div className="mt-10 px-8">
