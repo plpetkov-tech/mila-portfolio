@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade"
 import { GatsbyImage, getImage } from "gatsby-plugin-image"
 import { Link } from "gatsby"
 
-const BlogsContainer = ({ data }) => {
+const ProjectsContainer = ({ data }) => {
   let posts = data?.map(item => {
     return {
       featuredimage: item.node.frontmatter.featuredimage,
@@ -22,19 +22,19 @@ const BlogsContainer = ({ data }) => {
     <div className="max-w-7xl mx-auto mt-10 px-8 text-black">
       <Fade bottom cascade>
         <div className="grid grid-cols-3 gap-4 xxs:grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
-          {posts.map((blog, i) => (
+          {posts.map((project, i) => (
             <div key={i}>
               <div className="overflow-hidden  rounded-xl xxs:w-full ">
                 <Link
-                  to={blog.slug}
+                  to={project.slug}
                   style={{
                     textDecoration: "none",
                     color: "black",
                   }}
                 >
                   <GatsbyImage
-                    image={getImage(blog.featuredimage)}
-                    alt={blog.title}
+                    image={getImage(project.featuredimage)}
+                    alt={project.title}
                     placeholder="none"
                     layout="cover"
                     formats={["auto", "webp", "avif"]}
@@ -46,18 +46,18 @@ const BlogsContainer = ({ data }) => {
               </div>
               <div className="m-6">
                 <Link
-                  to={blog.slug}
+                  to={project.slug}
                   style={{
                     textDecoration: "none",
                     color: "black",
                   }}
                 >
                   <h1 className="text-2xl font-simibold mt-2 mb-4">
-                    {blog.title}
+                    {project.title}
                   </h1>
                 </Link>
 
-                <p className="text-sm opacity-50 mt-2">{blog.description}</p>
+                <p className="text-sm opacity-50 mt-2">{project.description}</p>
               </div>
             </div>
           ))}
@@ -84,4 +84,4 @@ const BlogsContainer = ({ data }) => {
   )
 }
 
-export default BlogsContainer
+export default ProjectsContainer

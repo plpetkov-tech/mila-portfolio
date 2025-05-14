@@ -3,7 +3,7 @@ import { getImage, GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-const BlogHeader = ({ post }) => {
+const ProjectsHeader = ({ post }) => {
   const image = getImage(post.node.frontmatter.featuredimage)
   return (
     <div className="max-w-7xl xxs:mx-4 sm:mx-auto mt-10">
@@ -61,4 +61,4 @@ const BlogHeader = ({ post }) => {
   )
 }
 
-export default BlogHeader
+export default ProjectsHeader

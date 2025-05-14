@@ -64,7 +64,7 @@ const BlogPost = props => {
   return (
     <Layout>
       <Seo
-        title="Blog"
+        title="Project"
         description="We have been providing professional repair services in the city since 1993 ,and we have helped thousands of local car owners to restore their vehicles."
       />
       <main className="pt-8 pb-16 lg:pt-16 lg:pb-24">

@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-const FeaturedBlog = () => {
+const FeaturedProjects = () => {
   return (
     <Fade duration={2200}>
       <div className="bg-transparent">
@@ -12,7 +12,7 @@ const FeaturedBlog = () => {
           <h3 className="text-black pl-4 text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
             My Design Work
           </h3>
-          <div className="blog-hover bg-gradient-to-r from-pink to-purple border mt-10 border-gray-200 rounded-lg p-8 md:p-12 mb-8">
+          <div className="project-hover bg-gradient-to-r from-pink to-purple border mt-10 border-gray-200 rounded-lg p-8 md:p-12 mb-8">
             <h2 className="text-black text-3xl font-simibold mb-2">
               E-Commerce Platform Design
             </h2>
@@ -42,7 +42,7 @@ const FeaturedBlog = () => {
             </a>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="blog-hover bg-white rounded-lg p-8 md:p-12">
+            <div className="project-hover bg-white rounded-lg p-8 md:p-12">
               <h2 className="text-gray-900 text-3xl font-simibold mb-2">
                 Event Application Design
               </h2>
@@ -71,7 +71,7 @@ const FeaturedBlog = () => {
                 </svg>
               </a>
             </div>
-            <div className="blog-hover bg-white rounded-lg p-8 md:p-12">
+            <div className="project-hover bg-white rounded-lg p-8 md:p-12">
               <h2 className="text-gray-900 text-3xl font-simibold mb-2">
                 Whiskey Bottle Design Competition
               </h2>
@@ -107,4 +107,4 @@ const FeaturedBlog = () => {
   )
 }
 
-export default FeaturedBlog
+export default FeaturedProjects
