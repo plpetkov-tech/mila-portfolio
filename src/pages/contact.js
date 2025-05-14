@@ -12,13 +12,13 @@ const Contact = () => {
     <Layout>
       <Seo
         title="Contact - Mila | UI UX Designer"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        description="Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
       ></Seo>
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">
         <Fade duration={1200}>
           <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
-            <h1 className="text-3xl text-white">CONTACT HOLO</h1>
+            <h1 className="text-3xl text-white">CONTACT MILA</h1>
             <h2 className=" text-black text-gradient bg-gradient-to-r from-pink to-purple text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl">
               Gatsby Theme
             </h2>
@@ -83,8 +83,8 @@ const Contact = () => {
                         Email
                       </p>
                       <p className="text-neutral-500 mb-2">
-                        <a href="mailto:hello@holo.com?subject=Contact Holo for help.">
-                          hello@holo.com
+                        <a href="mailto:hello@mila.com?subject=Contact Mila for help.">
+                          hello@mila.com
                         </a>
                       </p>
                     </div>

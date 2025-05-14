@@ -1,10 +1,8 @@
+# Mila's Portfolio
 
- <h1 align="center">Holo - Gatsby Theme </h1>
+![Mila's Portfolio](https://github.com/lilxyzz/mila-portfolio/blob/main/static/img/holo-cover.png)
 
-
-![Holo - Gatsby Theme](https://github.com/lilxyzz/holo-theme/blob/main/static/img/holo-cover.png)
-
-Welcome to the ultimate blend of technologies that promises to revolutionize your web development experience. The Holo template is designed to kickstart your project with elegance and efficiency.
+Welcome to Mila's Portfolio website. This is a visually striking and highly customizable portfolio website built with modern web technologies.
 
 ## 📚 Tech Stack
 
@@ -20,11 +18,11 @@ To embark on your development adventure, follow these simple steps:
 
 **Clone this repository**
 
-```git clone https://github.com/lilxyzz/holo-theme.git```
+```git clone https://github.com/lilxyzz/mila-portfolio.git```
 
 **Navigate into the repository**
 
-```cd holo-theme```
+```cd mila-portfolio```
 
 **Install dependencies**
 
@@ -44,7 +42,7 @@ You're now ready to develop with the speed of Gatsby and the flexibility of Tail
 
 ### Deploying to Netlify
 
-[![Deploy to Netlify ](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lilxyzz/holo-theme)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lilxyzz/mila-portfolio)
 
 You could also host directly with Netlify by linking your own repository.
 For more information, read [hosting on Netlify](https://docs.netlify.com/get-started/).

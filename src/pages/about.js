@@ -13,7 +13,7 @@ const About = () => {
     <Layout>
       <Seo
         title="About - Mila | UI UX Designer"
-        description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
+        description="Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
       ></Seo>
       <AboutHeader></AboutHeader>
       <AboutPage></AboutPage>

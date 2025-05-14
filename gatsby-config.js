@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Holo - Gatsby Starter`,
-    description: `Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
-    siteUrl: "https://holo-theme.netlify.app/",
+    title: `Mila's Portfolio`,
+    description: `Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
+    siteUrl: "https://mila-portfolio.netlify.app/",
     author: `Travis Lord <hi@travislord.xyz>`,
   },
   plugins: [
@@ -79,8 +79,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Holo - Gatsby Starter Theme`,
-        short_name: `Holo`,
+        name: `Mila's Portfolio`,
+        short_name: `Mila Portfolio`,
         start_url: `/`,
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,
