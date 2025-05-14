@@ -14,8 +14,6 @@ description: A traditional oil portrait capturing the quiet dignity of a bay
   contrast beautifully with the horse's alert, soulful eye, embodying the
   timeless connection between humans and these majestic animals.
 ---
-![Horse Portrait](/img/horse.png)
-
 This classical equestrian portrait follows in the tradition of the great animal painters, focusing on the serene nobility that has made horses such compelling artistic subjects throughout history.
 
 The composition features a bay horse with a distinctive white blaze, rendered with careful attention to the play of light across the muscular structure of the head and neck. The artist has employed traditional oil techniques to achieve the rich, warm tones of the chestnut coat, which stands in harmonious contrast to the atmospheric green background.
