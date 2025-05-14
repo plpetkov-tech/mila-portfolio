@@ -20,10 +20,10 @@ const Contact = () => {
           <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
             <h1 className="text-3xl text-white">CONTACT MILA</h1>
             <h2 className=" text-black text-gradient bg-gradient-to-r from-pink to-purple text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl">
-              Gatsby Theme
+              UI/UX Designer
             </h2>
             <p className="text-lg mt-2 opacity-70 w-3/4 xxs:text-xs xxs:w-full sm:text-sm sm:w-3/4">
-              A stunning and minimal personalized website starter theme.
+              Let's collaborate on creating exceptional user experiences that solve real problems.
             </p>
 
             <div className="w-full shrink-0 grow-0 basis-auto lg:w-ful mt-10">
@@ -114,7 +114,7 @@ const Contact = () => {
                       <p className="mb-2 font-bold underline decoration-pink">
                         Location
                       </p>
-                      <p className="text-neutral-500 mb-2">Worldwide</p>
+                      <p className="text-neutral-500 mb-2">Bulgaria</p>
                     </div>
                   </div>
                 </div>
@@ -195,7 +195,7 @@ const Contact = () => {
                 <textarea
                   className="mt-5 w-full bg-bg bg-opacity-20 rounded-xl p-5 focus:outline-none focus:ring-2 focus:ring-purple focus:border-transparent"
                   rows="5"
-                  placeholder="How can we help you?"
+                  placeholder="Tell me about your project needs"
                   type="text"
                   name="Message"
                 ></textarea>

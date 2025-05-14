@@ -12,11 +12,10 @@ const AboutHeader = () => {
         </div>
         <div className="mt-10 px-8">
           <h1 className="font-bold text-xl text-black text-gradient bg-gradient-to-r from-pink to-purple">
-            What is Mila's Portfolio?
+            About Mila
           </h1>
           <h2 className="text-black text-6xl font-semibold leading-snug xxs:text-lg xs:text-lg sm:text-3xl lg:text-6xl">
-            A visually captivating and lightning-fast open-source theme crafted
-            on the Gatsby framework.
+            UI/UX Designer with a unique blend of corporate experience and artistic talent
           </h2>
         </div>
       </div>
