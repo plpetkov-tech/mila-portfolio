@@ -146,16 +146,6 @@ const FeatureSection = () => {
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
           My unique professional background includes roles as a Procurement Specialist at IBM, Account Manager at Cisco Software (B2B), Verification Specialist at a payment platform, In-Game Support for mobile gaming, and Customer Support (B2C). This diverse experience has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions. I bring this business acumen to every design project, ensuring that my creative solutions are also practical and aligned with organizational objectives.
         </p>
-        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div className="rounded-md">
-            <a
-              href="/contact/"
-              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
-            >
-              Let's Connect
-            </a>
-          </div>
-        </div>
       </div>
 
       <div className="mt-10 px-8">
@@ -189,16 +179,6 @@ const FeatureSection = () => {
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
           My corporate experience has equipped me with valuable skills beyond just design expertise. I'm familiar with agile methodologies and have experience collaborating with cross-functional teams. My analytical approach to identifying and addressing user pain points stems from my diverse professional background. I excel at translating stakeholder requirements into design solutions that balance business goals with user needs. My self-directed study of psychological principles enhances my ability to create intuitive, user-centered experiences that resonate emotionally and functionally with the target audience.
         </p>
-        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div className="rounded-md">
-            <a
-              href="/contact/"
-              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
-            >
-              Let's Work Together
-            </a>
-          </div>
-        </div>
       </div>
 
       <Fade bottom cascade>
@@ -283,16 +263,6 @@ const FeatureSection = () => {
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
           I'm fluent in Bulgarian (native) and English, with proficient knowledge of German and basic Spanish skills. My language abilities enhance my ability to communicate effectively with diverse stakeholders and understand cultural nuances that impact user experience design. This multinational perspective helps me create interfaces that resonate with users from different cultural backgrounds.
         </p>
-        <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
-          <div className="rounded-md">
-            <a
-              href="/contact/"
-              className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
-            >
-              Contact Me
-            </a>
-          </div>
-        </div>
       </div>
 
       <Fade bottom cascade>

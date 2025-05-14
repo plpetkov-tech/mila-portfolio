@@ -49,14 +49,6 @@ const Navbar = () => {
                 >
                   Contact
                 </Link>
-                <div className="items-center">
-                  <a
-                    href="tel:#"
-                    className="transition-all duration-500ms ease-in-out hover:ease-in-out bg-transparent mt-5 py-2.5 px-4 text-base font-medium text-center text-black rounded-lg border border-purple hover:text-white border-black  hover:bg-purple"
-                  >
-                    Call Us Now
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -117,14 +109,6 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <div className="items-center mt-20 py-3">
-              <a
-                href="tel:#"
-                className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple  hover:bg-transparent md:text-lg md:px-10 "
-              >
-                Call Us Now
-              </a>
-            </div>
           </div>
         </div>
       )}
