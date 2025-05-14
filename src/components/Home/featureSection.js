@@ -99,17 +99,17 @@ const FeatureSection = () => {
             </span>
             <div className="mt-5">
               <div>
-                <p className="text-black text-2xl">Gatsby 5+</p>
-                <p className="text-black opacity-50 text-sm">SSG and more...</p>
+                <p className="text-black text-2xl">Figma</p>
+                <p className="text-black opacity-50 text-sm">Wireframes, mood boards and more...</p>
               </div>
               <div className="mt-5">
-                <p className="text-black text-2xl">React 18+</p>
-                <p className="text-black opacity-50 text-sm">Create more...</p>
+                <p className="text-black text-2xl">Adobe Photoshop and Illustrator</p>
+                <p className="text-black opacity-50 text-sm">Creation of icons, vector art and graphic design and more...</p>
               </div>
               <div className="mt-5">
-                <p className="text-black text-2xl">Tailwind CSS 3+</p>
+                <p className="text-black text-2xl">HTML & CSS</p>
                 <p className="text-black opacity-50 text-sm">
-                  A utility-first CSS
+                  Understanding of the technology and responsive design
                 </p>
               </div>
             </div>
