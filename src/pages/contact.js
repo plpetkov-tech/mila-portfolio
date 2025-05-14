@@ -11,7 +11,7 @@ const Contact = () => {
   return (
     <Layout>
       <Seo
-        title="Contact - Holo"
+        title="Contact - Mila | UI UX Designer"
         description="Holo is a visually striking and highly customizable open source theme built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
       ></Seo>
 
