@@ -50,9 +50,39 @@ const AboutPage = () => {
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">EDUCATION</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Academic & Professional Training</h3>
-          <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            I hold a Bachelor's Degree in Business Administration which provides me with a solid foundation in understanding business requirements. My technical certifications include Figma Essentials, Figma Advanced, Adobe Photoshop, and Adobe Illustrator. I've also completed specialized training in the Principles of UI & UX Design and HTML & CSS Fundamentals. My interest in psychology has led me to self-directed study of psychological principles that enhance user experience design.
-          </p>
+          <div className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
+            <div className="mb-4">
+              <h4 className="font-semibold text-base mb-2">Academic Background</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Bachelor's Degree in Business Administration</li>
+              </ul>
+            </div>
+            
+            <div className="mb-4">
+              <h4 className="font-semibold text-base mb-2">Design Certifications</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Figma Essentials Certification</li>
+                <li>Figma Advanced Certification</li>
+                <li>Adobe Photoshop Certification</li>
+                <li>Adobe Illustrator Certification</li>
+              </ul>
+            </div>
+
+            <div className="mb-4">
+              <h4 className="font-semibold text-base mb-2">Specialized Training</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Principles of UI & UX Design</li>
+                <li>HTML & CSS Fundamentals</li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 className="font-semibold text-base mb-2">Additional Studies</h4>
+              <ul className="list-disc pl-6 space-y-1">
+                <li>Self-directed study of psychological principles for enhanced user experience design</li>
+              </ul>
+            </div>
+          </div>
         </div>
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">ADDITIONAL STRENGTHS</h2>
