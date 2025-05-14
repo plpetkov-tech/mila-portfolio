@@ -12,8 +12,8 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Mila's Portfolio - Projects"
-        description="Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        title="Meelah's Portfolio - Projects"
+        description="Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
       ></Seo>
       <ProjectsHeader post={HeaderPost} />
       <ProjectsContainer data={otherPosts} />

@@ -1,7 +1,7 @@
-# Mila's Professional Profile
+# Meelah's Professional Profile
 
 ## Professional Summary
-I am Mila, a UI/UX Designer with a unique blend of corporate experience and artistic talent. With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments—from customer support to procurement—has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
+I am Meelah, a UI/UX Designer with a unique blend of corporate experience and artistic talent. With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments—from customer support to procurement—has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
 
 ## Design Philosophy
 My approach to design is centered on three core principles: consistency, accessibility, and simplicity. I believe that consistent design elements build user trust, accessible interfaces ensure inclusivity, and minimalism eliminates confusion while enhancing usability. While I have a personal affinity for Scandinavian minimalism, neumorphic elements, and glassmorphic designs, I prioritize stakeholder requirements and user needs above personal preferences.
@@ -37,7 +37,7 @@ My journey as a designer began in early childhood, where I developed a passion f
 - **Design Tools**: Figma, Adobe Photoshop, Adobe Illustrator, Wacom tablet
 - **Development Knowledge**: HTML, CSS fundamentals
 - **UX Methodologies**: User interviews, A/B testing, web-based questionnaires, persona creation, user flow mapping
-- **Design Styles**: Minimalistic/Scandinavian, neumorphic, and glassmorphic design
+- **Design Styles**: Minimalistic, neumorphic, and glassmorphic design
 
 ## Additional Strengths
 - **Languages**: Bulgarian (native), English (fluent), German (proficient), Spanish (basic)

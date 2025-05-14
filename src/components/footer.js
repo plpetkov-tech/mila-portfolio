@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="footer bg-gradient-to-r from-pink to-purple p-10 mt-10 rounded-xl">
           <div className="grid grid-cols-2 xxs:grid-cols-1 lg:grid-cols-2">
             <div>
-              <img className="max-h-28 max-w-xs" src={logo} alt="Mila's Portfolio"></img>
+              <img className="max-h-28 max-w-xs" src={logo} alt="Meelah's Portfolio"></img>
               <p className="text-black opacity-70 text-sm mt-5 ">
                 A stunning and minimal<br></br> website built with Gatsby, <br></br> 
                 vibes and a bit of help from <a href="https://plamen.works" target="_blank" className="text-purple">plamen.works.</a>
@@ -23,12 +23,12 @@ const Footer = () => {
               <div className="text-black font-bold block-inline">
                 <p>
                   <a className="text-black font-bold block-inline" href="/">
-                    Mila's Portfolio
+                    Meelah's Portfolio
                   </a>
                   <br></br>
                     Made with ❤️
                   <a
-                    href="https://github.com/lilxyzz/mila-portfolio"
+                    href="https://github.com/lilxyzz/meelah-portfolio"
                     target="_blank"
                   >
                   </a>

@@ -11,8 +11,8 @@ const Contact = () => {
   return (
     <Layout>
       <Seo
-        title="Contact - Mila | UI UX Designer"
-        description="Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        title="Contact - Meelah | UI UX Designer"
+        description="Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
       ></Seo>
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">
@@ -83,8 +83,8 @@ const Contact = () => {
                         Email
                       </p>
                       <p className="text-neutral-500 mb-2">
-                        <a href="mailto:hello@mila.com?subject=Contact Mila for help.">
-                          hello@mila.com
+                        <a href="mailto:hello@meelah.com?subject=Contact Meelah for help.">
+                          hello@meelah.com
                         </a>
                       </p>
                     </div>

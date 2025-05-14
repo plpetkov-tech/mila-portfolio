@@ -1,8 +1,8 @@
-# Mila's Portfolio
+# Meelah's Portfolio
 
-![Mila's Portfolio](https://github.com/lilxyzz/mila-portfolio/blob/main/static/img/holo-cover.png)
+![Meelah's Portfolio](https://github.com/lilxyzz/meelah-portfolio/blob/main/static/img/holo-cover.png)
 
-Welcome to Mila's Portfolio website. This is a visually striking and highly customizable portfolio website built with modern web technologies.
+Welcome to Meelah's Portfolio website. This is a visually striking and highly customizable portfolio website built with modern web technologies.
 
 ## 📚 Tech Stack
 
@@ -18,11 +18,11 @@ To embark on your development adventure, follow these simple steps:
 
 **Clone this repository**
 
-```git clone https://github.com/lilxyzz/mila-portfolio.git```
+```git clone https://github.com/lilxyzz/meelah-portfolio.git```
 
 **Navigate into the repository**
 
-```cd mila-portfolio```
+```cd meelah-portfolio```
 
 **Install dependencies**
 
@@ -42,7 +42,7 @@ You're now ready to develop with the speed of Gatsby and the flexibility of Tail
 
 ### Deploying to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lilxyzz/mila-portfolio)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/lilxyzz/meelah-portfolio)
 
 You could also host directly with Netlify by linking your own repository.
 For more information, read [hosting on Netlify](https://docs.netlify.com/get-started/).

@@ -12,8 +12,8 @@ const IndexPage = () => (
   <div className="h-auto w-screen">
     <Layout>
       <Seo
-        title="Home - Mila | UI UX Designer"
-        description="Mila is a UI UX Designer based in Bulgaria. Her portfolio features Figma designs, fine arts and graphic design deliveries"
+        title="Home - Meelah | UI UX Designer"
+        description="Meelah is a UI UX Designer based in Bulgaria. Her portfolio features Figma designs, fine arts and graphic design deliveries"
       ></Seo>
       <Header></Header>
       <FeatureSection></FeatureSection>

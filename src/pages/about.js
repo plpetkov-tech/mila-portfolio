@@ -12,8 +12,8 @@ const About = () => {
   return (
     <Layout>
       <Seo
-        title="About - Mila | UI UX Designer"
-        description="Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
+        title="About - Meelah | UI UX Designer"
+        description="Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS."
       ></Seo>
       <AboutHeader></AboutHeader>
       <AboutPage></AboutPage>

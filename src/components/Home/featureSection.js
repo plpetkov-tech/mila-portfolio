@@ -104,7 +104,7 @@ const FeatureSection = () => {
             </h2>
             <p className="mt-5 text-white opacity-70">
               <span className="block mb-3 text-xl">Design Tools:</span> 
-              Figma, Adobe Photoshop, Adobe Illustrator, Wacom tablet
+              Figma, Adobe Photoshop, Adobe Illustrator, Wacom drawing
             </p>
             <p className="mt-2 text-white opacity-70">
               <span className="block mb-3 text-xl">Design Approaches:</span>
@@ -112,7 +112,7 @@ const FeatureSection = () => {
             </p>
             <p className="mt-2 text-white opacity-70">
               <span className="block mb-3 text-xl">Design Styles:</span>
-              Minimalistic/Scandinavian, neumorphic, and glassmorphic
+              Minimalistic, neumorphic, and glassmorphic
             </p>
           </div>
         </div>

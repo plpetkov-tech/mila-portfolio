@@ -6,7 +6,7 @@ const AboutGrid = () => {
     <div className="max-w-7xl mx-auto px-4 my-20 grid grid-cols-3 gap-16 justify-items-center xxs:grid-cols-1 sm:grid-cols-3">
       <AboutTeamCard
         imgSrc="https://i.postimg.cc/HWhyyLNH/Holographic-Liquid3.webp"
-        position="Minimalist/Scandinavian Design"
+        position="Minimalist Design"
       ></AboutTeamCard>
       <AboutTeamCard
         imgSrc="https://i.postimg.cc/WbBzjWWc/Holographic-Liquid2.webp"

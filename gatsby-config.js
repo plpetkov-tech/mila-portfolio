@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Mila's Portfolio`,
-    description: `Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
-    siteUrl: "https://mila-portfolio.netlify.app/",
+    title: `Meelah's Portfolio`,
+    description: `Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
+    siteUrl: "https://meelah-portfolio.netlify.app/",
     author: `Travis Lord <hi@travislord.xyz>`,
   },
   plugins: [
@@ -93,8 +93,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Mila's Portfolio`,
-        short_name: `Mila Portfolio`,
+        name: `Meelah's Portfolio`,
+        short_name: `Meelah Portfolio`,
         start_url: `/`,
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,

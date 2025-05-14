@@ -44,7 +44,7 @@ const AboutPage = () => {
           <h2 className="text-black text-4xl font-semibold opacity-70">TECHNICAL SKILLS</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Tools & Methodologies</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            I work with industry-standard design tools including Figma, Adobe Photoshop, and Adobe Illustrator, utilizing my Wacom tablet for precision and creative freedom. My knowledge of HTML and CSS fundamentals helps me understand development constraints and possibilities when designing interfaces. I'm skilled in key UX methodologies including user interviews, A/B testing, web-based questionnaires, persona creation, and user flow mapping. My design approach encompasses various styles including minimalistic/Scandinavian, neumorphic, and glassmorphic design techniques.
+            I work with industry-standard design tools including Figma, Adobe Photoshop, and Adobe Illustrator, utilizing my Wacom tablet for precision and creative freedom. My knowledge of HTML and CSS fundamentals helps me understand development constraints and possibilities when designing interfaces. I'm skilled in key UX methodologies including user interviews, A/B testing, web-based questionnaires, persona creation, and user flow mapping. My design approach encompasses various styles including minimalistic, neumorphic, and glassmorphic design techniques.
           </p>
         </div>
         <div className="mt-10 px-8">

@@ -1,7 +1,7 @@
 {
-  "name": "mila-portfolio",
+  "name": "meelah-portfolio",
   "private": true,
-  "description": "Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS.",
+  "description": "Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS.",
   "version": "1.0.0",
   "author": "Travis Lord <hi@travislord.xyz>",
   "dependencies": {
