@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: Testvam admin
 date: 2025-05-14T10:28:00.000Z
-featuredimage: /img/лелебоце.webp
+featuredimage: /img/Holographic-Liquid-3.jpg
 categories:
   - design
 tags:
