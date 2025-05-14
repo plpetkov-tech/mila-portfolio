@@ -13,7 +13,7 @@ const Footer = () => {
               <img className="max-h-28 max-w-xs" src={logo} alt="Meelah's Portfolio"></img>
               <p className="text-black opacity-70 text-sm mt-5 ">
                 A stunning and minimal<br></br> website built with Gatsby, <br></br> 
-                vibes and a bit of help from <a href="https://plamen.works" target="_blank" className="text-purple">plamen.works.</a>
+                vibes and a bit of help from <a href="https://plamen.works" target="_blank" className="text-purple-900 font-bold underline hover:text-fuchsia-700 transition-colors">plamen.works</a>
               </p>
               <p className="text-white text-lg font-bold mt-20">
                 <span className="text-black font-montserrat font-semibold mt-20">
