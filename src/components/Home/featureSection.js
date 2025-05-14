@@ -47,22 +47,17 @@ const FeatureSection = () => {
             <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
               Bridging Art & Technology
             </h3>
-
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
-              With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration with a lifelong artistic passion to create meaningful digital experiences that solve real user problems.
+              I blend corporate experience with artistic talent to create user-centered designs that balance aesthetics with functionality. My approach is rooted in consistency, accessibility, and simplicity.
             </p>
-
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
               <div className="rounded-md">
                 <a
-                  href="/contact"
+                  href="/about"
                   className="transition-all duration-500ms ease-in-out hover:ease-in-out w-full flex items-center justify-center px-8 py-3 text-base font-medium rounded-md text-center bg-purple text-white hover:text-black border border-purple hover:bg-transparent md:text-lg md:px-10"
                 >
-                  Contact Me
+                  Learn more about me
                 </a>
-              </div>
-              <div className="mt-3 sm:mt-0 sm:ml-3">
-                {/* Gallery button removed */}
               </div>
             </div>
           </div>
