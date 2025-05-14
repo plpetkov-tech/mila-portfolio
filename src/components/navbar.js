@@ -39,6 +39,12 @@ const Navbar = () => {
                 </Link>
                 <Link
                   className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
+                  to="/arts"
+                >
+                  Arts
+                </Link>
+                <Link
+                  className="relative after:rounded after:bg-purple after:absolute after:h-0.5 after:w-0 after:bottom-0 after:left-0 hover:after:w-full after:transition-all after:duration-300 text-black opacity-70 hover:opacity-100 px-3 py-2 rounded-md text-sm font-medium font-montserrat"
                   to="/contact"
                 >
                   Contact
@@ -96,6 +102,12 @@ const Navbar = () => {
               href="/contact"
             >
               Contact
+            </a>
+            <a
+              className="text-black opacity-50 hover:opacity-100 px-3 py-3 rounded-md text-m font-medium font-montserrat"
+              href="/arts"
+            >
+              Arts
             </a>
           </div>
         </div>

@@ -63,5 +63,14 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
       node,
       value,
     })
+    // Add sourceInstanceName for filtering
+    const parent = getNode(node.parent)
+    if (parent && parent.sourceInstanceName) {
+      createNodeField({
+        name: `sourceInstanceName`,
+        node,
+        value: parent.sourceInstanceName,
+      })
+    }
   }
 }

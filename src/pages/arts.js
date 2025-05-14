@@ -5,14 +5,14 @@ import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
 
-const Projects = ({ data }) => {
+const Arts = ({ data }) => {
   let HeaderPost = data?.allMarkdownRemark?.edges[0]
   let otherPosts = data?.allMarkdownRemark?.edges.slice(1)
 
   return (
     <Layout>
       <Seo
-        title="Mila's Portfolio - Projects"
+        title="Mila's Portfolio - Arts"
         description="Mila's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
       ></Seo>
       <ProjectsHeader post={HeaderPost} />
@@ -21,13 +21,13 @@ const Projects = ({ data }) => {
   )
 }
 
-export default Projects
+export default Arts
 
-export const WorkPageQuery = graphql`
-  query ProjectsPage {
+export const ArtsPageQuery = graphql`
+  query ArtsPage {
     allMarkdownRemark(
       filter: {
-        fileAbsolutePath: { regex: "/src/projects/" }
+        fileAbsolutePath: { regex: "/src/arts/" }
         frontmatter: { templateKey: { eq: "blog-post" } }
       }
       sort: { frontmatter: { date: DESC } }
@@ -52,4 +52,4 @@ export const WorkPageQuery = graphql`
       }
     }
   }
-`
+` 

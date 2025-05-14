@@ -4,6 +4,9 @@ import React from "react"
 import Fade from "react-reveal/Fade"
 
 const ProjectsHeader = ({ post }) => {
+  if (!post || !post.node || !post.node.frontmatter) {
+    return null // or you can return a fallback UI
+  }
   const image = getImage(post.node.frontmatter.featuredimage)
   return (
     <div className="max-w-7xl xxs:mx-4 sm:mx-auto mt-10">
