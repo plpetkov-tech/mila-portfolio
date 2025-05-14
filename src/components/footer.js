@@ -12,10 +12,8 @@ const Footer = () => {
             <div>
               <img className="max-h-28 max-w-xs" src={logo} alt="Mila's Portfolio"></img>
               <p className="text-black opacity-70 text-sm mt-5 ">
-                A stunning and minimal<br></br> personalized website starter
-                theme
-                <br></br>
-                built with Gatsby.
+                A stunning and minimal<br></br> website built with Gatsby, <br></br> 
+                vibes and a bit of help from <a href="https://plamen.works" target="_blank" className="text-purple">plamen.works.</a>
               </p>
               <p className="text-white text-lg font-bold mt-20">
                 <span className="text-black font-montserrat font-semibold mt-20">
@@ -27,23 +25,12 @@ const Footer = () => {
                   <a className="text-black font-bold block-inline" href="/">
                     Mila's Portfolio
                   </a>
-
-                  <a
-                    className="text-black font-semibold ml-1"
-                    target="_blank"
-                    href="https://travislord.xyz"
-                  >
+                  <br></br>
                     Made with ❤️
-                  </a>
                   <a
                     href="https://github.com/lilxyzz/mila-portfolio"
                     target="_blank"
                   >
-                    <img
-                      className="w-5 h-5 mt-1"
-                      src="/img/Github-Logo.png"
-                      alt="GitHub"
-                    ></img>
                   </a>
                 </p>
               </div>
@@ -58,16 +45,13 @@ const Footer = () => {
                   <Link to="/about">About</Link>
                 </li>
                 <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
                   <Link to="/projects">Projects</Link>
                 </li>
                 <li>
                   <Link to="/arts">Arts</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
                 </li>
               </ul>
             </div>
