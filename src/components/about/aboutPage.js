@@ -9,42 +9,42 @@ const AboutPage = () => {
           <h2 className="text-black text-4xl font-semibold opacity-70">PROFESSIONAL SUMMARY</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">UI/UX Designer & Business Professional</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments—from customer support to procurement—has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
+            I dedicated the last 1.5 years exclusively to deep UI/UX training and practice, whereby I also draw Fine Arts drawings, Graphic design illustrations on my Wacom tablet and read user pshychology literature. I combine my background in business administration, customer-focused roles, interest in psychology and lifelong artistic passion for drawing to create user-centered designs that balance aesthetics with functionality. My experience working in diverse corporate environments—from customer support and B2B sales to procurement—has equipped me with strong stakeholder communication and soft skills and a deep understanding of business requirements that influence my design decisions.
           </p>
         </div>
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">DESIGN PHILOSOPHY</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Consistency, Accessibility, Simplicity</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My approach to design is centered on three core principles: consistency, accessibility, and simplicity. I believe that consistent design elements build user trust, accessible interfaces ensure inclusivity, and minimalism eliminates confusion while enhancing usability. While I have a personal affinity for Scandinavian minimalism, neumorphic elements, and glassmorphic designs, I prioritize stakeholder requirements and user needs above personal preferences.
+            Always trying to follow the three core UI principles - Consistency, Accessibility and Simplicity. The UI of each platform has to be consistent in its design as this is the basic impression in users perception of the ptoduct. Accessibility has to be considered at each level of the UI, so the product can be used by everyone. The aesthetics of the product play a crucial role of the product's perception as it can lead to different emotions in the users. I try to keep the Minimalistic style in order to keep designs clean and simple. Even if I have my personal preferences for pastel color palettes and for Neumorphic and Glassmorphic design, I always prioritize stakeholer requirements and user needs above personal preferences.
           </p>
         </div>
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">ARTISTIC FOUNDATION</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">From Traditional Art to Digital Design</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My journey as a designer began in early childhood, where I developed a passion for drawing and painting landscapes, flowers, animals, and portraits. This artistic foundation gives me a natural advantage in UI design, particularly in creating original visual elements and understanding color theory and composition. Today, I continue to develop these skills digitally using my Wacom tablet with Adobe Illustrator, bringing the freedom of traditional art to digital design.
+            My journey as a designer began in early childhood, when I developed a passion for drawing and painting landscapes, flowers, animals, and portraits. Ever since my childhood I used to draw continiously with aquarel, oil and acrylic colors. This artistic personality gives me a natural advantage in UI design, particularly in creating original and beautiful visual elements and understanding color theory and composition. Today, I continue to develop these skills digitally using my Wacom tablet with Adobe Illustrator, bringing the freedom of drawing art on paper to digital design.
           </p>
         </div>
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">PROFESSIONAL EXPERIENCE</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">UI/UX Design (2023-Present)</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My professional experience includes creating website banners and social media assets while providing UX consultation for website improvement at a digital marketing agency. I've developed complete user flows, wireframes, and high-fidelity prototypes for an e-commerce platform, including original logo, icons, buttons, cards, and backgrounds. I also created a comprehensive event app with advanced animations and component interactions based on user research and persona development. My corporate background as a Procurement Specialist at IBM, Account Manager at Cisco Software, and various customer support roles has given me valuable insights into business requirements and user needs.
+            My professional experience includes creating website banners and social media assets while providing UX consultation for website improvement at a digital marketing agency. During my UI education, I've created two completed platforms - mobile and web which include complete user flows, wireframes, and high-fidelity prototypes. My first project was an e-commerce platform, including original logo, icons, buttons, cards, and backgrounds. After that, during my Figma Advanced course, I created an event app with advanced animations and component interactions based on a given user personas needs. My corporate background as a Procurement Specialist at IBM, Account Manager and Inside Sales Representative at Cisco (for Cisco Webex) and other customer support roles has given me deep knowledge about business requirements and user needs.
           </p>
         </div>
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">CORPORATE EXPERIENCE</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Business Insight Meets Design</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My unique professional background includes roles as a Procurement Specialist at IBM, Account Manager at Cisco Software (B2B), Verification Specialist at a payment platform, In-Game Support for mobile gaming, and Customer Support (B2C). This diverse experience has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions. I bring this business acumen to every design project, ensuring that my creative solutions are also practical and aligned with organizational objectives.
+            My corporate experience started during my University education. First I had a customer support role for an Online Payment platform that was followed by a technical game support position for a mobile gaming application. The role of a customer care specialist helped me to understand better the customer's requirements and struggle while using web based applications. I developped my empathy and soft skills while solving their issues. After my University graduation, I moved into the B2B business where I had Account Manager, Inside Sales (B2B Sales of Cisco Webex) and Procurement Specialist roles (Procurement for Hardware at IBM) positions. In this diverse experience, I have gained exceptional stakeholder communication skills and a deep understanding of business goals. As I now work as a UI designer, I always align the organizational objectives with my design projects.
           </p>
         </div>
         <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">TECHNICAL SKILLS</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Tools & Methodologies</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            I work with industry-standard design tools including Figma, Adobe Photoshop, and Adobe Illustrator, utilizing my Wacom tablet for precision and creative freedom. My knowledge of HTML and CSS fundamentals helps me understand development constraints and possibilities when designing interfaces. I'm skilled in key UX methodologies including user interviews, A/B testing, web-based questionnaires, persona creation, and user flow mapping. My design approach encompasses various styles including minimalistic, neumorphic, and glassmorphic design techniques.
+            The design softwares I work with are industry-standard design tools including Figma, Adobe Photoshop, and Adobe Illustrator, using my Wacom tablet for precision and creative details. In order to understand the structure of the platforms, the development of contstraints and the possibilities of the design better, I also completed courses for HTML and CSS fundamentals. Familiar with key UX research and design practices such as user interviews, A/B testing, persona creation, and user flow mapping, which I studied during UI/UX courses and explored further through self-learning.
           </p>
         </div>
         <div className="mt-10 px-8">
@@ -85,17 +85,10 @@ const AboutPage = () => {
           </div>
         </div>
         <div className="mt-10 px-8">
-          <h2 className="text-black text-4xl font-semibold opacity-70">ADDITIONAL STRENGTHS</h2>
-          <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Beyond Design Skills</h3>
-          <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            My corporate experience has equipped me with valuable skills beyond just design expertise. I'm familiar with agile methodologies and have experience collaborating with cross-functional teams. My analytical approach to identifying and addressing user pain points stems from my diverse professional background. I excel at translating stakeholder requirements into design solutions that balance business goals with user needs. My self-directed study of psychological principles enhances my ability to create intuitive, user-centered experiences that resonate emotionally and functionally with the target audience.
-          </p>
-        </div>
-        <div className="mt-10 px-8">
           <h2 className="text-black text-4xl font-semibold opacity-70">LANGUAGES</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Multilingual Communication</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            I'm fluent in Bulgarian (native) and English, with proficient knowledge of German and basic Spanish skills. My language abilities enhance my ability to communicate effectively with diverse stakeholders and understand cultural nuances that impact user experience design. This multinational perspective helps me create interfaces that resonate with users from different cultural backgrounds.
+            I'm fluent in Bulgarian (native) and English, with proficient knowledge of German and basic Spanish skills. My language abilities enhance my ability to communicate effectively with diverse stakeholders and understand cultural differences that can influence user experience design. This multinational perspective helps me create interfaces that resonate with users preferences of users with different cultural backgrounds.
           </p>
         </div>
       </Fade>

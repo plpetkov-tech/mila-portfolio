@@ -17,7 +17,7 @@ const FeaturedProjects = () => {
               E-Commerce Platform Design
             </h2>
             <p className="text-lg  text-black opacity-60 mb-6">
-              Complete user flow, wireframes, and high-fidelity prototypes for a handbag e-commerce platform (mobile and web), including original logo, icons, buttons, cards, and backgrounds. The project emphasized Scandinavian minimalism with carefully selected typography and a soothing color palette to create an elegant shopping experience.
+              This project was created for a handbag e-commerce platform during the completion of my UI Essentials Course led by Daniel Scott. It includes: Complete user flow, Wireframes, and high-fidelity prototypes. I created all design elements including the original brand logo, icons, buttons, cards, and backgrounds. With my passion for Gradients and Minimalism, I carefully selected the typography and a soft color palette in order to create an elegant shopping experience.
             </p>
             <a
               href="/blog/blog-post"
@@ -47,7 +47,7 @@ const FeaturedProjects = () => {
                 Event Application Design
               </h2>
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                Comprehensive event app with advanced animations and component interactions based on thorough user research and persona development. The interface features neumorphic elements that create subtle depth while maintaining a clean user experience, with special attention to information hierarchy and intuitive navigation.
+                Designed the UI for an Event App for the completion of the Figma Advanced Course. The Event App contains complex interactive cards with advanced Auto-Layout features with info about each concert, along with animations and an easy way for buying tickets online. As the Event will take part at the beachside of Obzor and it's about RnB music, I got inspiration for my color palette and the unique logo and effects by the nostalgic 2000s and '90s vibes.  
               </p>
               <a
                 href="/blog/blog-post-1"
@@ -76,7 +76,7 @@ const FeaturedProjects = () => {
                 Whiskey Bottle Design Competition
               </h2>
               <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
-                Original graphic design for a national competition, featuring a blend of traditional illustration techniques and digital refinement. The design combines classic elements with modern glassmorphic effects to create a premium visual identity that captures the essence of the product while appealing to contemporary tastes.
+                I took part in a designer competition for the design of the summer edition package of a famous Whiskey. The Theme for the design was a summer holiday. My illustration made in Adobe Illustrator contains a beautiful sunset scene where the sea, the sky and the sunshines blend into the horizon and the viewer is being taken into his memories or imagination of relax, freedom and peace by the sea. I am currently awaiting results. 
               </p>
               <a
                 href="/blog/blog-post-2"

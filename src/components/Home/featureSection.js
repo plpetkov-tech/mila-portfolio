@@ -48,7 +48,7 @@ const FeatureSection = () => {
               Bridging Art & Technology
             </h3>
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
-              I blend corporate experience with artistic talent to create user-centered designs that balance aesthetics with functionality. My approach is rooted in consistency, accessibility, and simplicity.
+              My way for achieving aestatically pleasing user-centered and functional design is combining my natural talent for Fine Arts, the technical skills for using design software precisely and the soft skills I have gained through my corporate experience. The three key Rules that I always follow in my designs are consistency, accessibility, and simplicity - This is the way of winning user's trust. Creating functional and aesthetically pleasing designs that brings positive emotions in the users is my ultimative goal.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
               <div className="rounded-md">
@@ -72,7 +72,7 @@ const FeatureSection = () => {
           Consistency, Accessibility, Simplicity
         </h3>
         <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-          My approach to design is centered on three core principles: consistency, accessibility, and simplicity. I believe that consistent design elements build user trust, accessible interfaces ensure inclusivity, and minimalism eliminates confusion while enhancing usability.
+          Keeping designs consistent, making sure everyone can use them, and keeping them simple are my main three rules. I believe that when designs look and work the same, people trust them more. Accessible designs include everyone, and simple layouts not only help people understand things quickly but are also clean and beautiful. Less is more!
         </p>
       </div>
 
