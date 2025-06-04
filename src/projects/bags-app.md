@@ -10,5 +10,4 @@ description: >-
   Meaningful description here.
 ---
 
-![Liquid Web Art](../../static/img)
 
