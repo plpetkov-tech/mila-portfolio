@@ -10,4 +10,4 @@ description: >-
   Meaningful description here.
 ---
 
-
+![Showcase handbags project](../../static/img/handbags.svg)
