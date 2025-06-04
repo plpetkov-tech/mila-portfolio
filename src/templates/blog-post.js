@@ -31,6 +31,19 @@ const StyledDiv = styled.div`
   & a {
     color: #6b46c1;
   }
+  & .gatsby-resp-image-wrapper {
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+  & p {
+    margin: 0 !important;
+    padding: 0 !important;
+    line-height: 0;
+  }
+  & p:not(:has(.gatsby-resp-image-wrapper)) {
+    margin: 1rem 0 !important;
+    line-height: 1.6;
+  }
 `
 const BlogPost = props => {
   const { pageContext } = props
