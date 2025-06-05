@@ -1,13 +1,11 @@
 import React from "react"
-import ProjectsHeader from "../components/Blog/projectsHeader"
-import ProjectsContainer from "../components/Blog/projectsContainer"
+import ProjectsContainerFull from "../components/Blog/projectsContainerFull"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
 
 const Projects = ({ data }) => {
-  let HeaderPost = data?.allMarkdownRemark?.edges[0]
-  let otherPosts = data?.allMarkdownRemark?.edges.slice(1)
+  let allPosts = data?.allMarkdownRemark?.edges
 
   return (
     <Layout>
@@ -15,8 +13,7 @@ const Projects = ({ data }) => {
         title="Meelah's Portfolio - Projects"
         description="Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
       ></Seo>
-      <ProjectsHeader post={HeaderPost} />
-      <ProjectsContainer data={otherPosts} />
+      <ProjectsContainerFull data={allPosts} />
     </Layout>
   )
 }
