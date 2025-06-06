@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "Noble Companion: Classical Equestrian Portrait"
 date: 2025-05-14T22:42:00.000Z
-featuredimage: /img/horse.png
+featuredimage: /img/arts/misc/horse.png
 categories:
   - Equestrian Art
   - Oil Painting

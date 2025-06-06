@@ -97,11 +97,7 @@ const BlogPost = props => {
                 />
               </div>
             )}
-            <p className="text-base text-gray-500 dark:text-gray-400 lg:mb-2">
-              <time dateTime={isoDate} title={titlaDate}>
-                {formattedDate}
-              </time>
-            </p>
+            
 
             <StyledDiv
               className="post-content-body text-[#000000]"
