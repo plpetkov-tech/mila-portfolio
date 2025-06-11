@@ -1,13 +1,13 @@
 ---
 templateKey: blog-post
-title: HandBags App
+title: Pavel Handbags
 date: 2024-03-30T18:18:16.118Z
 featuredimage: /img/Handbags-Mock-Up/1-Creative-Screens-Sections.png
 categories:
   - UI/UX
   - Design
 description: >-
-  Meaningful description here.
+  Complete UX/UI case study for a premium handbag brand entering the competitive online market. Features comprehensive user research, persona development ("The Smart Spender"), journey mapping, and elegant design system. Includes wireframing, prototyping, and high-fidelity designs focused on building brand trust and creating a sophisticated shopping experience that converts hesitant luxury shoppers into confident customers.
 ---
 
 ![Showcase handbags project](../../static/img/Handbags-Mock-Up/2-Hero-Sections.png)
