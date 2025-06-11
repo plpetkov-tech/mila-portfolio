@@ -3,9 +3,9 @@ import Fade from "react-reveal/Fade"
 
 // Assets
 import HeroImage from "../../images/holographic-background-1.webp"
-import Image1 from "../../images/3D-liquid-abstract-1.webp"
-import Image2 from "../../images/3D-liquid-abstract.webp"
-import Image3 from "../../images/3D-liquid-abstract-3.webp"
+import Image1 from "../../images/Group-4.png"
+import Image2 from "../../images/Group-5.png"
+import Image3 from "../../images/Group-12.png"
 
 const FeatureSection = () => {
   return (
@@ -119,17 +119,29 @@ const FeatureSection = () => {
       </Fade>
 
       <Fade bottom cascade>
-        <div className="grid grid-cols-3 mt-10 gap-4 xxs:grid-cols-1 lg:grid-cols-3 px-5">
-          <div className="rounded-xl overflow-hidden relative hover:opacity-100 flex justify-center">
-            <img alt="Image" src={Image1}></img>
-          </div>
-          <div className="rounded-xl overflow-hidden relative hover:opacity-100 flex justify-center">
-            <img alt="Image" src={Image2}></img>
-          </div>
-          <div className="rounded-xl overflow-hidden relative hover:opacity-100 hidden lg:block ">
-            <img alt="Image" src={Image3}></img>
-          </div>
-        </div>
+<div className="grid grid-cols-1 mt-10 gap-4 lg:grid-cols-3">
+  <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
+    <img 
+      alt="Image" 
+      src={Image1}
+      className="w-full h-64 object-contain bg-gray-50"
+    />
+  </div>
+  <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
+    <img 
+      alt="Image" 
+      src={Image2}
+      className="w-full h-64 object-contain bg-gray-50"
+    />
+  </div>
+  <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
+    <img 
+      alt="Image" 
+      src={Image3}
+      className="w-full h-64 object-contain bg-gray-50"
+    />
+  </div>
+</div>
       </Fade>
 
       <Fade bottom cascade>
