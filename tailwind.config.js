@@ -7,7 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         montserrat: ["Montserrat", "sans-serif"],
-        notoserif: ["Noto Serif", "sans-serif"],
+        comfortaa: ["Comfortaa", "sans-serif"],
       },
     },
     colors: {

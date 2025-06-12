@@ -119,29 +119,29 @@ const FeatureSection = () => {
       </Fade>
 
       <Fade bottom cascade>
-<div className="grid grid-cols-1 mt-10 gap-4 lg:grid-cols-3">
-  <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
-    <img 
-      alt="Image" 
-      src={Image1}
-      className="w-full h-64 object-contain bg-gray-50"
-    />
-  </div>
-  <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
-    <img 
-      alt="Image" 
-      src={Image2}
-      className="w-full h-64 object-contain bg-gray-50"
-    />
-  </div>
-  <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
-    <img 
-      alt="Image" 
-      src={Image3}
-      className="w-full h-64 object-contain bg-gray-50"
-    />
-  </div>
-</div>
+        <div className="grid grid-cols-1 mt-10 gap-4 lg:grid-cols-3">
+          <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
+            <img 
+              alt="Image" 
+              src={Image1}
+              className="w-full h-64 object-contain bg-transparent"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
+            <img 
+              alt="Image" 
+              src={Image2}
+              className="w-full h-64 object-contain bg-transparent"
+            />
+          </div>
+          <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
+            <img 
+              alt="Image" 
+              src={Image3}
+              className="w-full h-64 object-contain bg-transparent"
+            />
+          </div>
+        </div>
       </Fade>
 
       <Fade bottom cascade>
