@@ -7,7 +7,7 @@ categories:
   - UI/UX
   - Design
 description: >-
-  Complete UX/UI case study for a mobile app helping R&B music fans discover and book events. Features user research, persona development, journey mapping, wireframing, and high-fidelity designs with a nostalgic late 90s/early 2000s R&B aesthetic. Includes full design system with typography, color palette, and user flow optimization.
+  Complete UX/UI case study for a mobile app helping R&B music fans discover and book events. The project consists of user research, persona development, journey mapping, wireframing, and high-fidelity designs. The essence of the project is a nostalgic late 90s/early 2000s R&B aesthetic which has been the main focus while selecting and creating all elements of the design system.
 ---
 ![Showcase events project](../../static/img/Event-App-Mock-Up/1-Hero-Sections.png)
 ![Showcase events project](../../static/img/Event-App-Mock-Up/2-Project-Details-Sections.png)

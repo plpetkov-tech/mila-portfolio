@@ -7,7 +7,7 @@ categories:
   - UI/UX
   - Design
 description: >-
-  Complete UX/UI case study for a premium handbag brand entering the competitive online market. Features comprehensive user research, persona development ("The Smart Spender"), journey mapping, and elegant design system. Includes wireframing, prototyping, and high-fidelity designs focused on building brand trust and creating a sophisticated shopping experience that converts hesitant luxury shoppers into confident customers.
+  Complete UX/UI case study for a premium handbag brand entering the competitive online market. It includes a comprehensive user research, persona development ("The Smart Spender"), journey mapping, and elegant design system with feeling for elegance and luxury. The project includes wireframing, prototyping, and high-fidelity designs with a main focus on a brand trust creation that converts hesitant shoppers for luxury handbags into confident customers.
 ---
 
 ![Showcase handbags project](../../static/img/Handbags-Mock-Up/2-Hero-Sections.png)

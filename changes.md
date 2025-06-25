@@ -48,4 +48,4 @@ A logo created in Adobe Illustrator for an elderly care mobile app. It shows two
 The logo is simple, caring and easy to recognize.
 
 3D Icon Set for Mobile App
-A set of four custom-made 3D icons, designed in Adobe Illustrator for a mobile app. The icons have a soft 3D look made with light 3D effects and pastel colors. They feel modern, friendly, and easy to understand, making the app more welcoming and visually appealing.
+A set of four custom-made 3D icons, designed in Adobe Illustrator for a mobile app. The icons have a soft 3D look made with light 3D effects and pastel colors. They feel friendly, and easy to understand, making the app more welcoming and visually appealing for the target group.

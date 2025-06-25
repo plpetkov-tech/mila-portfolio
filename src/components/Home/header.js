@@ -19,7 +19,7 @@ const Header = () => {
               Creating user-centered designs where art meets functionality
             </p>
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-0">
-              My strongest aim is to create user-centered designs that balance aesthetics with functionality. My passion for drawing, technical skills and corporate experience help me to achieve my design goals whereby I always follow those three core principles: consistency, accessibility, and simplicity.
+              My goal as a UI/UX designer is to create beautiful, minimalistic but functional designs with high focus on accessibility. My passion for drawing, technical skills and corporate experience help me to achieve the desired results whereby I always follow those three core principles: consistency, accessibility, and simplicity.
             </p>
 
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">

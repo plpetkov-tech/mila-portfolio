@@ -14,7 +14,7 @@ const FeatureSection = () => {
         <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
           <div className="w-1/3 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
             <h3 className="text-black text-2xl">UI Design</h3>
-            <h4 className="mt-10 text-black opacity-70 text-xl">Pixel Perfectionist</h4>
+            <h4 className="mt-10 text-black opacity-70 text-xl">Detail Perfectionist</h4>
           </div>
 
           <div className="w-1/3 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
@@ -23,7 +23,7 @@ const FeatureSection = () => {
           </div>
           <div className="w-1/3 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
             <h3 className="text-white text-2xl">Visual Design</h3>
-            <h4 className="mt-10 text-white opacity-70 text-xl">Color Harmony Maestro</h4>
+            <h4 className="mt-10 text-white opacity-70 text-xl">Color Optimizer</h4>
           </div>
           <div className="lg:rounded-xl lg:w-1/3 lg:bg-dp bg-dp p-8 rounded-xl m-5 xxs:w-full xxs:bg-dp xxs:rounded-xl xs:w-full xs:bg-dp xs:rounded-xl sm:hidden md:hidden lg:block">
             <h3 className="text-white text-2xl">Web Fundamentals</h3>
@@ -118,7 +118,7 @@ const FeatureSection = () => {
         </div>
       </Fade>
 
-      <Fade bottom cascade>
+      {/* <Fade bottom cascade>
         <div className="grid grid-cols-1 mt-10 gap-4 lg:grid-cols-3">
           <div className="rounded-xl overflow-hidden relative hover:opacity-90 transition-opacity">
             <img 
@@ -142,7 +142,7 @@ const FeatureSection = () => {
             />
           </div>
         </div>
-      </Fade>
+      </Fade> */}
 
       <Fade bottom cascade>
         <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
