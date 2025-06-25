@@ -12,7 +12,7 @@ const Contact = () => {
     <Layout>
       <Seo
         title="Contact - Meelah | UI UX Designer"
-        description="Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS"
+        description="Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent"
       ></Seo>
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">

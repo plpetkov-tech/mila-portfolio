@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `Meelah's Portfolio`,
-    description: `Meelah's Portfolio is a visually striking and highly customizable portfolio website built on the powerful Gatsby framework and integrated with the versatile Decap CMS`,
-    siteUrl: "https://meelah-portfolio.netlify.app/",
-    author: `Travis Lord <hi@travislord.xyz>`,
+    description: `Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent`,
+    siteUrl: "https://futureliving.club/",
+    author: `Meelah <meelah@futureliving.club>`,
   },
   plugins: [
     `gatsby-plugin-image`,
