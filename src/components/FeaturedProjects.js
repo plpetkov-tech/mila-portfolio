@@ -20,7 +20,7 @@ const FeaturedProjects = () => {
               This project was created for a handbag e-commerce platform during the completion of my UI Essentials Course led by Daniel Scott. It includes: Complete user flow, Wireframes, and high-fidelity prototypes. I created all design elements including the original brand logo, icons, buttons, cards, and backgrounds. With my passion for Gradients and Minimalism, I carefully selected the typography and a soft color palette in order to create an elegant shopping experience.
             </p>
             <a
-              href="/blog/blog-post"
+              href="/projects/bags-app/"
               className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white rounded-lg border border-purple  hover:bg-purple"
             >
               View Project
@@ -42,15 +42,15 @@ const FeaturedProjects = () => {
             </a>
           </div>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="project-hover bg-white rounded-lg p-8 md:p-12">
-              <h2 className="text-gray-900 text-3xl font-simibold mb-2">
+            <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
+              <h2 className="text-black text-3xl font-simibold mb-2">
                 Event Application Design
               </h2>
-              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+              <p className="text-lg  text-black opacity-60 mb-6">
                 Designed the UI for an Event App for the completion of the Figma Advanced Course. The Event App contains complex interactive cards with advanced Auto-Layout features with info about each concert, along with animations and an easy way for buying tickets online. As the Event will take part at the beachside of Obzor and it's about RnB music, I got inspiration for my color palette and the unique logo and effects by the nostalgic 2000s and '90s vibes.  
               </p>
               <a
-                href="/blog/blog-post-1"
+                href="/projects/event-app/"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
               >
                 View Project
@@ -71,15 +71,15 @@ const FeaturedProjects = () => {
                 </svg>
               </a>
             </div>
-            <div className="project-hover bg-white rounded-lg p-8 md:p-12">
-              <h2 className="text-gray-900 text-3xl font-simibold mb-2">
+            <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
+              <h2 className="text-black text-3xl font-simibold mb-2">
                 Whiskey Bottle Design Competition
               </h2>
-              <p className="text-lg font-normal text-gray-500 dark:text-gray-400 mb-4">
+              <p className="text-lg  text-black opacity-60 mb-6">
                 I took part in a designer competition for the design of the summer edition package of a famous Whiskey. The Theme for the design was a summer holiday. My illustration made in Adobe Illustrator contains a beautiful sunset scene where the sea, the sky and the sunshines blend into the horizon and the viewer is being taken into his memories or imagination of relax, freedom and peace by the sea. I am currently awaiting results. 
               </p>
               <a
-                href="/blog/blog-post-2"
+                href="/arts/jw/"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
               >
                 View Project
