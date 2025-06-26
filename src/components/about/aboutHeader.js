@@ -1,7 +1,7 @@
 import React from "react"
 import Fade from "react-reveal/Fade"
 
-import Image3 from "../../images/holographic-background-1.webp"
+import Image3 from "../../images/Banner.png"
 
 const AboutHeader = () => {
   return (
