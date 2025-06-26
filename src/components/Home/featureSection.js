@@ -49,7 +49,7 @@ const FeatureSection = () => {
             </h3>
             <p className="mt-3 text-base text-black-70 sm:mt-5 sm:text-lg sm:max-w-xl sm:mx-auto md:mt-5 md:text-xl lg:mx-auto lg:mr-0">
               My way for achieving aestatically pleasing and functional user design is combining my natural talent and passion for Fine Arts, the technical skills for using design software precisely and the soft skills that I have gained through my corporate experience. The way for gaining customer trust is to keep the designs consistent, clear and simple. 
-Provoking positive emotions in users by a beautiful user-centred design is the ultimate goal of my efforts.
+Evoking positive emotions in users by a beautiful user-centred design is the ultimate goal of my efforts.
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-end">
               <div className="rounded-md">
