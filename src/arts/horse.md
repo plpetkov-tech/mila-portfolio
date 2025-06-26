@@ -10,6 +10,5 @@ categories:
   - Animal Portrait
   - Traditional Art
 description: A traditional acrylic painting with warm tones and accent on the pure heart and natural innocence of the horse
-
 ---
 A traditional acrylic painting with warm tones and accent on the pure heart and natural innocence of the horse

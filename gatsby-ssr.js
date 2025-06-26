@@ -4,4 +4,14 @@
  * See: https://www.gatsbyjs.com/docs/ssr-apis/
  */
 
-// You can delete this file if you're not using it
+import React from "react"
+
+export const onRenderBody = ({ setHeadComponents }) => {
+  setHeadComponents([
+    <link
+      key="comfortaa-font"
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400&display=swap"
+      rel="stylesheet"
+    />,
+  ]);
+}

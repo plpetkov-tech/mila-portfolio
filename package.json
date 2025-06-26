@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Travis Lord <hi@travislord.xyz>",
   "dependencies": {
+    "@fontsource/comfortaa": "^5.2.6",
     "@fontsource/montserrat": "^5.1.0",
     "@fontsource/noto-serif": "^5.1.0",
     "axios": "^1.7.7",
@@ -15,7 +16,6 @@
     "gatsby-plugin-image": "^3.12.3",
     "gatsby-plugin-manifest": "^5.14.0",
     "gatsby-plugin-netlify": "^5.1.1",
-    "gatsby-plugin-netlify-cms": "^7.12.1",
     "gatsby-plugin-offline": "^6.13.3",
     "gatsby-plugin-sharp": "^5.14.0",
     "gatsby-plugin-sitemap": "^6.14.0",
@@ -29,7 +29,6 @@
     "gatsby-transformer-remark": "^6.13.0",
     "gatsby-transformer-sharp": "^5.14.0",
     "i": "^0.3.7",
-    "netlify-cms-app": "^2.15.72",
     "npm": "^10.9.0",
     "prop-types": "^15.7.2",
     "react": "^18.3.1",
@@ -45,6 +44,14 @@
     "postcss": "^8.4.47",
     "prettier": "3.3.3",
     "tailwindcss": "^3.4.14"
+  },
+  "resolutions": {
+    "graphql": "16.9.0",
+    "graphql-compose": "9.0.10"
+  },
+  "overrides": {
+    "graphql-compose": "9.0.10",
+    "graphql": "16.9.0"
   },
   "keywords": [
     "gatsby"
