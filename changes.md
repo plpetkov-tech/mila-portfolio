@@ -1,6 +1,6 @@
 Landing Page:
 
-My goal as a UI/UX designer is to create beautiful, minimalistic but functional designs with high focus on accessibility. My passion for drawing, technical skills and corporate experience help me to achieve the desired results whereby I always follow those three core principles: consistency, accessibility, and simplicity.
+My goal as a UI/UX designer is to create beautiful, minimalistic but functional designs with high focus on accessibility. My passion for drawing, the technical skills that I gained and my solid corporate experience help me to achieve the desired results whereby I always follow the following principles: consistency, accessibility, empathy and simplicity.
 
 UI Designs - 
 Detail Perfectionist
