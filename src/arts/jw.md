@@ -16,3 +16,5 @@ A packaging design inspired by the emotional scene of a sunset by the sea with a
 
 
 ![Raw design](/img/arts/jw/illustrator.png)
+
+![design](/img/arts/jw/illustrator2.png)
