@@ -12,18 +12,18 @@ const FeatureSection = () => {
     <div className="max-w-7xl mx-auto">
       <Fade bottom cascade>
         <div className="mt-10 flex flex-row justify-space xxs:flex-col xs:flex-col sm:flex-row content-center justify-center align-middle text-center">
-          <div className="w-1/3 bg-gradient-to-r from-pink to-purple p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
+          <div className="w-1/3 bg-box4 p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
             <h3 className="text-black text-2xl">UI Design</h3>
             <h4 className="mt-10 text-black opacity-70 text-xl">Detail Perfectionist</h4>
           </div>
 
-          <div className="w-1/3 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h3 className="text-white text-2xl">UX Research</h3>
-            <h4 className="mt-10 text-white opacity-70 text-xl">Empathy Engineer</h4>
+          <div className="w-1/3 bg-box3 p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
+            <h3 className="text-black text-2xl">UX Research</h3>
+            <h4 className="mt-10 text-black opacity-70 text-xl">Empathy Engineer</h4>
           </div>
-          <div className="w-1/3 bg-dp p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
-            <h3 className="text-white text-2xl">Visual Design</h3>
-            <h4 className="mt-10 text-white opacity-70 text-xl">Color Optimizer</h4>
+          <div className="w-1/3 bg-box2 p-8 rounded-xl m-5 xxs:w-full xs:w-full sm:w-1/3">
+            <h3 className="text-black text-2xl">Visual Design</h3>
+            <h4 className="mt-10 text-black opacity-70 text-xl">Color Optimizer</h4>
           </div>
           <div className="lg:rounded-xl lg:w-1/3 lg:bg-dp bg-dp p-8 rounded-xl m-5 xxs:w-full xxs:bg-dp xxs:rounded-xl xs:w-full xs:bg-dp xs:rounded-xl sm:hidden md:hidden lg:block">
             <h3 className="text-white text-2xl">Web Fundamentals</h3>
