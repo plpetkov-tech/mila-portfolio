@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: "The Beauty of the Sea Shells"
 date: 2025-06-06T10:00:00.000Z
-featuredimage: /img/arts/shells/Group-4.png
+featuredimage: /img/arts/shells/aShells.png
 categories:
  - Digital Illustration
  - Design Process
@@ -14,8 +14,3 @@ description: A design study exploring the beauty of seashells, progressing from 
 
 Started as a traditional pencil sketch that progressed into a polished digital illustration of 3 different types of seashells with a soft gradient and shadow effects.
 
-![Scallop shell 1](/img/arts/shells/Group-4.png)
-
-![Scallop shell 1](/img/arts/shells/Group-5.png)
-
-![Scallop shell 1](/img/arts/shells/Group-12.png)
