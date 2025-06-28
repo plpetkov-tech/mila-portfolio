@@ -1,7 +1,7 @@
 {
-  "name": "meelah-portfolio",
+  "name": "meela-portfolio",
   "private": true,
-  "description": "Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent.",
+  "description": "Meela is a UI/UX Designer with a refined blend of corporate experience and artistic talent.",
   "version": "1.0.0",
   "author": "Travis Lord <hi@travislord.xyz>",
   "dependencies": {

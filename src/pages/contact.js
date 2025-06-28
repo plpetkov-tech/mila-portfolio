@@ -11,14 +11,14 @@ const Contact = () => {
   return (
     <Layout>
       <Seo
-        title="Contact - Meelah | UI UX Designer"
-        description="Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent"
+        title="Contact - Meela | UI UX Designer"
+        description="Meela is a UI/UX Designer with a refined blend of corporate experience and artistic talent"
       ></Seo>
 
       <div className="max-w-7xl mx-auto mt-10 flex text-white xxs:flex-col sm:flex-row">
         <Fade duration={1200}>
           <div className="bg-dp opacity-70 p-10 rounded-xl w-3/4 m-5 w-auto">
-            <h1 className="text-3xl text-white">CONTACT MEELAH</h1>
+            <h1 className="text-3xl text-white">CONTACT MEELA</h1>
             <h2 className="text-4xl font-bold mt-2 xxs:text-lg sm:text-2xl lg:text-4xl text-gradient bg-gradient-to-r from-pink to-purple">
               Let's Create Exceptional Experiences Together
             </h2>

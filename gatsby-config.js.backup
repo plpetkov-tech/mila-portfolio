@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: `Meelah's Portfolio`,
-    description: `Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent`,
+    title: `Meela's Portfolio`,
+    description: `Meela is a UI/UX Designer with a refined blend of corporate experience and artistic talent`,
     siteUrl: "https://futureliving.club/",
-    author: `Meelah <meelah@futureliving.club>`,
+    author: `Meela <meela@futureliving.club>`,
   },
   plugins: [
     `gatsby-plugin-image`,
@@ -47,8 +47,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Meelah's Portfolio`,
-        short_name: `Meelah Portfolio`,
+        name: `Meela's Portfolio`,
+        short_name: `Meela Portfolio`,
         start_url: `/`,
         background_color: `#ebebfa`,
         theme_color: `#ebebfa`,

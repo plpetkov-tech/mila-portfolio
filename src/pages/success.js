@@ -7,8 +7,8 @@ const Success = () => {
   return (
     <Layout>
       <Seo
-        title="Message Sent - Meelah | UI UX Designer"
-        description="Thank you for contacting Meelah. Your message has been sent successfully."
+        title="Message Sent - Meela | UI UX Designer"
+        description="Thank you for contacting Meela. Your message has been sent successfully."
       />
       <div className="max-w-7xl mx-auto mt-20 text-center text-white">
         <h1 className="text-4xl font-bold mb-4">Thank You!</h1>

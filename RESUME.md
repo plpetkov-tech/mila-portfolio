@@ -1,7 +1,7 @@
-# Meelah's Professional Profile
+# Meela's Professional Profile
 
 ## Professional Summary
-I am Meelah, a UI/UX Designer with a unique blend of corporate experience and artistic talent. With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments—from customer support to procurement—has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
+I am Meela, a UI/UX Designer with a refined blend of corporate experience and artistic talent. With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments, from customer support to procurement, has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
 
 ## Design Philosophy
 My approach to design is centered on three core principles: consistency, accessibility, and simplicity. I believe that consistent design elements build user trust, accessible interfaces ensure inclusivity, and minimalism eliminates confusion while enhancing usability. While I have a personal affinity for Scandinavian minimalism, neumorphic elements, and glassmorphic designs, I prioritize stakeholder requirements and user needs above personal preferences.
@@ -27,7 +27,7 @@ My journey as a designer began in early childhood, where I developed a passion f
 - **Whiskey Bottle Design Competition**: Developed original graphic design for national competition (awaiting results)
 
 ### Corporate Experience (Chronological)
-- **Procurement Specialist, IBM**: Managed hardware procurement processes, developing keen attention to detail and systematic approach to complex requirements
+- **Procurement Specialist, IBM**: In my role as a Procurement Specialist at IBM, I was responsible for processing hardware machine and parts requests from developers. My tasks included maintaining correspondence with vendors and requesting and analyzing quotеs. Before confirming an order, I was always verifying the existence of contractual agreements between the respective vendor and IBM. I was also involved in negotiating offers to ensure that IBM received the most competitive pricing.When necessary, I prepared, renewed, or amended contracts and contractual clauses in full compliance with IBM’s internal trade policies.I was specifically responsible for the German market, supporting IBM developers from German-speaking countries. I worked as part of an international team with colleagues from different countries, always adhering to corporate policies and procedures.
 - **Account Manager & Inside Sales, Cisco Software (B2B)**: Built strong communication skills and understanding of stakeholder needs across diverse business environments
 - **Verification Specialist, Payment Platform**: Developed analytical skills and appreciation for security and user trust mechanisms
 - **In-Game Support, Mobile Gaming**: Gained insight into user behavior and pain points within digital applications
@@ -40,7 +40,7 @@ My journey as a designer began in early childhood, where I developed a passion f
 - **Design Styles**: Minimalistic, neumorphic, and glassmorphic design
 
 ## Additional Strengths
-- **Languages**: Bulgarian (native), English (fluent), German (proficient), Spanish (basic)
+- **Languages**: Bulgarian (native), English (fluent), German (proficient), Romanian (intermediate), Russian (intermediate), Spanish (basic)
 - **Psychology Interest**: Self-directed study of psychological principles that enhance user experience design
 - **Corporate Acumen**: Experience with agile methodologies and cross-functional team collaboration
 - **Communication**: Exceptional ability to translate stakeholder requirements into design solutions

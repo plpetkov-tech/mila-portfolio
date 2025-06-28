@@ -11,8 +11,8 @@ const About = () => {
   return (
     <Layout>
       <Seo
-        title="About - Meelah | UI UX Designer"
-        description="Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent."
+        title="About - Meela | UI UX Designer"
+        description="Meela is a UI/UX Designer with a refined blend of corporate experience and artistic talent."
       ></Seo>
       <AboutHeader></AboutHeader>
       <AboutPage></AboutPage>

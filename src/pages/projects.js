@@ -10,8 +10,8 @@ const Projects = ({ data }) => {
   return (
     <Layout>
       <Seo
-        title="Meelah's Portfolio - Projects"
-        description="Meelah is a UI/UX Designer with a unique blend of corporate experience and artistic talent"
+        title="Meela's Portfolio - Projects"
+        description="Meela is a UI/UX Designer with a refined blend of corporate experience and artistic talent"
       ></Seo>
       <ProjectsContainerFull data={allPosts} />
     </Layout>
