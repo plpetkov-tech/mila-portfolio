@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Classical Equestrian Portrait"
-date: 2025-01-14T22:42:00.000Z
+date: 2025-02-14T22:42:00.000Z
 featuredimage: /img/arts/misc/horse.png
 categories:
   - Equestrian Art
