@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Minimalist 3D Strawberry"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-08-06T10:00:00.000Z
 featuredimage: /img/arts/misc/Asset-2.png
 categories:
  - 3D Illustration

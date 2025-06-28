@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Logo for a Mobile App"
-date: 2025-01-06T10:00:00.000Z
+date: 2024-07-06T10:00:00.000Z
 featuredimage: /img/arts/misc/Logos-01.png
 categories:
  - Digital Illustration

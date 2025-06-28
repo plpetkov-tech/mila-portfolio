@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "The Beauty of the Sea Shells"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-10-06T10:00:00.000Z
 featuredimage: /img/arts/shells/aShells.png
 categories:
  - Digital Illustration

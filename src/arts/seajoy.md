@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Sea Joy"
-date: 2025-06-06T10:00:00.000Z
+date: 2023-12-06T10:00:00.000Z
 featuredimage: /img/arts/misc/joy.png
 categories:
  - Paper Art

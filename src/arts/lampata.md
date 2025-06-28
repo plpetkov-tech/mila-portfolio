@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Promotional Flyer for Lampata Restaurant"
-date: 2025-06-06T10:00:00.000Z
+date: 2023-06-06T10:00:00.000Z
 featuredimage: /img/arts/misc/lampata.png
 categories:
  - Paper Art

@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Abstract Waves - UI Background"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-09-06T10:00:00.000Z
 featuredimage: /img/arts/misc/waves.png
 categories:
  - Paper Art

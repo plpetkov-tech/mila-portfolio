@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Johnny Walker Hackathon"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-04-06T10:00:00.000Z
 featuredimage: /img/arts/jw/ai.jpg
 categories:
  - Paper Art

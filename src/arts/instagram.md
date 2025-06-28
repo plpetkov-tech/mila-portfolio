@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Instagram Banner"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-03-06T10:00:00.000Z
 featuredimage: /img/arts/misc/instagram.png
 categories:
  - Paper Art

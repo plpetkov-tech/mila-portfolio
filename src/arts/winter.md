@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Winter landscape"
-date: 2025-05-14T22:42:00.000Z
+date: 2025-02-14T22:42:00.000Z
 featuredimage: /img/arts/misc/zimen.png
 categories:
   - Equestrian Art
@@ -9,6 +9,6 @@ categories:
   - Fine Art
   - Animal Portrait
   - Traditional Art
-description: A traditional acrylic painting with warm tones and accent on the pure heart and natural innocence of the horse
+description: Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter
 ---
-A traditional acrylic painting with warm tones and accent on the pure heart and natural innocence of the horse
+Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter

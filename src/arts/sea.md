@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Abstract Composition of The Sea"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-02-06T10:00:00.000Z
 featuredimage: /img/arts/misc/Sea-Sculpture.png
 categories:
  - Digital Art

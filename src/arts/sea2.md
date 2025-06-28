@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Sunset by the Sea - Custom Oil Painting"
-date: 2025-06-06T10:00:00.000Z
+date: 2024-12-06T10:00:00.000Z
 featuredimage: /img/arts/sea/incanvas.png
 categories:
  - Oil Painting
