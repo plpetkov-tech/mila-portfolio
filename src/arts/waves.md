@@ -4,11 +4,7 @@ title: "Sea Waves"
 date: 2024-11-08T10:00:00.000Z
 featuredimage: /img/arts/sea/waves.webp
 categories:
- - Digital Art
- - Abstract Design
- - UI Elements
- - Modern Graphics
- - Fluid Design
+ - Graphic Illustrations 
 description: The illustration has been made in Adobe Illustrator. Layering techniques, gradient mesh and wave shapes with different multi-color gradients.
 ---
 

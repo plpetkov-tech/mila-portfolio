@@ -1,52 +1,12 @@
-import React from "react"
-import ArtsContainer from "../components/Blog/artsContainer"
-import Layout from "../components/layout"
-import Seo from "../components/seo"
-import { graphql } from "gatsby"
+import React, { useEffect } from "react"
+import { navigate } from "gatsby"
 
-const Arts = ({ data }) => {
-  let allPosts = data?.allMarkdownRemark?.edges
+const Arts = () => {
+  useEffect(() => {
+    navigate("/projects")
+  }, [])
 
-  return (
-    <Layout>
-      <Seo
-        title="Meela's Portfolio - Arts"
-        description="Meela is a UI/UX Designer with a refined blend of corporate experience and artistic talent"
-      ></Seo>
-      <ArtsContainer data={allPosts} />
-    </Layout>
-  )
+  return null
 }
 
 export default Arts
-
-export const ArtsPageQuery = graphql`
-  query ArtsPage {
-    allMarkdownRemark(
-      filter: {
-        fileAbsolutePath: { regex: "/src/arts/" }
-        frontmatter: { templateKey: { eq: "blog-post" } }
-      }
-      sort: { frontmatter: { date: DESC } }
-      limit: 30
-    ) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-          frontmatter {
-            date(formatString: "DD:MM:YYYY hh:mm a")
-            title
-            description
-            featuredimage {
-              childImageSharp {
-                gatsbyImageData
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-` 

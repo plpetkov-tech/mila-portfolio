@@ -4,11 +4,7 @@ title: "Johnny Walker Hackathon"
 date: 2024-04-06T10:00:00.000Z
 featuredimage: /img/arts/jw/ai.jpg
 categories:
- - Paper Art
- - Botanical Design
- - Craft Design
- - Floral Illustration
- - Handmade Graphics
+ - Commercial Works 
 description: A packaging design inspired by the emotional scene of a sunset by the sea with a soft color palette and abstract forms.
 ---
 

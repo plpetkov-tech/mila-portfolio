@@ -5,7 +5,6 @@ date: 2024-03-30T18:18:16.118Z
 featuredimage: /img/Event-App-Mock-Up/Thumbnail.png
 categories:
   - UI/UX
-  - Design
 description: >-
   Complete UX/UI case study for a mobile app helping R&B music fans discover and book events. The project consists of user research, persona development, journey mapping, wireframing, and high-fidelity designs. The essence of the project is a nostalgic late 90s/early 2000s R&B aesthetic which has been the main focus while selecting and creating all elements of the design system.
 ---

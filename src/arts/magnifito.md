@@ -4,11 +4,7 @@ title: "Marketing Agency Brand Guidelines Banner"
 date: 2023-06-06T10:00:00.000Z
 featuredimage: /img/arts/misc/Blog-Banner.png
 categories:
- - Web Design
- - Branding
- - Marketing Materials
- - Bulgarian Market
- - Banner Design
+ - Commercial Works 
 description: A professional marketing banner designed for Magnifito, a Bulgarian marketing agency, featuring their brand guidelines checklist and clean workspace aesthetic.
 ---
 

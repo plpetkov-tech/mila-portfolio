@@ -4,11 +4,7 @@ title: "Sea Joy"
 date: 2023-12-06T10:00:00.000Z
 featuredimage: /img/arts/misc/joy.png
 categories:
- - Paper Art
- - Botanical Design
- - Craft Design
- - Floral Illustration
- - Handmade Graphics
+ - Graphic Illustrations 
 description: This is mask technique used in Figma which illustrates the joy that a happy woman experiences in front of the Sea.
 
 ---
