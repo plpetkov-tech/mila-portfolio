@@ -9,7 +9,7 @@ categories:
  - UI Elements
  - Modern Graphics
  - Fluid Design
-description: The design of this composition imitates a low-relief sculpture or a multilayer paper cut effect with a matte surface. The abstract shapes mimic water, waves and sand giving the viewer a gentle and relaxed feeling. 
+description: The design of this composition imitates a low-relief sculpture or a multilayer paper cut effect with a matte surface. The abstract shapes mimic water, waves and sand giving the viewer a gentle and relaxed feeling
 ---
 
-The design of this composition imitates a low-relief sculpture or a multilayer paper cut effect with a matte surface. The abstract shapes mimic water, waves and sand giving the viewer a gentle and relaxed feeling. 
+The design of this composition imitates a low-relief sculpture or a multilayer paper cut effect with a matte surface. The abstract shapes mimic water, waves and sand giving the viewer a gentle and relaxed feeling.

@@ -11,4 +11,4 @@ categories:
   - Traditional Art
 description: Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter
 ---
-Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter
+Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter.

@@ -9,7 +9,7 @@ categories:
  - Marketing Materials
  - Bulgarian Market
  - Banner Design
-description: A professional marketing banner designed for Magnifito, a Bulgarian marketing agency, featuring their brand guidelines checklist and clean workspace aesthetic.
+description: A professional marketing banner designed for Magnifito, a Bulgarian marketing agency, featuring their brand guidelines checklist and clean workspace aesthetic
 ---
 
 This banner was created for Magnifito, a marketing agency in Bulgaria, as part of their website production. The design combines their brand identity with a clean, professional workspace setting.

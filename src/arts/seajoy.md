@@ -9,7 +9,7 @@ categories:
  - Craft Design
  - Floral Illustration
  - Handmade Graphics
-description: This is mask technique used in Figma which illustrates the joy that a happy woman experiences infant of the Sea.
+description: This is mask technique used in Figma which illustrates the joy that a happy woman experiences infant of the Sea
 
 ---
 

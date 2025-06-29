@@ -9,7 +9,7 @@ categories:
  - UI Elements
  - Modern Graphics
  - Fluid Design
-description: The illustration has been made in Adobe Illustrator. Layering techniques, gradient mesh and wave shapes with different multi-color gradients. 
+description: The illustration has been made in Adobe Illustrator. Layering techniques, gradient mesh and wave shapes with different multi-color gradients
 ---
 
 The illustration has been made in Adobe Illustrator. Layering techniques, gradient mesh and wave shapes with different multi-color gradients. 
