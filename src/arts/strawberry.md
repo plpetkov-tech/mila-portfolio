@@ -9,7 +9,7 @@ categories:
  - Food Illustration
  - Product Design
  - Digital Art
-description: A clean, minimalist 3D rendered strawberry wit bold colors and simple forms against a warm orange background
+description: A clean, minimalist 3D rendered strawberry wit bold colors and simple forms against a warm orange background.
 ---
 
 A clean, minimalist 3D rendered strawberry wit bold colors and simple forms against a warm orange background.

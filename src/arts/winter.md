@@ -9,6 +9,6 @@ categories:
   - Fine Art
   - Animal Portrait
   - Traditional Art
-description: Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter
+description: Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter.
 ---
 Acrylic painting with cold tons and accent on the cold beauty of the mountain in winter.

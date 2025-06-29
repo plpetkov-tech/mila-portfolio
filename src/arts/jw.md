@@ -9,7 +9,7 @@ categories:
  - Craft Design
  - Floral Illustration
  - Handmade Graphics
-description: A packaging design inspired by the emotional scene of a sunset by the sea with a soft color palette and abstract forms
+description: A packaging design inspired by the emotional scene of a sunset by the sea with a soft color palette and abstract forms.
 ---
 
 A packaging design inspired by the emotional scene of a sunset by the sea with a soft color palette and abstract forms.
