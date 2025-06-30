@@ -1,5 +1,4 @@
 import React from "react"
-import ProjectsContainerFull from "../components/Blog/projectsContainerFull"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
 import { graphql } from "gatsby"
@@ -11,10 +10,10 @@ const Projects = ({ data }) => {
   let projectPosts = data?.projects?.edges
   let artsPosts = data?.arts?.edges
 
-  // Group arts by category
-  const groupArtsByCategory = (arts) => {
+  // Group items by category - unified function for both projects and arts
+  const groupByCategory = (items) => {
     const grouped = {}
-    arts.forEach(item => {
+    items.forEach(item => {
       const category = item.node.frontmatter.categories?.[0] || "Uncategorized"
       if (!grouped[category]) {
         grouped[category] = []
@@ -29,10 +28,17 @@ const Projects = ({ data }) => {
     return grouped
   }
 
-  const groupedArts = groupArtsByCategory(artsPosts)
+  const groupedProjects = groupByCategory(projectPosts)
+  const groupedArts = groupByCategory(artsPosts)
 
-  // Define custom order for categories (optional)
-  const categoryOrder = [
+  // Define custom order for project categories
+  const projectCategoryOrder = [
+    "UI/UX",
+    "UI/UX Projects - Complete App Flows & Prototypes",
+  ]
+
+  // Define custom order for arts categories
+  const artsCategoryOrder = [
     "Commercial Works",
     "Logos & Icons",
     "Graphic Illustrations", 
@@ -40,20 +46,25 @@ const Projects = ({ data }) => {
   ]
 
   // Sort categories by custom order, fallback to alphabetical
-  const sortedCategoryEntries = Object.entries(groupedArts).sort(([a], [b]) => {
-    const aIndex = categoryOrder.indexOf(a)
-    const bIndex = categoryOrder.indexOf(b)
-    
-    if (aIndex !== -1 && bIndex !== -1) {
-      return aIndex - bIndex
-    } else if (aIndex !== -1) {
-      return -1
-    } else if (bIndex !== -1) {
-      return 1
-    } else {
-      return a.localeCompare(b)
-    }
-  })
+  const sortCategories = (grouped, categoryOrder) => {
+    return Object.entries(grouped).sort(([a], [b]) => {
+      const aIndex = categoryOrder.indexOf(a)
+      const bIndex = categoryOrder.indexOf(b)
+      
+      if (aIndex !== -1 && bIndex !== -1) {
+        return aIndex - bIndex
+      } else if (aIndex !== -1) {
+        return -1
+      } else if (bIndex !== -1) {
+        return 1
+      } else {
+        return a.localeCompare(b)
+      }
+    })
+  }
+
+  const sortedProjectEntries = sortCategories(groupedProjects, projectCategoryOrder)
+  const sortedArtsEntries = sortCategories(groupedArts, artsCategoryOrder)
 
   return (
     <Layout>
@@ -63,11 +74,66 @@ const Projects = ({ data }) => {
       ></Seo>
       
       {/* Projects Section */}
-      <ProjectsContainerFull data={projectPosts} />
+      <div className="max-w-7xl mx-auto mt-16 px-8 text-black">
+        {sortedProjectEntries.map(([category, projects]) => (
+          <div key={category} className="mb-12">
+            {/* Category Header */}
+            <Fade bottom>
+              <div className="mb-8">
+                <h2 className="text-3xl font-bold text-center mb-2">{category}</h2>
+                <div className="w-24 h-1 bg-gradient-to-r from-pink to-purple mx-auto rounded-full"></div>
+              </div>
+            </Fade>
+            
+            {/* Projects Grid */}
+            <Fade bottom cascade>
+              <div className="grid grid-cols-2 gap-6 xxs:grid-cols-1 sm:grid-cols-1 lg:grid-cols-2 mb-8">
+                {projects.map((project, i) => (
+                  <div key={i}>
+                    <div className="overflow-hidden rounded-xl xxs:w-full">
+                      <Link
+                        to={project.slug}
+                        style={{
+                          textDecoration: "none",
+                          color: "black",
+                        }}
+                      >
+                        <GatsbyImage
+                          image={getImage(project.featuredimage)}
+                          alt={project.title}
+                          placeholder="none"
+                          layout="cover"
+                          formats={["auto", "webp", "avif"]}
+                          quality={100}
+                          className="img"
+                        />
+                      </Link>
+                    </div>
+                    <div className="m-6">
+                      <Link
+                        to={project.slug}
+                        style={{
+                          textDecoration: "none",
+                          color: "black",
+                        }}
+                      >
+                        <h1 className="text-2xl font-simibold mt-2 mb-4">
+                          {project.title}
+                        </h1>
+                      </Link>
+                      <p className="text-sm opacity-50 mt-2">{project.description}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </Fade>
+          </div>
+        ))}
+      </div>
       
       {/* Arts Section */}
       <div className="max-w-7xl mx-auto mt-16 px-8 text-black">
-        {sortedCategoryEntries.map(([category, arts]) => (
+        {sortedArtsEntries.map(([category, arts]) => (
           <div key={category} className="mb-12">
             {/* Category Header */}
             <Fade bottom>
@@ -167,6 +233,7 @@ export const WorkPageQuery = graphql`
             date(formatString: "DD:MM:YYYY hh:mm a")
             title
             description
+            categories
             featuredimage {
               childImageSharp {
                 gatsbyImageData
