@@ -88,7 +88,7 @@ const AboutPage = () => {
           <h2 className="text-black text-4xl font-semibold opacity-70">LANGUAGES</h2>
           <h3 className="text-black text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">Multilingual Communication</h3>
           <p className="text-black opacity-70 font-normal mt-3 text-xs xxs:text-xs xs:text-xs sm:text-xs md:text-sm lg:text-lg">
-            I'm fluent in Bulgarian (native) and English, with proficient knowledge of German, intermediate Romanian and Russian, and basic Spanish skills. My language abilities enhance my ability to communicate effectively with diverse stakeholders and understand cultural differences that can influence user experience design. This multinational perspective helps me create interfaces that resonate with users preferences of users with different cultural backgrounds.
+            I'm fluent in Bulgarian (native), English, and German, with intermediate knowledge of Spanish, Russian, and Romanian. My language abilities enhance my ability to communicate effectively with diverse stakeholders and understand cultural differences that can influence user experience design. This multinational perspective helps me create interfaces that resonate with users preferences of users with different cultural backgrounds.
           </p>
         </div>
       </Fade>

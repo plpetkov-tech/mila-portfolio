@@ -40,7 +40,7 @@ My journey as a designer began in early childhood, where I developed a passion f
 - **Design Styles**: Minimalistic, neumorphic, and glassmorphic design
 
 ## Additional Strengths
-- **Languages**: Bulgarian (native), English (fluent), German (proficient), Romanian (intermediate), Russian (intermediate), Spanish (basic)
+- **Languages**: Bulgarian (native), English (fluent), German (fluent), Spanish (intermediate), Russian (intermediate), Romanian (intermediate)
 - **Psychology Interest**: Self-directed study of psychological principles that enhance user experience design
 - **Corporate Acumen**: Experience with agile methodologies and cross-functional team collaboration
 - **Communication**: Exceptional ability to translate stakeholder requirements into design solutions

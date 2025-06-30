@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Marketing Agency Brand Guidelines Banner"
-date: 2023-06-06T10:00:00.000Z
+date: 2024-01-04T10:00:00.000Z
 featuredimage: /img/arts/misc/Blog-Banner.png
 categories:
  - Commercial Works 

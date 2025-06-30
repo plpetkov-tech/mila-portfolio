@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "3D Icon Set for Mobile App"
-date: 2024-06-06T10:00:00.000Z
+date: 2024-06-04T10:00:00.000Z
 featuredimage: /img/arts/misc/Icons.png
 categories:
  - Logos & Icons 

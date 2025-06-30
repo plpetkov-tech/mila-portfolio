@@ -1,7 +1,7 @@
 ---
 templateKey: blog-post
 title: "Instagram Banner"
-date: 2024-03-06T10:00:00.000Z
+date: 2024-02-04T10:00:00.000Z
 featuredimage: /img/arts/misc/instagram.png
 categories:
  - Graphic Illustrations 
