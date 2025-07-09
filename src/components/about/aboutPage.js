@@ -71,6 +71,7 @@ const AboutPage = () => {
             <div className="mb-4">
               <h4 className="font-semibold text-base mb-2">Specialized Training</h4>
               <ul className="list-disc pl-6 space-y-1">
+                <li>UX Design Process from User Research to Usability Testing</li>
                 <li>Principles of UI & UX Design</li>
                 <li>HTML & CSS Fundamentals</li>
               </ul>
