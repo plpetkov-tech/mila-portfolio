@@ -47,7 +47,7 @@ const FeaturedProjects = () => {
                 Event Application Design
               </h2>
               <p className="text-lg  text-black opacity-60 mb-6">
-                Designed the UI for an Event App for the completion of the Figma Advanced Course. The Event App contains complex interactive cards with advanced Auto-Layout features with info about each concert, along with animations and an easy way for buying tickets online. As the Event will take part at the beachside of Obzor and it's about RnB music, I got inspiration for my color palette and the unique logo and effects by the nostalgic 2000s and '90s vibes.  
+                Designed the UI for an Event App for the completion of the Figma Advanced Course. The Event App contains complex interactive cards with advanced Auto-Layout features with info about each concert, along with animations and an easy way for buying tickets online. As the Event will take part at the beachside of Obzor and it's about RnB music, I got inspiration for my color palette and the unique logo and effects by the nostalgic 2000s and '90s vibes.
               </p>
               <a
                 href="/projects/event-app/"
@@ -76,10 +76,99 @@ const FeaturedProjects = () => {
                 Whiskey Bottle Design Competition
               </h2>
               <p className="text-lg  text-black opacity-60 mb-6">
-                I took part in a designer competition for the design of the summer edition package of a famous Whiskey. The Theme for the design was a summer holiday. My illustration made in Adobe Illustrator contains a beautiful sunset scene where the sea, the sky and the sunshines blend into the horizon and the viewer is being taken into his memories or imagination of relax, freedom and peace by the sea. I am currently awaiting results. 
+                I took part in a designer competition for the design of the summer edition package of a famous Whiskey. The Theme for the design was a summer holiday. My illustration made in Adobe Illustrator contains a beautiful sunset scene where the sea, the sky and the sunshines blend into the horizon and the viewer is being taken into his memories or imagination of relax, freedom and peace by the sea. I am currently awaiting results.
               </p>
               <a
                 href="/arts/jw/"
+                className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
+              >
+                View Project
+                <svg
+                  className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8 mt-8">
+            <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
+              <h2 className="text-black text-3xl font-simibold mb-2">
+                Instagram Posts for Online Booking Platform
+              </h2>
+              <p className="text-lg  text-black opacity-60 mb-6">
+                Created two distinct static Instagram posts targeting a B2B audience to support the launch of the newly developed "MyLink" online booking platform.
+              </p>
+              <a
+                href="/projects/restaurant-app/"
+                className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
+              >
+                View Project
+                <svg
+                  className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
+              <h2 className="text-black text-3xl font-simibold mb-2">
+                Package Redesign Prestige
+              </h2>
+              <p className="text-lg  text-black opacity-60 mb-6">
+                Redesign of the packaging for a Bulgarian-produced hair toner.
+              </p>
+              <a
+                href="/projects/fitness-app/"
+                className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
+              >
+                View Project
+                <svg
+                  className="w-3.5 h-3.5 ms-2 rtl:rotate-180"
+                  aria-hidden="true"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 14 10"
+                >
+                  <path
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M1 5h12m0 0L9 1m4 4L9 9"
+                  />
+                </svg>
+              </a>
+            </div>
+            <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
+              <h2 className="text-black text-3xl font-simibold mb-2">
+                Logo Design for VexXy Software
+              </h2>
+              <p className="text-lg  text-black opacity-60 mb-6">
+                The VexXy Logo – a symbol of the constant monitoring and prevention of cyber attacks.
+              </p>
+              <a
+                href="/projects/travel-app/"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
               >
                 View Project
