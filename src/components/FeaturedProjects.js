@@ -110,7 +110,7 @@ const FeaturedProjects = () => {
                 Created two distinct static Instagram posts targeting a B2B audience to support the launch of the newly developed "MyLink" online booking platform.
               </p>
               <a
-                href="/projects/restaurant-app/"
+                href="/arts/restaurant-app/"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
               >
                 View Project
@@ -139,7 +139,7 @@ const FeaturedProjects = () => {
                 Redesign of the packaging for a Bulgarian-produced hair toner.
               </p>
               <a
-                href="/projects/fitness-app/"
+                href="/arts/fitness-app/"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
               >
                 View Project
@@ -168,7 +168,7 @@ const FeaturedProjects = () => {
                 The VexXy Logo – a symbol of the constant monitoring and prevention of cyber attacks.
               </p>
               <a
-                href="/projects/travel-app/"
+                href="/arts/travel-app/"
                 className="transition-all duration-500ms ease-in-out hover:ease-in-out inline-flex justify-center items-center py-2.5 px-5 text-base font-medium text-center text-black hover:text-white  rounded-lg border border-purple  hover:bg-purple"
               >
                 View Project
