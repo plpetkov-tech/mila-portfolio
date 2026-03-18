@@ -12,7 +12,8 @@ const FeaturedProjects = () => {
           <h3 className="text-black pl-4 text-6xl font-bold xxs:text-2xl xs:text-3xl sm:text-5xl lg:text-6xl text-gradient bg-gradient-to-r from-pink to-purple">
             My Design Work
           </h3>
-          <div className="project-hover bg-gradient-to-r from-pink to-purple border mt-10 border-gray-200 rounded-lg p-8 md:p-12 mb-8">
+          <div className="flex flex-col gap-8 mt-10">
+          <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
             <h2 className="text-black text-3xl font-simibold mb-2">
               E-Commerce Platform Design
             </h2>
@@ -101,7 +102,7 @@ const FeaturedProjects = () => {
               </a>
             </div>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 mt-8">
+          <div className="grid md:grid-cols-3 gap-8">
             <div className="project-hover bg-gradient-to-r from-pink to-purple border border-gray-200 rounded-lg p-8 md:p-12">
               <h2 className="text-black text-3xl font-simibold mb-2">
                 Instagram Posts for Online Booking Platform
@@ -189,6 +190,7 @@ const FeaturedProjects = () => {
                 </svg>
               </a>
             </div>
+          </div>
           </div>
         </div>
       </div>
