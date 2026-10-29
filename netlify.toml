@@ -1,3 +1,15 @@
+[build]
+  command = "npm run build"
+  publish = "out"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[redirects]]
+  from = "/arts/"
+  to = "/projects/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

@@ -1,0 +1,233 @@
+{
+  "name": "Mila",
+  "siteTitle": "Mila Mihova | Graphic & UI/UX Designer",
+  "siteDescription": "Graphic Designer creating print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator. Background in UI/UX design and corporate business.",
+  "siteUrl": "https://i-love-figma.com",
+  "headerTaglineOne": "Hello, I'm Mila 👋",
+  "headerTaglineTwo": "Graphic & UI/UX Designer",
+  "headerTaglineThree": "creating print, outdoor and",
+  "headerTaglineFour": "social campaigns in Sofia.",
+  "showCursor": true,
+  "darkMode": true,
+  "socials": [
+    {
+      "id": "1",
+      "title": "LinkedIn",
+      "link": "https://www.linkedin.com/in/meela-s-7531b9376/"
+    },
+    {
+      "id": "2",
+      "title": "Email",
+      "link": "mailto:mila@i-love-figma.com"
+    },
+    {
+      "id": "3",
+      "title": "Contact",
+      "link": "/contact/"
+    }
+  ],
+  "projectCategoryOrder": [
+    "UI/UX",
+    "UI/UX Projects - Complete App Flows & Prototypes"
+  ],
+  "artsCategoryOrder": [
+    "Commercial Works",
+    "Logos & Icons",
+    "Graphic Illustrations",
+    "Fine Arts"
+  ],
+  "services": [
+    {
+      "id": "1",
+      "title": "Social Media Campaigns",
+      "description": "Campaign visuals for social media: static posts and video stories, from concept to final export."
+    },
+    {
+      "id": "2",
+      "title": "Outdoor & Print",
+      "description": "Billboards, large-format outdoor advertising, non-standard print and sticker materials for malls and in-store spaces."
+    },
+    {
+      "id": "3",
+      "title": "AI Image & Video",
+      "description": "AI image and video generation with Higgsfield, refined in Adobe Illustrator into print-ready and digital files."
+    },
+    {
+      "id": "4",
+      "title": "UI/UX Design",
+      "description": "Personas, wireframes, interactive Figma prototypes and design systems built with variables, tokens and components."
+    }
+  ],
+  "aboutpara": "I create print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator, building on a background in UI/UX design and corporate business. My work is guided by consistency, accessibility and simplicity: I prioritize stakeholder requirements and user needs while keeping designs clean and aesthetic.",
+  "testimonial": {
+    "quote": "Mila combines exceptional artistic talent with a keen understanding of business requirements. Her designs are not only visually stunning but also highly functional and user-focused. Her ability to translate stakeholder needs into elegant design solutions sets her apart in the field of UI/UX design.",
+    "author": "Digital Marketing Agency",
+    "role": "Client Feedback"
+  },
+  "about": {
+    "tagline": "Graphic Designer & UI/UX Designer with a background in corporate business",
+    "banner": "/images/Banner.png",
+    "sections": [
+      {
+        "label": "Professional Summary",
+        "title": "Graphic Designer & UI/UX Designer",
+        "body": "I'm a Graphic Designer creating print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator. Before moving into graphic design I spent years on UI/UX training and freelance and agency work, and before that I worked in procurement at IBM and sales at Cisco. That mix gives me a strong eye for visuals together with a clear understanding of business requirements, stakeholders and deadlines."
+      },
+      {
+        "label": "Design Philosophy",
+        "title": "Consistency, Accessibility, Simplicity",
+        "body": "Focused on consistency, accessibility, and simplicity. I prioritize stakeholder requirements and user needs while incorporating clean and aesthetic designs."
+      },
+      {
+        "label": "Artistic Foundation",
+        "title": "From Traditional Art to Digital Design",
+        "body": "My journey as a designer began in early childhood, when I developed a passion for drawing and painting landscapes, flowers, animals, and portraits. Ever since my childhood I used to draw continuously with aquarelle, oil and acrylic colors. This artistic personality gives me a natural advantage in UI design, particularly in creating original and beautiful visual elements and understanding color theory and composition. Today, I continue to develop these skills digitally using my Wacom tablet with Adobe Illustrator, bringing the freedom of drawing art on paper to digital design."
+      }
+    ],
+    "education": [
+      {
+        "title": "Bachelor's in Business Administration",
+        "school": "University of Sofia St. Kliment Ohridski",
+        "date": "2018"
+      },
+      {
+        "title": "Business Studies",
+        "school": "University of Vienna",
+        "date": "2015"
+      }
+    ],
+    "skills": {
+      "Design Tools": [
+        "Figma",
+        "Adobe Photoshop",
+        "Adobe Illustrator",
+        "Wacom Tablet"
+      ],
+      "AI Tools": [
+        "Higgsfield",
+        "AI Image & Video",
+        "Prompt Writing"
+      ],
+      "UX Methods": [
+        "User Interviews",
+        "A/B Testing",
+        "Persona Creation",
+        "User Flow Mapping",
+        "Wireframing",
+        "Prototyping"
+      ],
+      "Development": [
+        "HTML5",
+        "CSS3",
+        "Responsive Design"
+      ]
+    },
+    "experience": [
+      {
+        "group": "Design Experience",
+        "role": "Graphic Designer (AI)",
+        "company": "TEODOR",
+        "dates": "Sep 2026 - Present",
+        "bullets": [
+          "Campaign visuals for social media: static posts and video stories",
+          "Billboard and large-format outdoor advertising",
+          "Non-standard print and sticker materials for mall and in-store spaces",
+          "AI image and video generation with Higgsfield, refined in Adobe Illustrator",
+          "Preparing print-ready and digital files with the in-house marketing team"
+        ]
+      },
+      {
+        "group": "Design Experience",
+        "role": "UI/UX Designer",
+        "company": "Freelance & Agency Collaboration",
+        "dates": "2023 - Present",
+        "bullets": [
+          "Strong understanding of color theory, typography, and iconography",
+          "Proficient in responsive design, auto-layout, and component creation",
+          "Experienced in interactive design, microinteractions, and smart animation in Figma",
+          "Skilled in persona creation, wireframing, and prototyping (low & high fidelity)",
+          "Building and maintaining design systems using variables, tokens, and consistency principles",
+          "Applying UX methods: user interviews, A/B testing, and usability testing"
+        ]
+      },
+      {
+        "group": "Corporate Experience",
+        "role": "Procurement Professional",
+        "company": "IBM",
+        "dates": "May 2021 - Jun 2025",
+        "bullets": [
+          "Negotiation and execution of hardware component deals",
+          "Execution of contract agreements and amendments",
+          "Daily collaboration with multi-cultural teams ensuring policy and contract compliance"
+        ]
+      },
+      {
+        "group": "Corporate Experience",
+        "role": "Sales Specialist",
+        "company": "Cisco International Ltd.",
+        "dates": "May 2019 - Dec 2020",
+        "bullets": [
+          "Led DACH market growth through strategic account management",
+          "Achieved 300% of net-new sales target in multiple quarters",
+          "Award winner for most praised customer feedback among sales representatives"
+        ]
+      }
+    ],
+    "certifications": [
+      {
+        "title": "UX Design Process from User Research to Usability Testing",
+        "issuer": "Muhammad Pervaiz - Udemy",
+        "date": "July 2025"
+      },
+      {
+        "title": "Figma UI/UX Design Advanced",
+        "issuer": "Daniel Walter Scott - Udemy",
+        "date": "June 2025"
+      },
+      {
+        "title": "Adobe Illustrator CC Essentials",
+        "issuer": "Video School - Udemy",
+        "date": "March 2025"
+      },
+      {
+        "title": "Adobe Photoshop CC Essentials",
+        "issuer": "Daniel Walter Scott - Udemy",
+        "date": "January 2025"
+      },
+      {
+        "title": "Principles of UX/UI Design",
+        "issuer": "Meta - Coursera",
+        "date": "September 2024"
+      }
+    ],
+    "languages": [
+      {
+        "name": "Bulgarian",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Fluent"
+      },
+      {
+        "name": "German",
+        "level": "Fluent"
+      },
+      {
+        "name": "Russian",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Romanian",
+        "level": "Intermediate"
+      },
+      {
+        "name": "Spanish",
+        "level": "Intermediate"
+      }
+    ]
+  },
+  "email": "mila@i-love-figma.com",
+  "fullName": "Mila Mihova",
+  "location": "Sofia, Bulgaria"
+}

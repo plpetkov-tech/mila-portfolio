@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "./markdown.css";
+
+* {
+  font-family: var(--font-hind), sans-serif;
+}
+
+/* The 100vw gradient glows otherwise cause sideways scrolling */
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  @apply dark:bg-black dark:text-white;
+}
+
+.gradient-circle {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  top: -30px;
+  height: 40px;
+  width: 100vw;
+  opacity: 0.5;
+  filter: blur(40px);
+  background: radial-gradient(
+    circle,
+    rgba(170, 175, 235, 1) 0%,
+    rgba(130, 127, 185, 0.8) 100%
+  );
+}
+.gradient-circle-bottom {
+  position: absolute;
+  pointer-events: none;
+  z-index: 100;
+  bottom: -20px;
+  height: 30px;
+  width: 100vw;
+  opacity: 0.5;
+  filter: blur(40px);
+  background: radial-gradient(
+    circle,
+    rgba(170, 175, 235, 1) 0%,
+    rgba(130, 127, 185, 0.8) 100%
+  );
+}
+
+.text-gradient {
+  @apply bg-gradient-to-r from-pink to-purple;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  margin: -15px 0 0 -15px;
+  border-radius: 9999px;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+  background: #fff;
+}

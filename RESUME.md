@@ -1,50 +1,71 @@
-# Meela's Professional Profile
+# Mila Mihova
 
-## Professional Summary
-I am Meela, a UI/UX Designer with a refined blend of corporate experience and artistic talent. With 1.5 years of dedicated UI/UX training and practice, I combine my background in business administration, customer-focused roles, and lifelong artistic passion to create user-centered designs that balance aesthetics with functionality. My experience working across diverse corporate environments, from customer support to procurement, has equipped me with exceptional stakeholder communication skills and a deep understanding of business requirements that inform my design decisions.
+**Graphic Designer & UI/UX Designer** · Sofia, Bulgaria · mila@i-love-figma.com · [i-love-figma.com](https://i-love-figma.com)
 
-## Design Philosophy
-My approach to design is centered on three core principles: consistency, accessibility, and simplicity. I believe that consistent design elements build user trust, accessible interfaces ensure inclusivity, and minimalism eliminates confusion while enhancing usability. While I have a personal affinity for Scandinavian minimalism, neumorphic elements, and glassmorphic designs, I prioritize stakeholder requirements and user needs above personal preferences.
+Graphic Designer creating print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator. Background in UI/UX design and corporate business.
 
-## Artistic Foundation
-My journey as a designer began in early childhood, where I developed a passion for drawing and painting landscapes, flowers, animals, and portraits. This artistic foundation gives me a natural advantage in UI design, particularly in creating original visual elements and understanding color theory and composition. Today, I continue to develop these skills digitally using my Wacom tablet with Adobe Illustrator, bringing the freedom of traditional art to digital design.
+## Design Experience
 
-## Education & Certifications
-- Bachelor's Degree in Business Administration
-- Figma Essentials Certification
-- Figma Advanced Certification
-- Adobe Photoshop Certification
-- Adobe Illustrator Certification
-- Pricinples of UI & UX Design
-- HTML & CSS Fundamentals (2020)
+### Graphic Designer (AI) · TEODOR
+_Sep 2026 - Present_
 
-## Professional Experience
+- Campaign visuals for social media: static posts and video stories
+- Billboard and large-format outdoor advertising
+- Non-standard print and sticker materials for mall and in-store spaces
+- AI image and video generation with Higgsfield, refined in Adobe Illustrator
+- Preparing print-ready and digital files with the in-house marketing team
 
-### UI/UX Design (2023-Present)
-- **Digital Marketing Agency Collaboration**: Create website banners and social media assets while providing UX consultation for website improvement
-- **E-Commerce Platform Design**: Developed complete user flow, wireframes, and high-fidelity prototypes for handbag e-commerce platform (mobile and web), including original logo, icons, buttons, cards, and backgrounds
-- **Event Application Design**: Created comprehensive event app with advanced animations and component interactions based on user research and persona development
-- **Whiskey Bottle Design Competition**: Developed original graphic design for national competition (awaiting results)
+### UI/UX Designer · Freelance & Agency Collaboration
+_2023 - Present_
 
-### Corporate Experience (Chronological)
-- **Procurement Specialist, IBM**: In my role as a Procurement Specialist at IBM, I was responsible for processing hardware machine and parts requests from developers. My tasks included maintaining correspondence with vendors and requesting and analyzing quotеs. Before confirming an order, I was always verifying the existence of contractual agreements between the respective vendor and IBM. I was also involved in negotiating offers to ensure that IBM received the most competitive pricing.When necessary, I prepared, renewed, or amended contracts and contractual clauses in full compliance with IBM’s internal trade policies.I was specifically responsible for the German market, supporting IBM developers from German-speaking countries. I worked as part of an international team with colleagues from different countries, always adhering to corporate policies and procedures.
-- **Account Manager & Inside Sales, Cisco Software (B2B)**: Built strong communication skills and understanding of stakeholder needs across diverse business environments
-- **Verification Specialist, Payment Platform**: Developed analytical skills and appreciation for security and user trust mechanisms
-- **In-Game Support, Mobile Gaming**: Gained insight into user behavior and pain points within digital applications
-- **Customer Support (B2C)**: Established foundation in understanding user needs and effective communication
+- Strong understanding of color theory, typography, and iconography
+- Proficient in responsive design, auto-layout, and component creation
+- Experienced in interactive design, microinteractions, and smart animation in Figma
+- Skilled in persona creation, wireframing, and prototyping (low & high fidelity)
+- Building and maintaining design systems using variables, tokens, and consistency principles
+- Applying UX methods: user interviews, A/B testing, and usability testing
 
-## Technical Skills
-- **Design Tools**: Figma, Adobe Photoshop, Adobe Illustrator, Wacom tablet
-- **Development Knowledge**: HTML, CSS fundamentals
-- **UX Methodologies**: User interviews, A/B testing, web-based questionnaires, persona creation, user flow mapping
-- **Design Styles**: Minimalistic, neumorphic, and glassmorphic design
+## Corporate Experience
 
-## Additional Strengths
-- **Languages**: Bulgarian (native), English (fluent), German (fluent), Spanish (intermediate), Russian (intermediate), Romanian (intermediate)
-- **Psychology Interest**: Self-directed study of psychological principles that enhance user experience design
-- **Corporate Acumen**: Experience with agile methodologies and cross-functional team collaboration
-- **Communication**: Exceptional ability to translate stakeholder requirements into design solutions
-- **Problem-Solving**: Analytical approach to identifying and addressing user pain points
+### Procurement Professional · IBM
+_May 2021 - Jun 2025_
 
-## Design Portfolio Highlights
-My portfolio showcases my ability to create comprehensive design systems from concept through high-fidelity prototyping. Each project demonstrates my commitment to user-centered design principles while maintaining visual appeal and brand consistency. I invite you to explore my featured projects for examples of my design process, from initial wireframes to final interactive prototypes.
+- Negotiation and execution of hardware component deals
+- Execution of contract agreements and amendments
+- Daily collaboration with multi-cultural teams ensuring policy and contract compliance
+
+### Sales Specialist · Cisco International Ltd.
+_May 2019 - Dec 2020_
+
+- Led DACH market growth through strategic account management
+- Achieved 300% of net-new sales target in multiple quarters
+- Award winner for most praised customer feedback among sales representatives
+
+## Design Skills
+
+- **Design Tools:** Figma, Adobe Photoshop, Adobe Illustrator, Wacom Tablet
+- **AI Tools:** Higgsfield, AI Image & Video, Prompt Writing
+- **UX Methods:** User Interviews, A/B Testing, Persona Creation, User Flow Mapping, Wireframing, Prototyping
+- **Development:** HTML5, CSS3, Responsive Design
+
+## Recent Certifications
+
+- UX Design Process from User Research to Usability Testing (Muhammad Pervaiz - Udemy, July 2025)
+- Figma UI/UX Design Advanced (Daniel Walter Scott - Udemy, June 2025)
+- Adobe Illustrator CC Essentials (Video School - Udemy, March 2025)
+- Adobe Photoshop CC Essentials (Daniel Walter Scott - Udemy, January 2025)
+- Principles of UX/UI Design (Meta - Coursera, September 2024)
+
+## Languages
+
+- Bulgarian: Native
+- English: Fluent
+- German: Fluent
+- Russian: Intermediate
+- Romanian: Intermediate
+- Spanish: Intermediate
+
+## Education
+
+- Bachelor's in Business Administration (2018), University of Sofia St. Kliment Ohridski
+- Business Studies (2015), University of Vienna
