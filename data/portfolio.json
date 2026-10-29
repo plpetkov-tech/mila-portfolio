@@ -1,12 +1,12 @@
 {
   "name": "Mila",
   "siteTitle": "Mila Mihova | Graphic & UI/UX Designer",
-  "siteDescription": "Graphic Designer creating print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator. Background in UI/UX design and corporate business.",
+  "siteDescription": "Graphic and UI/UX Designer creating social media, web, outdoor and print visuals. Passionate about user-centered digital design, backed by a strong corporate business background.",
   "siteUrl": "https://i-love-figma.com",
   "headerTaglineOne": "Hello, I'm Mila 👋",
   "headerTaglineTwo": "Graphic & UI/UX Designer",
-  "headerTaglineThree": "creating print, outdoor and",
-  "headerTaglineFour": "social campaigns in Sofia.",
+  "headerTaglineThree": "creating social media, web,",
+  "headerTaglineFour": "outdoor and print visuals.",
   "showCursor": true,
   "darkMode": true,
   "socials": [
@@ -39,34 +39,34 @@
   "services": [
     {
       "id": "1",
-      "title": "Social Media Campaigns",
-      "description": "Campaign visuals for social media: static posts and video stories, from concept to final export."
+      "title": "UI/UX & Web Design",
+      "description": "User-centered interfaces, web assets and banners. Personas, wireframes, interactive Figma prototypes and design systems built with components and tokens."
     },
     {
       "id": "2",
-      "title": "Outdoor & Print",
-      "description": "Billboards, large-format outdoor advertising, non-standard print and sticker materials for malls and in-store spaces."
+      "title": "Social Media Campaigns",
+      "description": "Campaign visuals for social media, from static posts to video stories, designed to stay consistent across every format."
     },
     {
       "id": "3",
-      "title": "AI Image & Video",
-      "description": "AI image and video generation with Higgsfield, refined in Adobe Illustrator into print-ready and digital files."
+      "title": "Branding & Illustration",
+      "description": "Logos, icons and illustrations drawn by hand on a Wacom tablet and finished in Adobe Illustrator."
     },
     {
       "id": "4",
-      "title": "UI/UX Design",
-      "description": "Personas, wireframes, interactive Figma prototypes and design systems built with variables, tokens and components."
+      "title": "Outdoor & Print",
+      "description": "Billboards, large-format outdoor advertising and non-standard print and sticker materials, delivered as print-ready files."
     }
   ],
-  "aboutpara": "I create print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator, building on a background in UI/UX design and corporate business. My work is guided by consistency, accessibility and simplicity: I prioritize stakeholder requirements and user needs while keeping designs clean and aesthetic.",
+  "aboutpara": "I design social media, web, outdoor and print visuals, and I'm most passionate about user-centered digital design. My work is guided by consistency, accessibility and simplicity: I put stakeholder requirements and user needs first while keeping designs clean and aesthetic. A strong corporate background in sales and procurement helps me understand the business behind every brief.",
   "about": {
-    "tagline": "Graphic Designer & UI/UX Designer with a background in corporate business",
+    "tagline": "Graphic & UI/UX Designer, backed by a strong corporate business background",
     "banner": "/images/Banner.png",
     "sections": [
       {
         "label": "Professional Summary",
         "title": "Graphic Designer & UI/UX Designer",
-        "body": "I'm a Graphic Designer creating print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator. Before moving into graphic design I spent years on UI/UX training and freelance and agency work, and before that I worked in procurement at IBM and sales at Cisco. That mix gives me a strong eye for visuals together with a clear understanding of business requirements, stakeholders and deadlines."
+        "body": "I'm a Graphic and UI/UX Designer based in Sofia, creating social media, web, outdoor and print visuals. My passion is user-centered digital design: from color, typography and iconography to responsive layouts, interactive prototypes and design systems in Figma. I combine hands-on design in Figma, Illustrator and Photoshop with AI tools where they help me move faster on concepts, imagery and video. Before design, I worked in procurement at IBM and sales at Cisco, which taught me to understand stakeholders, business requirements and deadlines."
       },
       {
         "label": "Design Philosophy",
@@ -98,7 +98,11 @@
         "Adobe Illustrator",
         "Wacom Tablet"
       ],
-      "AI Tools": ["Higgsfield", "AI Image & Video", "Prompt Writing"],
+      "AI Tools": [
+        "Higgsfield",
+        "AI Image & Video",
+        "Prompt Writing"
+      ],
       "UX Methods": [
         "User Interviews",
         "A/B Testing",
@@ -107,19 +111,24 @@
         "Wireframing",
         "Prototyping"
       ],
-      "Development": ["HTML5", "CSS3", "Responsive Design"]
+      "Development": [
+        "HTML5",
+        "CSS3",
+        "Responsive Design"
+      ]
     },
     "experience": [
       {
         "group": "Design Experience",
-        "role": "Graphic Designer (AI)",
+        "role": "Graphic Designer",
         "company": "TEODOR",
         "dates": "Sep 2026 - Present",
         "bullets": [
           "Campaign visuals for social media: static posts and video stories",
+          "Web assets and banners for the TEODOR website",
           "Billboard and large-format outdoor advertising",
+          "Combining hands-on design with AI tools like Higgsfield for faster concepts, imagery and video",
           "Non-standard print and sticker materials for mall and in-store spaces",
-          "AI image and video generation with Higgsfield, refined in Adobe Illustrator",
           "Preparing print-ready and digital files with the in-house marketing team"
         ]
       },
@@ -129,6 +138,7 @@
         "company": "Freelance & Agency Collaboration",
         "dates": "2023 - Present",
         "bullets": [
+          "Creativity, adaptability, and willingness to learn",
           "Strong understanding of color theory, typography, and iconography",
           "Proficient in responsive design, auto-layout, and component creation",
           "Experienced in interactive design, microinteractions, and smart animation in Figma",

@@ -2,22 +2,24 @@
 
 **Graphic Designer & UI/UX Designer** · Sofia, Bulgaria · mila@i-love-figma.com · [i-love-figma.com](https://i-love-figma.com)
 
-Graphic Designer creating print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator. Background in UI/UX design and corporate business.
+Graphic and UI/UX Designer creating social media, web, outdoor and print visuals. Passionate about user-centered digital design, backed by a strong corporate business background.
 
 ## Design Experience
 
-### Graphic Designer (AI) · TEODOR
+### Graphic Designer · TEODOR
 _Sep 2026 - Present_
 
 - Campaign visuals for social media: static posts and video stories
+- Web assets and banners for the TEODOR website
 - Billboard and large-format outdoor advertising
+- Combining hands-on design with AI tools like Higgsfield for faster concepts, imagery and video
 - Non-standard print and sticker materials for mall and in-store spaces
-- AI image and video generation with Higgsfield, refined in Adobe Illustrator
 - Preparing print-ready and digital files with the in-house marketing team
 
 ### UI/UX Designer · Freelance & Agency Collaboration
 _2023 - Present_
 
+- Creativity, adaptability, and willingness to learn
 - Strong understanding of color theory, typography, and iconography
 - Proficient in responsive design, auto-layout, and component creation
 - Experienced in interactive design, microinteractions, and smart animation in Figma
