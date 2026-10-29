@@ -52,10 +52,10 @@
 }
 
 .markdown-class blockquote {
-  @apply p-5 border-l-8 border-purple rounded-lg shadow-lg text-sm bg-slate-200 text-black;
+  @apply p-5 border-l-4 border-purple rounded-lg text-sm bg-slate-100 dark:bg-slate-900;
 }
 .markdown-class blockquote p {
-  @apply text-black text-sm;
+  @apply text-sm;
 }
 
 /* Case-study mockups are tall: show them whole, never cropped */

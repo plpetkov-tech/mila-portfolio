@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: Instagram Posts for Online Booking Platform
 date: 2024-06-15T10:00:00.000Z
 featuredimage: /img/MyLink-Mock-Up/mylink_post1_mockup.png

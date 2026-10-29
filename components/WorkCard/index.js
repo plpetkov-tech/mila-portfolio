@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import { optimized } from "../../utils/image";
 
 const WorkCard = ({ img, name, description, href, tall = true }) => {
   return (
@@ -16,7 +17,8 @@ const WorkCard = ({ img, name, description, href, tall = true }) => {
           alt={name}
           loading="lazy"
           className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
-          src={img}
+          decoding="async"
+          src={optimized(img, 800)}
         ></img>
       </div>
       <h1 className="mt-5 text-3xl font-medium">

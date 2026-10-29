@@ -4,6 +4,7 @@ import Layout from "../Layout";
 import ContentSection from "../ContentSection";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
+import { optimized } from "../../utils/image";
 
 const truncate = (text, max = 30) =>
   text.length > max ? text.slice(0, max) + "..." : text;
@@ -17,7 +18,11 @@ const EntryPage = ({ entry, previous, next }) => {
   }, []);
 
   return (
-    <Layout title={entry.title} description={entry.description} image={entry.image}>
+    <Layout
+      title={entry.title}
+      description={entry.description}
+      image={entry.image}
+    >
       <article className="mt-10 flex flex-col max-w-5xl mx-auto">
         <h1
           ref={textOne}
@@ -32,13 +37,20 @@ const EntryPage = ({ entry, previous, next }) => {
           {entry.category}
         </h2>
         {entry.image && (
-          <img
-            className="mt-10 w-full h-auto rounded-lg shadow-lg"
-            src={entry.image}
-            alt={entry.title}
-          ></img>
+          <a
+            href={entry.image}
+            target="_blank"
+            rel="noreferrer"
+            className="link"
+          >
+            <img
+              className="mt-10 w-full h-auto rounded-lg shadow-lg"
+              src={optimized(entry.image)}
+              alt={entry.title}
+            ></img>
+          </a>
         )}
-        {entry.description && (
+        {entry.showDescription && (
           <p className="mt-10 text-xl laptop:text-2xl opacity-80 p-2 laptop:p-0">
             {entry.description}
           </p>

@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: Package Redesign Prestige
 date: 2024-07-20T10:00:00.000Z
 featuredimage: /img/Prestige-Mock-Up/Prestige1.png

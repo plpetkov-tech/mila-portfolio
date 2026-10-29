@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: Logo Design for VexXy Software
 date: 2024-08-10T10:00:00.000Z
 featuredimage: /img/VexXy-Mock-Up/VexXy1.png

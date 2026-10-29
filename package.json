@@ -3,14 +3,17 @@
   "version": "2.0.0",
   "private": true,
   "description": "Mila is a UI/UX Designer with a refined blend of corporate experience and artistic talent.",
-  "license": "MIT",
+  "license": "SEE LICENSE IN LICENSE",
   "scripts": {
+    "predev": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/optimize-images.mjs",
     "dev": "next dev",
     "start": "next dev",
+    "prebuild": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/optimize-images.mjs",
     "build": "next build",
+    "postbuild": "node scripts/sitemap.mjs",
     "serve": "npx serve out",
     "lint": "next lint",
-    "format": "prettier --write \"**/*.{js,jsx,json,md,css}\""
+    "format": "prettier --write \"**/*.{js,mjs,json,css}\""
   },
   "dependencies": {
     "@headlessui/react": "1.7.19",
@@ -29,6 +32,8 @@
     "eslint-config-next": "14.2.35",
     "postcss": "8.4.47",
     "prettier": "3.3.3",
+    "sharp": "^0.35.5",
     "tailwindcss": "3.4.14"
-  }
+  },
+  "author": "Mila Mihova <mila@i-love-figma.com>"
 }

@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Marketing Agency Brand Guidelines Banner"
 date: 2024-01-04T10:00:00.000Z
 featuredimage: /img/arts/misc/Blog-Banner.png

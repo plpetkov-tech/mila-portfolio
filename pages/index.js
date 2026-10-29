@@ -23,7 +23,7 @@ export default function Home({ projects }) {
     stagger(
       [textOne.current, textTwo.current, textThree.current, textFour.current],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
   }, []);
 
@@ -103,20 +103,6 @@ export default function Home({ projects }) {
         >
           More about me →
         </Link>
-      </div>
-
-      <div className="mt-10 laptop:mt-40 p-2 laptop:p-0">
-        <blockquote className="tablet:m-10 w-full laptop:w-4/5 p-8 laptop:p-12 rounded-lg bg-gradient-to-r from-pink to-purple text-black">
-          <p className="text-xl laptop:text-2xl">
-            &ldquo;{data.testimonial.quote}&rdquo;
-          </p>
-          <footer className="mt-6">
-            <span className="text-lg font-medium">{data.testimonial.author}</span>
-            <span className="block text-sm opacity-60">
-              {data.testimonial.role}
-            </span>
-          </footer>
-        </blockquote>
       </div>
     </Layout>
   );

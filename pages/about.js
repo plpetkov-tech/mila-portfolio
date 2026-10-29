@@ -3,6 +3,7 @@ import Layout from "../components/Layout";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
 import data from "../data/portfolio.json";
+import { optimized } from "../utils/image";
 
 const { about } = data;
 
@@ -11,7 +12,7 @@ const experienceGroups = Object.entries(
   about.experience.reduce((groups, job) => {
     (groups[job.group] ||= []).push(job);
     return groups;
-  }, {})
+  }, {}),
 );
 
 const SectionLabel = ({ children }) => (
@@ -26,7 +27,7 @@ const About = () => {
     stagger(
       [textOne.current, textTwo.current],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
   }, []);
 
@@ -44,13 +45,16 @@ const About = () => {
         </h2>
         <img
           className="mt-10 w-full max-h-96 object-cover rounded-lg shadow-lg"
-          src={about.banner}
+          src={optimized(about.banner)}
           alt="Artwork banner by Mila"
         ></img>
       </div>
 
       {about.sections.map((section) => (
-        <section key={section.label} className="mt-10 laptop:mt-20 p-2 laptop:p-0">
+        <section
+          key={section.label}
+          className="mt-10 laptop:mt-20 p-2 laptop:p-0"
+        >
           <SectionLabel>{section.label}</SectionLabel>
           <h2 className="mt-2 text-3xl laptop:text-5xl text-gradient">
             {section.title}

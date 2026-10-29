@@ -5,7 +5,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Development Commands
 
 - `npm run dev` - Start development server at http://localhost:3000
-- `npm run build` - Static export to `out/` (what Netlify deploys)
+- `npm run build` - Optimize images, static export to `out/`, write `out/sitemap.xml` (what Netlify runs)
 - `npm run serve` - Serve the built `out/` folder locally
 - `npm run lint` - ESLint (also runs during `build`)
 - `npm run format` - Prettier
@@ -29,9 +29,14 @@ content/arts/       # Art pieces (markdown)
 data/portfolio.json # All site copy: taglines, services, about sections, testimonial, socials, category order
 utils/api.js        # Markdown loading (server-only, used in getStaticProps)
 utils/entries.js    # Shared getStaticProps/getStaticPaths for detail pages
+utils/image.js      # optimized(src, width): maps /img/... to its generated WebP copy
+scripts/            # optimize-images.mjs (pre dev/build, writes public/_img), sitemap.mjs (post build)
 public/img/         # Content images (Decap media folder, served at /img)
 public/images/      # Site images and theme icons
 ```
+
+### Deploy
+- Netlify site `snazzy-souffle-aff069` (i-love-figma.com) deploys on push to `main`. Build settings come from `netlify.toml`.
 
 ### Content
 - Frontmatter: `title`, `date`, `featuredimage` (`/img/...`), `categories` (first one is used for grouping), `description`
@@ -41,4 +46,6 @@ public/images/      # Site images and theme icons
 
 ### Gotchas
 - Never import `utils/api.js` from a component; only from `getStaticProps`/`getStaticPaths` in `pages/`, otherwise `fs` leaks into the client bundle.
+- Always pass content images through `optimized()` (cards use width 800, everything else 1600). Originals in `public/img` are 2-4MB PNGs.
+- `public/_img/` is generated and gitignored; delete it to force regeneration.
 - Use `trailingSlash` URLs (`/projects/bags-app/`) in links.

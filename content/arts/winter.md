@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Winter landscape"
 date: 2025-01-14T22:42:00.000Z
 featuredimage: /img/arts/misc/zimen.png

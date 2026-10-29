@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Sea Waves"
 date: 2024-11-08T10:00:00.000Z
 featuredimage: /img/arts/sea/waves.webp

@@ -12,7 +12,9 @@ const Section = ({ group, collection, columns }) => (
       {group.category}
     </h2>
     <div className="w-24 h-1 mt-2 bg-gradient-to-r from-pink to-purple rounded-full mx-2 laptop:mx-0"></div>
-    <div className={`mt-5 grid grid-cols-1 tablet:grid-cols-2 ${columns} gap-4`}>
+    <div
+      className={`mt-5 grid grid-cols-1 tablet:grid-cols-2 ${columns} gap-4`}
+    >
       {group.items.map((entry) => (
         <WorkCard
           key={entry.slug}
@@ -34,12 +36,15 @@ const Projects = ({ projects, arts }) => {
     stagger(
       [text.current],
       { y: 40, x: -10, transform: "scale(0.95) skew(10deg)" },
-      { y: 0, x: 0, transform: "scale(1)" }
+      { y: 0, x: 0, transform: "scale(1)" },
     );
   }, []);
 
   return (
-    <Layout title="Work" description="UI/UX case studies, illustrations, logos and fine arts by Mila.">
+    <Layout
+      title="Work"
+      description="UI/UX case studies, illustrations, logos and fine arts by Mila."
+    >
       <div className="mt-10">
         <h1
           ref={text}
@@ -48,7 +53,12 @@ const Projects = ({ projects, arts }) => {
           Work.
         </h1>
         {projects.map((group) => (
-          <Section key={group.category} group={group} collection="projects" columns="" />
+          <Section
+            key={group.category}
+            group={group}
+            collection="projects"
+            columns=""
+          />
         ))}
         {arts.map((group) => (
           <Section
@@ -66,7 +76,10 @@ const Projects = ({ projects, arts }) => {
 export async function getStaticProps() {
   return {
     props: {
-      projects: groupByCategory(getAllEntries("projects"), data.projectCategoryOrder),
+      projects: groupByCategory(
+        getAllEntries("projects"),
+        data.projectCategoryOrder,
+      ),
       arts: groupByCategory(getAllEntries("arts"), data.artsCategoryOrder),
     },
   };

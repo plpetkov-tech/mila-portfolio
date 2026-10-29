@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Classical Equestrian Portrait"
 date: 2025-02-14T22:42:00.000Z
 featuredimage: /img/arts/misc/horse.png

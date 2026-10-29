@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Bear's Fruity Dreams"
 date: 2024-06-06T10:00:00.000Z
 featuredimage: /img/arts/misc/bear.png

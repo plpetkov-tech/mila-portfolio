@@ -3,11 +3,13 @@ import { join } from "path";
 import matter from "gray-matter";
 import { remark } from "remark";
 import html from "remark-html";
+import { optimized } from "./image";
 
 // Collections live in /content/<collection>/*.md (edited via Decap CMS at /admin)
 export const COLLECTIONS = ["projects", "arts"];
 
-const collectionDir = (collection) => join(process.cwd(), "content", collection);
+const collectionDir = (collection) =>
+  join(process.cwd(), "content", collection);
 
 export function getSlugs(collection) {
   return fs
@@ -63,5 +65,12 @@ export function groupByCategory(entries, order = []) {
 
 export async function markdownToHtml(markdown) {
   const result = await remark().use(html).process(markdown);
-  return result.toString();
+  // Serve resized WebP copies and lazy-load everything below the fold
+  return result
+    .toString()
+    .replace(
+      /<img src="([^"]+)"/g,
+      (_, src) =>
+        `<img loading="lazy" decoding="async" src="${optimized(src)}"`,
+    );
 }

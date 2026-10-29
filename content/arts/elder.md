@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Elder Care Love"
 date: 2024-06-06T10:00:00.000Z
 featuredimage: /img/arts/misc/elder.png

@@ -10,7 +10,7 @@ const hind = Hind({
 
 const App = ({ Component, pageProps }) => {
   return (
-    <ThemeProvider attribute="class" defaultTheme="light">
+    <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
       <div className={hind.variable}>
         <Component {...pageProps} />
       </div>

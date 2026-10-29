@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Sunset by the Sea - Custom Acrylic Painting"
 date: 2024-12-06T10:00:00.000Z
 featuredimage: /img/arts/sea/incanvas.png

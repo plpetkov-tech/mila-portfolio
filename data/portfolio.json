@@ -59,11 +59,6 @@
     }
   ],
   "aboutpara": "I create print, outdoor and social campaigns with Higgsfield AI and Adobe Illustrator, building on a background in UI/UX design and corporate business. My work is guided by consistency, accessibility and simplicity: I prioritize stakeholder requirements and user needs while keeping designs clean and aesthetic.",
-  "testimonial": {
-    "quote": "Mila combines exceptional artistic talent with a keen understanding of business requirements. Her designs are not only visually stunning but also highly functional and user-focused. Her ability to translate stakeholder needs into elegant design solutions sets her apart in the field of UI/UX design.",
-    "author": "Digital Marketing Agency",
-    "role": "Client Feedback"
-  },
   "about": {
     "tagline": "Graphic Designer & UI/UX Designer with a background in corporate business",
     "banner": "/images/Banner.png",
@@ -103,11 +98,7 @@
         "Adobe Illustrator",
         "Wacom Tablet"
       ],
-      "AI Tools": [
-        "Higgsfield",
-        "AI Image & Video",
-        "Prompt Writing"
-      ],
+      "AI Tools": ["Higgsfield", "AI Image & Video", "Prompt Writing"],
       "UX Methods": [
         "User Interviews",
         "A/B Testing",
@@ -116,11 +107,7 @@
         "Wireframing",
         "Prototyping"
       ],
-      "Development": [
-        "HTML5",
-        "CSS3",
-        "Responsive Design"
-      ]
+      "Development": ["HTML5", "CSS3", "Responsive Design"]
     },
     "experience": [
       {

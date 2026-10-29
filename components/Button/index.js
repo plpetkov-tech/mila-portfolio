@@ -1,27 +1,26 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Link from "next/link";
-import { useTheme } from "next-themes";
-import data from "../../data/portfolio.json";
 
-const Button = ({ children, type, onClick, href, classes = "", submit }) => {
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
+// Colors come from Tailwind `dark:` variants, so there is no flash on load
+const STYLES = {
+  primary:
+    "inline-block bg-black text-white dark:bg-white dark:text-black first:ml-0",
+  default:
+    "flex items-center hover:bg-slate-100 dark:hover:bg-slate-800 tablet:first:ml-0",
+};
 
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  const isDark = mounted && theme === "dark";
-  const cursorClass = data.showCursor ? "cursor-none" : "";
-
-  const className =
-    type === "primary"
-      ? `text-sm tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg inline-block ${
-          isDark ? "bg-white text-black" : "bg-black text-white"
-        } transition-all duration-300 ease-out first:ml-0 hover:scale-105 active:scale-100 link ${cursorClass} ${classes}`
-      : `text-sm tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg flex items-center transition-all ease-out duration-300 ${
-          isDark ? "hover:bg-slate-600 text-white" : "hover:bg-slate-100"
-        } hover:scale-105 active:scale-100 tablet:first:ml-0 ${cursorClass} ${classes} link`;
+const Button = ({
+  children,
+  type,
+  onClick,
+  href,
+  classes = "",
+  submit,
+  label,
+}) => {
+  const className = `text-sm tablet:text-base p-1 laptop:p-2 m-1 laptop:m-2 rounded-lg transition-all duration-300 ease-out hover:scale-105 active:scale-100 link ${
+    STYLES[type] || STYLES.default
+  } ${classes}`;
 
   if (href) {
     const external = /^(https?:|mailto:)/.test(href);
@@ -40,6 +39,7 @@ const Button = ({ children, type, onClick, href, classes = "", submit }) => {
     <button
       onClick={onClick}
       type={submit ? "submit" : "button"}
+      aria-label={label}
       className={className}
     >
       {children}

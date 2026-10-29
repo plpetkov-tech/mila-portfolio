@@ -1,9 +1,9 @@
-import { useEffect, useRef, useState } from "react";
-import { useTheme } from "next-themes";
+import { useRef } from "react";
 import Layout from "../components/Layout";
 import Button from "../components/Button";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
+import data from "../data/portfolio.json";
 
 const FIELDS = [
   { name: "name", type: "text", placeholder: "Your Name", required: true },
@@ -14,20 +14,12 @@ const FIELDS = [
 
 const Contact = () => {
   const text = useRef();
-  const { theme } = useTheme();
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
   useIsomorphicLayoutEffect(() => {
     stagger([text.current], { y: 30 }, { y: 0 });
   }, []);
 
-  const inputClass = `w-full p-4 rounded-lg outline-none ring-1 focus:ring-2 ring-purple bg-transparent ${
-    mounted && theme === "dark" ? "placeholder-white/50" : "placeholder-black/50"
-  }`;
+  const inputClass =
+    "w-full p-4 rounded-lg outline-none ring-1 focus:ring-2 ring-purple bg-transparent placeholder-black/50 dark:placeholder-white/50";
 
   return (
     <Layout
@@ -44,8 +36,11 @@ const Contact = () => {
         </h2>
         <p className="mt-5 text-lg laptop:text-xl opacity-70 w-full laptop:w-3/5">
           Have a project in mind, need design consultation, or just want to say
-          hello? Fill out the form below and I&apos;ll get back to you as soon as
-          possible.
+          hello? Fill out the form below or email me at{" "}
+          <a href={`mailto:${data.email}`} className="underline link">
+            {data.email}
+          </a>
+          .
         </p>
 
         {/* Netlify Forms: detected from the static HTML at deploy time */}

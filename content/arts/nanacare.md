@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Logo for a Mobile App"
 date: 2024-06-05T10:00:00.000Z
 featuredimage: /img/arts/misc/Logos-01.png

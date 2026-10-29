@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: "Promotional Flyer for Lampata Restaurant"
 date: 2024-01-06T10:00:00.000Z
 featuredimage: /img/arts/misc/lampata.png

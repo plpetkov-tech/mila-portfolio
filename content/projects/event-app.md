@@ -1,5 +1,4 @@
 ---
-templateKey: blog-post
 title: Echoes of the Sea | Obzor R&B
 date: 2024-03-30T18:18:16.118Z
 featuredimage: /img/Event-App-Mock-Up/Thumbnail.png
