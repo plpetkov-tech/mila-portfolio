@@ -34,12 +34,12 @@ const About = () => {
   return (
     <Layout title="About" description={about.tagline} image={about.banner}>
       <div className="mt-10 p-2 laptop:p-0">
-        <h1 ref={textOne} className="text-6xl laptop:text-8xl text-bold">
+        <h1 ref={textOne} className="text-5xl laptop:text-7xl text-bold">
           About.
         </h1>
         <h2
           ref={textTwo}
-          className="mt-5 text-2xl tablet:text-4xl laptop:text-5xl w-full laptop:w-4/5"
+          className="mt-5 text-2xl tablet:text-3xl laptop:text-[2.75rem] laptop:leading-tight w-full laptop:w-4/5"
         >
           {about.tagline}
         </h2>
@@ -51,7 +51,7 @@ const About = () => {
           className="mt-10 laptop:mt-20 p-2 laptop:p-0"
         >
           <SectionLabel>{section.label}</SectionLabel>
-          <h2 className="mt-2 text-3xl laptop:text-5xl text-gradient">
+          <h2 className="mt-2 text-2xl laptop:text-4xl text-gradient">
             {section.title}
           </h2>
           {/* body can be one paragraph or a list of paragraphs */}
