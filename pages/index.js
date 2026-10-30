@@ -119,14 +119,20 @@ export default function Home({ projects, lookbooks }) {
         </div>
       </div>
 
-      <div className="mt-10 laptop:mt-40 p-2 laptop:p-0">
-        <h1 className="tablet:m-10 text-2xl text-bold">About.</h1>
-        <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
+      {/* Lined up with the Work cards: same edges, same title/body fonts */}
+      <div className="relative mt-10 laptop:mt-40 p-2 laptop:p-4 pb-16 laptop:pb-24">
+        {/* Very soft glow in the palette colors, bottom center */}
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute -z-10 left-1/2 bottom-4 -translate-x-1/2 w-2/3 laptop:w-1/2 h-32 laptop:h-44 rounded-[50%] bg-gradient-to-r from-[#f5cd91] via-[#ec9594] to-[#f5cd91] opacity-30 dark:opacity-20 blur-[80px]"
+        />
+        <h1 className="text-4xl laptop:text-6xl">About.</h1>
+        <p className="mt-5 font-body text-xl opacity-50 w-full">
           {data.aboutpara}
         </p>
         <Link
           href="/about/"
-          className="tablet:mx-10 inline-block mt-2 underline opacity-70 hover:opacity-100 link"
+          className="inline-block mt-4 font-body text-base underline opacity-70 hover:opacity-100 link"
         >
           More about me →
         </Link>
