@@ -22,7 +22,7 @@ gallery:
   - /img/seasonal-promotions/teodor-independent-style.png
   - /img/seasonal-promotions/llaggi-black-november.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
-  - /img/seasonal-promotions/teodor-members-week.png
+  - /img/seasonal-promotions/teodor-members-week-a4.jpg
   - /img/seasonal-promotions/teodor-corduroy-month.jpg
   - /img/seasonal-promotions/llaggi-grand-opening-post.png
   - /img/seasonal-promotions/llaggi-pleven-special-post.png
