@@ -10,6 +10,7 @@ gallery:
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
   - /img/seasonal-promotions/teodor-jackets-sale.jpg
+  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
   - /img/seasonal-promotions/teodor-club-shirts.png
   - /img/seasonal-promotions/teodor-club-trousers.png
   - /img/seasonal-promotions/teodor-coats-sale.png
@@ -41,14 +42,15 @@ sections:
       - /img/seasonal-promotions/teodor-shoes-sale.png
       - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
       - /img/seasonal-promotions/teodor-jackets-sale.jpg
+      - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
       - /img/seasonal-promotions/teodor-club-shirts.png
       - /img/seasonal-promotions/teodor-club-trousers.png
       - /img/seasonal-promotions/teodor-coats-sale.png
       - /img/seasonal-promotions/teodor-trench-print-a5.png
-      - /img/seasonal-promotions/teodor-app-registration.png
-      - /img/seasonal-promotions/teodor-independent-style.png
       - /img/seasonal-promotions/teodor-black-november-mall.png
+      - /img/seasonal-promotions/teodor-app-registration.png
       - /img/seasonal-promotions/teodor-corduroy-month.jpg
+      - /img/seasonal-promotions/teodor-independent-style.png
   - title: "LLAGGI — Collection Launches & Store Openings"
     images:
       - /img/seasonal-promotions/llaggi-everyday.png
