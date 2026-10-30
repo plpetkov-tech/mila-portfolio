@@ -123,7 +123,7 @@ const GalleryFrame = ({
       <Link href={href} className="block link">
         <h1 className="mt-5 text-3xl">{name}</h1>
         <h2
-          className={`font-body text-xl opacity-50 ${large ? "" : "line-clamp-3"}`}
+          className={`mt-3 font-body text-xl opacity-50 ${large ? "" : "line-clamp-3"}`}
         >
           {description}
         </h2>
