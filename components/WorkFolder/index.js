@@ -12,6 +12,7 @@ const WorkFolder = ({
   ratios = [],
   equal = false,
   href,
+  angle = 90,
 }) => {
   // Equal mode: every shot gets the same width and the same (average) shape
   const avg = ratios.length
@@ -19,7 +20,10 @@ const WorkFolder = ({
     : 1;
   return (
     <Link href={href} className="block p-2 laptop:p-4 link group">
-      <div className="relative rounded-lg bg-[#ebe6e2] dark:bg-transparent dark:bg-gradient-to-r dark:from-[#dda35a] dark:via-[#ec9594] dark:to-transparent pt-14 pb-6 px-4 tablet:px-8">
+      <div
+        style={{ "--a": `${angle}deg` }}
+        className="frost-card relative rounded-lg bg-[#ebe6e2] dark:bg-transparent pt-14 pb-6 px-4 tablet:px-8"
+      >
         <span className="absolute top-4 right-5 text-base opacity-70 group-hover:opacity-100 transition-opacity">
           View more →
         </span>

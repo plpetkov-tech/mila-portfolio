@@ -5,6 +5,9 @@ import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import { getLookbooks } from "../../utils/lookbooks";
 
+// Each card sees the same palette gradient from its own angle
+const ANGLES = [90, 270, 180, 0, 135, 315];
+
 // The Work page: the same folders as the home page, one per row, each with a
 // few full shots of its projects and the full description.
 const Projects = ({ lookbooks }) => {
@@ -31,8 +34,9 @@ const Projects = ({ lookbooks }) => {
           Work.
         </h1>
         <div className="mt-10 flex flex-col gap-10">
-          {lookbooks.map((book) => (
+          {lookbooks.map((book, i) => (
             <WorkFolder
+              angle={ANGLES[i % ANGLES.length]}
               key={book.slug}
               name={book.title}
               description={book.description}

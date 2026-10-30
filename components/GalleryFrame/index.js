@@ -22,6 +22,7 @@ const GalleryFrame = ({
   ratios = [],
   large = false,
   focus = [],
+  angle = 90,
 }) => {
   const router = useRouter();
   const height = large ? HEIGHT.large : HEIGHT.regular;
@@ -34,7 +35,8 @@ const GalleryFrame = ({
         aria-label={`${name} – view more`}
         onClick={() => router.push(href)}
         onKeyDown={(e) => e.key === "Enter" && router.push(href)}
-        className="relative rounded-lg overflow-hidden bg-[#ebe6e2] dark:bg-transparent dark:bg-gradient-to-r dark:from-[#dda35a] dark:via-[#ec9594] dark:to-transparent link"
+        style={{ "--a": `${angle}deg` }}
+        className="frost-card relative rounded-lg overflow-hidden bg-[#ebe6e2] dark:bg-transparent link"
       >
         <Link
           href={href}

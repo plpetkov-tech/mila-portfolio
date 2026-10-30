@@ -113,3 +113,12 @@ body {
     0 0 0 1.5px rgba(255, 255, 255, 0.85),
     inset 0 0 0 1px rgba(255, 255, 255, 0.5);
 }
+
+/* Work cards: the day palette gradient (blush to warm white) in both modes,
+   each card seen from its own angle */
+.frost-card {
+  background-image: linear-gradient(var(--a, 90deg), #f2dfd0, #fdfaf6);
+}
+.dark .frost-card {
+  color: #000;
+}

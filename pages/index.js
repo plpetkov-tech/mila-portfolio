@@ -11,6 +11,9 @@ import { stagger } from "../animations";
 import { getStandaloneEntries } from "../utils/api";
 import { getLookbooks } from "../utils/lookbooks";
 
+// Each card sees the same palette gradient from its own angle
+const ANGLES = [90, 270, 180, 0, 135, 315];
+
 // Local Data
 import data from "../data/portfolio.json";
 
@@ -66,13 +69,14 @@ export default function Home({ projects, lookbooks }) {
         <h1 className="text-2xl text-bold">Work.</h1>
 
         <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-          {lookbooks.map((book) => (
+          {lookbooks.map((book, i) => (
             <div
               key={book.slug}
               // A single frame gets the full row; otherwise all frames match
               className={lookbooks.length === 1 ? "tablet:col-span-2" : ""}
             >
               <GalleryFrame
+                angle={ANGLES[i % ANGLES.length]}
                 name={book.title}
                 description={book.description}
                 images={

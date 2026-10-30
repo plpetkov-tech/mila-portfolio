@@ -86,7 +86,7 @@ const Header = () => {
       <Popover className="block tablet:hidden mt-5">
         {({ open }) => (
           <>
-            <div className="flex items-center justify-between p-2 rounded-lg bg-gradient-to-r from-blush to-[#fdfaf6] dark:from-[#dda35a] dark:via-[#ec9594] dark:to-transparent">
+            <div className="flex items-center justify-between p-2 rounded-lg bg-gradient-to-r from-blush to-[#fdfaf6] dark:from-blush dark:to-[#fdfaf6] dark:text-black">
               <Link href="/" className="font-medium p-2 laptop:p-0 link dark:text-black">
                 {data.name}.
               </Link>
@@ -110,7 +110,7 @@ const Header = () => {
           </>
         )}
       </Popover>
-      <div className="mt-10 hidden tablet:flex flex-row items-center justify-between sticky top-0 z-20 px-4 py-1 rounded-lg bg-gradient-to-r from-blush to-[#fdfaf6] dark:from-[#dda35a] dark:via-[#ec9594] dark:to-transparent">
+      <div className="mt-10 hidden tablet:flex flex-row items-center justify-between sticky top-0 z-20 px-4 py-1 rounded-lg bg-gradient-to-r from-blush to-[#fdfaf6] dark:from-blush dark:to-[#fdfaf6] dark:text-black">
         <Link
           href="/"
           className="font-medium cursor-pointer mob:p-2 laptop:p-0 link dark:text-black"
