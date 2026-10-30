@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
 import Layout from "../Layout";
 import ContentSection from "../ContentSection";
@@ -13,6 +13,17 @@ const truncate = (text, max = 30) =>
 
 const EntryPage = ({ entry, previous, next, children = [] }) => {
   const textOne = useRef();
+  // 1 column on phones, 2 on tablets, 3 on laptops (matches the site's breakpoints)
+  const [columns, setColumns] = useState(3);
+  useEffect(() => {
+    const pick = () =>
+      setColumns(
+        window.innerWidth >= 1024 ? 3 : window.innerWidth >= 768 ? 2 : 1,
+      );
+    pick();
+    window.addEventListener("resize", pick);
+    return () => window.removeEventListener("resize", pick);
+  }, []);
   const textTwo = useRef();
 
   useIsomorphicLayoutEffect(() => {
@@ -59,39 +70,33 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
         )}
         {/* A folder's gallery only feeds its home page frame */}
         {entry.gallery?.length > 0 && !children.length && (
-          <div className="mt-10 columns-1 tablet:columns-2 laptop:columns-3 gap-4 p-2 laptop:p-0">
-            {entry.gallery.map((src) => (
-              <a
-                key={src}
-                href={src}
-                target="_blank"
-                rel="noreferrer"
-                className="relative block mb-4 break-inside-avoid overflow-hidden rounded-lg shadow-lg link"
-              >
-                <GalleryMedia
-                  src={src}
-                  alt={entry.title}
-                  className="w-full h-auto hover:scale-105 transition-all ease-out duration-300"
-                />
-                {isVideo(src) && (
-                  <span className="absolute bottom-3 right-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
-                    ▶ Full video
-                  </span>
-                )}
-              </a>
-            ))}
-          </div>
-        )}
-        {children.length > 0 && (
-          <div className="mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-            {children.map((child) => (
-              <WorkCard
-                key={child.slug}
-                img={child.image}
-                name={child.title}
-                description={child.description}
-                href={`/${child.collection}/${child.slug}/`}
-              />
+          // Masonry that reads left to right: piece 1, 2, 3 across the top, and so on
+          <div className="mt-10 flex gap-4 p-2 laptop:p-0">
+            {Array.from({ length: columns }, (_, col) => (
+              <div key={col} className="flex-1 min-w-0 flex flex-col gap-4">
+                {entry.gallery
+                  .filter((_, i) => i % columns === col)
+                  .map((src) => (
+                    <a
+                      key={src}
+                      href={src}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="relative block overflow-hidden rounded-lg shadow-lg link"
+                    >
+                      <GalleryMedia
+                        src={src}
+                        alt={entry.title}
+                        className="w-full h-auto hover:scale-105 transition-all ease-out duration-300"
+                      />
+                      {isVideo(src) && (
+                        <span className="absolute bottom-3 right-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
+                          ▶ Full video
+                        </span>
+                      )}
+                    </a>
+                  ))}
+              </div>
             ))}
           </div>
         )}
