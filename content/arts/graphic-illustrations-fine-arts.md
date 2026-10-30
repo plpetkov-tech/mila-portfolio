@@ -26,4 +26,11 @@ gallery:
   - /img/arts/misc/bear.png
   - /img/arts/misc/horse.png
   - /img/arts/sea/waves.webp
+# Work page row: full shots, uncropped
+workImages:
+  - /img/arts/misc/fire-lynx.png
+  - /img/arts/misc/bear.png
+  - /img/arts/misc/horse.png
+  - /img/arts/misc/zimen.png
+  - /img/arts/sea/incanvas.png
 ---

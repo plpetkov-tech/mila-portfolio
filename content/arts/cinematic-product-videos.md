@@ -17,4 +17,11 @@ gallery:
   - /img/cinematic-videos/llaggi-jacket.mp4
   - /img/cinematic-videos/llaggi-pleven-opening.mp4
   - /img/cinematic-videos/finally.mp4
+# Work page row: full shots, uncropped
+workImages:
+  - /img/cinematic-videos/llaggi-shoes.jpg
+  - /img/cinematic-videos/cotton.jpg
+  - /img/cinematic-videos/discount.jpg
+  - /img/cinematic-videos/teodor-black-november-mall.jpg
+  - /img/cinematic-videos/llaggi-pleven-opening.jpg
 ---

@@ -20,4 +20,9 @@ gallery:
   - /img/arts/jw/illustrator.png
   - /img/Prestige-Mock-Up/Prestige1.png
   - /img/Prestige-Mock-Up/Prestige3.png
+# Work page row: full shots, uncropped
+workImages:
+  - /img/arts/jw/ai.jpg
+  - /img/Prestige-Mock-Up/Prestige1.png
+  - /img/arts/jw/illustrator2.png
 ---

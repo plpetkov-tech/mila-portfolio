@@ -1,12 +1,12 @@
 import { useRef } from "react";
 import Layout from "../../components/Layout";
-import GalleryFrame from "../../components/GalleryFrame";
+import WorkFolder from "../../components/WorkFolder";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import { getLookbooks } from "../../utils/lookbooks";
 
-// The Work page: the same folders as the home page, as large cards with
-// their full descriptions, two per row.
+// The Work page: the same folders as the home page, one per row, each with a
+// few full shots of its projects and the full description.
 const Projects = ({ lookbooks }) => {
   const text = useRef();
 
@@ -30,24 +30,15 @@ const Projects = ({ lookbooks }) => {
         >
           Work.
         </h1>
-        <div className="mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+        <div className="mt-10 flex flex-col gap-10">
           {lookbooks.map((book) => (
-            <GalleryFrame
+            <WorkFolder
               key={book.slug}
               name={book.title}
               description={book.description}
-              images={
-                book.frameImages.length
-                  ? book.frameImages
-                  : book.gallery.filter((src) => !book.frameHide.includes(src))
-              }
+              images={book.workImages}
+              ratios={book.workRatios}
               href={`/${book.collection}/${book.slug}/`}
-              crop={book.frameCrop}
-              pairs={book.framePairs}
-              focus={book.frameFocus}
-              layout={book.frameLayout}
-              ratios={book.frameRatios}
-              large
             />
           ))}
         </div>

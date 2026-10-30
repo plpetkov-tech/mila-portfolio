@@ -52,4 +52,11 @@ frameHide:
   - /img/seasonal-promotions/fix-renovation-post-2.jpg
   - /img/seasonal-promotions/fix-lead-popup.jpg
   - /img/seasonal-promotions/new-coffee-world-post.jpg
+# Work page row: full shots, uncropped
+workImages:
+  - /img/seasonal-promotions/teodor-shoes-sale.png
+  - /img/seasonal-promotions/teodor-jackets-sale.jpg
+  - /img/seasonal-promotions/teodor-members-month-sweaters.png
+  - /img/seasonal-promotions/llaggi-grand-opening-post.png
+  - /img/MyLink-Mock-Up/mylink2.png
 ---

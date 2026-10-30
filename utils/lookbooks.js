@@ -3,22 +3,29 @@ import path from "path";
 import sharp from "sharp";
 import { getAllEntries, isFolder } from "./api";
 
-// Height/width of each home card picture, for layouts that keep proportions
+// Height/width of a picture (videos use their cover .jpg)
+const ratioOf = async (src) => {
+  try {
+    const { width, height } = await sharp(
+      path.join(
+        process.cwd(),
+        "public",
+        src.replace(/\.(mp4|webm|mov)$/i, ".jpg"),
+      ),
+    ).metadata();
+    return height / width;
+  } catch {
+    return 1;
+  }
+};
+
 const withRatios = async (book) => {
   const list = book.frameImages.length ? book.frameImages : book.gallery;
-  const frameRatios = await Promise.all(
-    list.map(async (src) => {
-      try {
-        const { width, height } = await sharp(
-          path.join(process.cwd(), "public", src),
-        ).metadata();
-        return height / width;
-      } catch {
-        return 1;
-      }
-    }),
-  );
-  return { ...book, frameRatios };
+  return {
+    ...book,
+    frameRatios: await Promise.all(list.map(ratioOf)),
+    workRatios: await Promise.all(book.workImages.map(ratioOf)),
+  };
 };
 
 // Every folder that has pictures for its card, newest first. Used by both the
