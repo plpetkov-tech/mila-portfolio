@@ -6,6 +6,8 @@ import { stagger } from "../../animations";
 import { getAllEntries, groupByCategory, isFolder } from "../../utils/api";
 import data from "../../data/portfolio.json";
 
+const FIRST_SECTION = "Commercial Works";
+
 const Section = ({ group, collection, columns }) => (
   <div className="mt-16">
     <h2 className="text-2xl tablet:text-4xl text-bold p-2 laptop:p-0">
@@ -52,6 +54,17 @@ const Projects = ({ projects, arts }) => {
         >
           Work.
         </h1>
+        {/* Commercial Works leads, then the UI/UX case studies, then the rest */}
+        {arts
+          .filter((group) => group.category === FIRST_SECTION)
+          .map((group) => (
+            <Section
+              key={group.category}
+              group={group}
+              collection="arts"
+              columns="laptop:grid-cols-3"
+            />
+          ))}
         {projects.map((group) => (
           <Section
             key={group.category}
@@ -60,14 +73,16 @@ const Projects = ({ projects, arts }) => {
             columns=""
           />
         ))}
-        {arts.map((group) => (
-          <Section
-            key={group.category}
-            group={group}
-            collection="arts"
-            columns="laptop:grid-cols-3"
-          />
-        ))}
+        {arts
+          .filter((group) => group.category !== FIRST_SECTION)
+          .map((group) => (
+            <Section
+              key={group.category}
+              group={group}
+              collection="arts"
+              columns="laptop:grid-cols-3"
+            />
+          ))}
       </div>
     </Layout>
   );
