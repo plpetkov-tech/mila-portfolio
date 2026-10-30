@@ -22,6 +22,7 @@ gallery:
   - /img/seasonal-promotions/teodor-independent-style.png
   - /img/seasonal-promotions/llaggi-black-november.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
+  - /img/seasonal-promotions/teodor-members-week.png
   - /img/MyLink-Mock-Up/mylink_post1_mockup.png
   - /img/MyLink-Mock-Up/mylink1.png
   - /img/MyLink-Mock-Up/mylink2.png

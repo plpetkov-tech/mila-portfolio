@@ -65,15 +65,11 @@ export default function Home({ projects, lookbooks }) {
         <h1 className="text-2xl text-bold">Work.</h1>
 
         <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-          {lookbooks.map((book, index) => (
+          {lookbooks.map((book) => (
             <div
               key={book.slug}
-              // An odd one out at the end gets the full row
-              className={
-                lookbooks.length % 2 === 1 && index === lookbooks.length - 1
-                  ? "tablet:col-span-2"
-                  : ""
-              }
+              // A single frame gets the full row; otherwise all frames match
+              className={lookbooks.length === 1 ? "tablet:col-span-2" : ""}
             >
               <GalleryFrame
                 name={book.title}
