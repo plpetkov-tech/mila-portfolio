@@ -29,7 +29,7 @@ const Layout = ({ title, description, image, children, footer = true }) => {
         {/* Share previews need an absolute URL; LinkedIn/Facebook don't like WebP */}
         <meta
           property="og:image"
-          content={data.siteUrl + (image || data.about.banner)}
+          content={data.siteUrl + (image || data.shareImage)}
         />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
