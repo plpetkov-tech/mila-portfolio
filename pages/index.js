@@ -8,7 +8,7 @@ import GalleryFrame from "../components/GalleryFrame";
 import Button from "../components/Button";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
-import { getAllEntries } from "../utils/api";
+import { getAllEntries, getStandaloneEntries, isFolder } from "../utils/api";
 
 // Local Data
 import data from "../data/portfolio.json";
@@ -65,15 +65,21 @@ export default function Home({ projects, lookbooks }) {
         <h1 className="text-2xl text-bold">Work.</h1>
 
         <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
-          {lookbooks.map((book) => (
+          {lookbooks.map((book, index) => (
             <div
               key={book.slug}
-              className={lookbooks.length === 1 ? "tablet:col-span-2" : ""}
+              // An odd one out at the end gets the full row
+              className={
+                lookbooks.length % 2 === 1 && index === lookbooks.length - 1
+                  ? "tablet:col-span-2"
+                  : ""
+              }
             >
               <GalleryFrame
                 name={book.title}
                 description={book.description}
                 images={book.gallery}
+                crop={book.frameCrop}
                 href={`/${book.collection}/${book.slug}/`}
               />
             </div>
@@ -125,9 +131,15 @@ export default function Home({ projects, lookbooks }) {
 export async function getStaticProps() {
   return {
     props: {
-      projects: getAllEntries("projects"),
-      // Folders with a lookbook gallery get a scrollable frame on the home page
-      lookbooks: getAllEntries("arts").filter((entry) => entry.gallery.length),
+      // Case studies that aren't inside a folder still get their own card
+      projects: getStandaloneEntries("projects"),
+      // Folders with a gallery get a scrollable frame on the home page
+      lookbooks: [
+        ...getAllEntries("arts").filter((entry) => entry.gallery.length),
+        ...getAllEntries("projects").filter(
+          (entry) => isFolder(entry) && entry.gallery.length,
+        ),
+      ],
     },
   };
 }

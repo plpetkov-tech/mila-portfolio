@@ -33,6 +33,9 @@ export function getEntryBySlug(collection, slug) {
     category: data.categories?.[0] || "Uncategorized",
     // Optional list of images shown as a lookbook grid on the entry page
     gallery: Array.isArray(data.gallery) ? data.gallery : [],
+    // A folder lists other entries of the same collection by slug
+    items: Array.isArray(data.items) ? data.items : [],
+    frameCrop: Boolean(data.frameCrop),
     content,
   };
 }
@@ -46,6 +49,15 @@ export function getAllEntries(collection) {
     })
     .filter((entry) => entry.date)
     .sort((a, b) => (a.date > b.date ? -1 : 1));
+}
+
+export const isFolder = (entry) => entry.items.length > 0;
+
+// Entries shown on their own: not folders, and not already inside a folder
+export function getStandaloneEntries(collection) {
+  const all = getAllEntries(collection);
+  const inFolder = new Set(all.filter(isFolder).flatMap((e) => e.items));
+  return all.filter((e) => !isFolder(e) && !inFolder.has(e.slug));
 }
 
 // Group entries by category, ordered by `order` first, then alphabetically

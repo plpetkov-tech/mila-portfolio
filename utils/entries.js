@@ -1,4 +1,10 @@
-import { getAllEntries, getEntryBySlug, getSlugs, markdownToHtml } from "./api";
+import {
+  getAllEntries,
+  getEntryBySlug,
+  getSlugs,
+  isFolder,
+  markdownToHtml,
+} from "./api";
 
 const squash = (text) => text.replace(/\s+/g, " ").trim();
 
@@ -7,10 +13,14 @@ export const makeStaticProps =
   (collection) =>
   async ({ params }) => {
     const { content, ...entry } = getEntryBySlug(collection, params.slug);
-    const all = getAllEntries(collection);
+    // Folders aren't part of the previous/next chain
+    const all = getAllEntries(collection).filter((item) => !isFolder(item));
     const index = all.findIndex((item) => item.slug === params.slug);
     const link = (item) =>
-      item ? { slug: item.slug, title: item.title } : null;
+      item && index !== -1 ? { slug: item.slug, title: item.title } : null;
+    const children = entry.items
+      .map((slug) => all.find((item) => item.slug === slug))
+      .filter(Boolean);
 
     return {
       props: {
@@ -25,6 +35,7 @@ export const makeStaticProps =
         // Newer entry first in the list, so "previous" is the older one
         previous: link(all[index + 1]),
         next: link(all[index - 1]),
+        children,
       },
     };
   };

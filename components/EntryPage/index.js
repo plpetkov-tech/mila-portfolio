@@ -6,11 +6,12 @@ import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import { optimized } from "../../utils/image";
 import GalleryMedia, { isVideo } from "../GalleryMedia";
+import WorkCard from "../WorkCard";
 
 const truncate = (text, max = 30) =>
   text.length > max ? text.slice(0, max) + "..." : text;
 
-const EntryPage = ({ entry, previous, next }) => {
+const EntryPage = ({ entry, previous, next, children = [] }) => {
   const textOne = useRef();
   const textTwo = useRef();
 
@@ -37,7 +38,7 @@ const EntryPage = ({ entry, previous, next }) => {
         >
           {entry.category}
         </h2>
-        {entry.image && !entry.gallery?.length && (
+        {entry.image && !entry.gallery?.length && !children.length && (
           <a
             href={entry.image}
             target="_blank"
@@ -56,7 +57,8 @@ const EntryPage = ({ entry, previous, next }) => {
             {entry.description}
           </p>
         )}
-        {entry.gallery?.length > 0 && (
+        {/* A folder's gallery only feeds its home page frame */}
+        {entry.gallery?.length > 0 && !children.length && (
           <div className="mt-10 columns-1 tablet:columns-2 laptop:columns-3 gap-4 p-2 laptop:p-0">
             {entry.gallery.map((src) => (
               <a
@@ -77,6 +79,19 @@ const EntryPage = ({ entry, previous, next }) => {
                   </span>
                 )}
               </a>
+            ))}
+          </div>
+        )}
+        {children.length > 0 && (
+          <div className="mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+            {children.map((child) => (
+              <WorkCard
+                key={child.slug}
+                img={child.image}
+                name={child.title}
+                description={child.description}
+                href={`/${child.collection}/${child.slug}/`}
+              />
             ))}
           </div>
         )}

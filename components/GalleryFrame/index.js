@@ -5,7 +5,7 @@ import GalleryMedia from "../GalleryMedia";
 
 // Home page frame for a lookbook folder: its pieces overlap in a row that
 // scrolls sideways, and the whole frame opens the folder's full grid.
-const GalleryFrame = ({ name, description, images, href }) => {
+const GalleryFrame = ({ name, description, images, href, crop = false }) => {
   const router = useRouter();
 
   return (
@@ -33,7 +33,9 @@ const GalleryFrame = ({ name, description, images, href }) => {
               src={src}
               alt={name}
               style={{ zIndex: index }}
-              className={`relative flex-none h-64 tablet:h-80 laptop:h-96 w-auto rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
+              className={`relative flex-none h-64 tablet:h-80 laptop:h-96 ${
+                crop ? "aspect-[3/4] object-cover" : "w-auto"
+              } rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
                 index === 0 ? "" : "-ml-16 tablet:-ml-24"
               }`}
             />

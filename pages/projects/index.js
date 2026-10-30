@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 import WorkCard from "../../components/WorkCard";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
-import { getAllEntries, groupByCategory } from "../../utils/api";
+import { getAllEntries, groupByCategory, isFolder } from "../../utils/api";
 import data from "../../data/portfolio.json";
 
 const Section = ({ group, collection, columns }) => (
@@ -77,7 +77,8 @@ export async function getStaticProps() {
   return {
     props: {
       projects: groupByCategory(
-        getAllEntries("projects"),
+        // The Work page keeps listing each case study on its own
+        getAllEntries("projects").filter((entry) => !isFolder(entry)),
         data.projectCategoryOrder,
       ),
       arts: groupByCategory(getAllEntries("arts"), data.artsCategoryOrder),
