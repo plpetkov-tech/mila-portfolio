@@ -16,7 +16,10 @@ const masonry = (items, ratios = [], columns) => {
   const cols = Array.from({ length: columns }, () => []);
   const heights = new Array(columns).fill(0);
   items.forEach((src, i) => {
-    const col = heights.indexOf(Math.min(...heights));
+    // Leftmost column that's (nearly) the shortest, so same-size pieces fill
+    // a row left to right
+    const min = Math.min(...heights);
+    const col = heights.findIndex((h) => h <= min + 0.05);
     cols[col].push(src);
     heights[col] += ratios[i] || 1;
   });
