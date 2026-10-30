@@ -37,7 +37,7 @@ body {
 }
 
 body {
-  @apply bg-white text-black dark:bg-black dark:text-white;
+  @apply bg-[#f7f5f5] text-black dark:bg-black dark:text-white;
 }
 
 ::selection {

@@ -98,7 +98,7 @@ const Header = () => {
                 </Popover.Button>
               </div>
             </div>
-            <Popover.Panel className="absolute right-4 z-20 w-11/12 p-4 bg-white dark:bg-slate-900 shadow-md rounded-md">
+            <Popover.Panel className="absolute right-4 z-20 w-11/12 p-4 bg-[#f7f5f5] dark:bg-slate-900 shadow-md rounded-md">
               <div className="grid grid-cols-1">
                 {NAV.map((item) => (
                   <Button key={item.href} href={item.href}>
