@@ -54,9 +54,15 @@ const About = () => {
           <h2 className="mt-2 text-3xl laptop:text-5xl text-gradient">
             {section.title}
           </h2>
-          <p className="mt-5 text-lg laptop:text-xl opacity-80 w-full laptop:w-4/5">
-            {section.body}
-          </p>
+          {/* body can be one paragraph or a list of paragraphs */}
+          {[].concat(section.body).map((paragraph) => (
+            <p
+              key={paragraph}
+              className="mt-5 text-lg laptop:text-xl opacity-80 w-full laptop:w-4/5"
+            >
+              {paragraph}
+            </p>
+          ))}
         </section>
       ))}
 
