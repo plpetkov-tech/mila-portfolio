@@ -129,7 +129,7 @@ export default function Home({ projects, lookbooks }) {
           {/* A soft wash of light in the palette colors, behind the text */}
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute -z-10 left-[3%] right-[3%] -top-6 -bottom-8 rounded-[50%] bg-gradient-to-r from-[#f5cd91] via-[#ec9594] to-[#f5cd91] opacity-25 dark:opacity-15 blur-3xl"
+            className="pointer-events-none absolute -z-10 left-[3%] right-[3%] -top-6 -bottom-8 rounded-[50%] bg-gradient-to-r from-[#f5cd91] via-[#ec9594] to-[#f5cd91] opacity-[0.12] dark:opacity-[0.08] blur-3xl"
           />
         </div>
         <Link
