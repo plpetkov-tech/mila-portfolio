@@ -20,10 +20,10 @@ items:
 frameCrop: true
 gallery:
   - /img/arts/misc/fire-lynx.png
-  - /img/arts/misc/bear.png
-  - /img/arts/shells/aShells.png
-  - /img/arts/sea/waves.webp
-  - /img/arts/misc/horse.png
   - /img/arts/misc/zimen.png
   - /img/arts/sea/incanvas.png
+  - /img/arts/misc/bear.png
+  - /img/arts/misc/horse.png
+  - /img/arts/shells/aShells.png
+  - /img/arts/sea/waves.webp
 ---
