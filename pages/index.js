@@ -40,7 +40,13 @@ export default function Home({ projects, lookbooks }) {
             ref={textOne}
             className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl p-1 tablet:p-2 text-bold w-full"
           >
-            {data.headerTaglineOne}
+            {data.headerTaglineOne}{" "}
+            <img
+              src="/images/mila-avatar.png"
+              alt=""
+              aria-hidden="true"
+              className="inline-block h-[1.15em] w-auto align-[-0.18em]"
+            />
           </h1>
           <h1
             ref={textTwo}

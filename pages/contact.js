@@ -37,7 +37,10 @@ const Contact = () => {
         <p className="mt-5 text-lg laptop:text-xl opacity-70 w-full laptop:w-3/5">
           Have a project in mind, need design consultation, or just want to say
           hello? Fill out the form below or email me at{" "}
-          <a href={`mailto:${data.email}`} className="underline link">
+          <a
+            href={`mailto:${data.email}`}
+            className="font-bold no-underline hover:opacity-70 transition-opacity link"
+          >
             {data.email}
           </a>
           .

@@ -10,11 +10,10 @@ description: >-
 items:
   - bags-app
   - event-app
-# Home page card: a close-up from each app, side by side
+# Home page card: one wide collage, Pavel Handbags screens with the Echoes home screen on the right
 frameLayout: natural
 frameImages:
-  - /img/Handbags-Mock-Up/pavel-collage-crop.jpg
-  - /img/Event-App-Mock-Up/echoes-collage-crop.jpg
+  - /img/Handbags-Mock-Up/apps-collage.jpg
 gallery:
   - /img/Handbags-Mock-Up/pavel-screen-home.png
   - /img/Event-App-Mock-Up/echoes-screen.jpg
