@@ -10,15 +10,18 @@ description: >-
 items:
   - bags-app
   - event-app
-# Home page card: Pavel Handbags screens side by side
-frameLayout: row
+# Home page card: a close-up from each app, side by side
+frameLayout: natural
+frameImages:
+  - /img/Handbags-Mock-Up/pavel-collage-crop.jpg
+  - /img/Event-App-Mock-Up/echoes-collage-crop.jpg
 gallery:
-  - /img/Handbags-Mock-Up/pavel-screen-checkout.png
   - /img/Handbags-Mock-Up/pavel-screen-home.png
+  - /img/Event-App-Mock-Up/echoes-screen.jpg
   - /img/Handbags-Mock-Up/pavel-screen-product.png
 # Work page row: the two apps side by side at the same size
 workEqual: true
 workImages:
-  - /img/Handbags-Mock-Up/2-Hero-Sections.png
-  - /img/Event-App-Mock-Up/1-Hero-Sections.png
+  - /img/Handbags-Mock-Up/1-Creative-Screens-Sections.png
+  - /img/Event-App-Mock-Up/10-Creative-Screens-Sections.png
 ---

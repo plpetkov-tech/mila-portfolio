@@ -13,8 +13,8 @@ items:
 # Home page card: hair dye boxes on the left, whiskey box on the right
 frameLayout: natural
 frameImages:
-  - /img/Prestige-Mock-Up/prestige-boxes.jpg
-  - /img/arts/jw/jw-box.jpg
+  - /img/arts/jw/ai.jpg
+  - /img/Prestige-Mock-Up/prestige-duo.jpg
 gallery:
   - /img/arts/jw/ai.jpg
   - /img/arts/jw/illustrator.png
@@ -23,6 +23,6 @@ gallery:
 # Work page row: full shots, uncropped
 workImages:
   - /img/arts/jw/ai.jpg
-  - /img/Prestige-Mock-Up/Prestige1.png
-  - /img/arts/jw/illustrator2.png
+  - /img/Prestige-Mock-Up/prestige-campaign.jpg
+  - /img/Prestige-Mock-Up/prestige-marble.jpg
 ---
