@@ -7,11 +7,9 @@ categories:
 description: >-
   Posters, flyers, banners, and stickers that bring retail promotions to storefronts and city buses. Designed for each format, finished for print.
 gallery:
-  - /img/print-outdoor/llaggi-born-active-billboard.jpg
   - /img/print-outdoor/llaggi-poster-indoor.jpg
   - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
   - /img/print-outdoor/llaggi-opening-flyer-a6-2.jpg
-  - /img/print-outdoor/teodor-bus-branding.jpg
   - /img/print-outdoor/teodor-black-week-led.jpg
   - /img/print-outdoor/llaggi-black-week-led.jpg
 ---

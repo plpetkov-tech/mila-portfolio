@@ -43,11 +43,6 @@ const About = () => {
         >
           {about.tagline}
         </h2>
-        <img
-          className="mt-10 w-full max-h-96 object-cover rounded-lg shadow-lg"
-          src={optimized(about.banner)}
-          alt="Artwork banner by Mila"
-        ></img>
       </div>
 
       {about.sections.map((section) => (
