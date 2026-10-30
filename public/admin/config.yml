@@ -36,6 +36,14 @@ collections:
       - label: "Description"
         name: "description"
         widget: "text"
+      - label: "Pieces in this folder (file names, e.g. jw)"
+        name: "items"
+        widget: "list"
+        required: false
+      - label: "Crop frame pictures to portrait"
+        name: "frameCrop"
+        widget: "boolean"
+        required: false
       - label: "Gallery (lookbook grid)"
         name: "gallery"
         widget: "list"

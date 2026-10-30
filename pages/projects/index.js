@@ -96,7 +96,11 @@ export async function getStaticProps() {
         getAllEntries("projects").filter((entry) => !isFolder(entry)),
         data.projectCategoryOrder,
       ),
-      arts: groupByCategory(getAllEntries("arts"), data.artsCategoryOrder),
+      // Folders only live on the home page; their pieces keep their own cards here
+      arts: groupByCategory(
+        getAllEntries("arts").filter((entry) => !isFolder(entry)),
+        data.artsCategoryOrder,
+      ),
     },
   };
 }

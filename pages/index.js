@@ -134,12 +134,13 @@ export async function getStaticProps() {
       // Case studies that aren't inside a folder still get their own card
       projects: getStandaloneEntries("projects"),
       // Folders with a gallery get a scrollable frame on the home page
+      // Newest first, whichever collection they come from
       lookbooks: [
         ...getAllEntries("arts").filter((entry) => entry.gallery.length),
         ...getAllEntries("projects").filter(
           (entry) => isFolder(entry) && entry.gallery.length,
         ),
-      ],
+      ].sort((a, b) => (a.date > b.date ? -1 : 1)),
     },
   };
 }
