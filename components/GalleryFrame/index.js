@@ -5,7 +5,15 @@ import GalleryMedia from "../GalleryMedia";
 
 // Home page frame for a lookbook folder: its pieces overlap in a row that
 // scrolls sideways, and the whole frame opens the folder's full grid.
-const GalleryFrame = ({ name, description, images, href, crop = false }) => {
+const GalleryFrame = ({
+  name,
+  description,
+  images,
+  href,
+  crop = false,
+  pairs = false,
+  focus = [],
+}) => {
   const router = useRouter();
 
   return (
@@ -26,26 +34,47 @@ const GalleryFrame = ({ name, description, images, href, crop = false }) => {
           View more →
         </Link>
 
-        <div className="flex overflow-x-auto pt-14 pb-6 px-6 tablet:px-8 [scrollbar-width:thin]">
-          {images.map((src, index) => (
-            <GalleryMedia
-              key={src}
-              src={src}
-              alt={name}
-              style={{ zIndex: index }}
-              className={`relative flex-none h-64 tablet:h-80 laptop:h-96 ${
-                crop ? "aspect-[3/4] object-cover" : "w-auto"
-              } rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
-                index === 0 ? "" : "-ml-16 tablet:-ml-24"
-              }`}
-            />
-          ))}
-          <span className="flex-none w-6" aria-hidden="true" />
-        </div>
+        {pairs ? (
+          // Two side-by-side pairs, e.g. one product on the left, another on the right
+          <div className="grid grid-cols-2 gap-4 tablet:gap-6 pt-14 pb-6 px-6 tablet:px-8">
+            {[0, 2].map((start) => (
+              <div key={start} className="grid grid-cols-2 gap-2">
+                {images.slice(start, start + 2).map((src, j) => (
+                  <GalleryMedia
+                    key={src}
+                    src={src}
+                    alt={name}
+                    style={{ objectPosition: focus[start + j] || "50% 50%" }}
+                    className="w-full h-64 tablet:h-80 laptop:h-96 object-cover rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+                  />
+                ))}
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="flex overflow-x-auto pt-14 pb-6 px-6 tablet:px-8 [scrollbar-width:thin]">
+            {images.map((src, index) => (
+              <GalleryMedia
+                key={src}
+                src={src}
+                alt={name}
+                style={{ zIndex: index }}
+                className={`relative flex-none h-64 tablet:h-80 laptop:h-96 ${
+                  crop ? "aspect-[3/4] object-cover" : "w-auto"
+                } rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
+                  index === 0 ? "" : "-ml-16 tablet:-ml-24"
+                }`}
+              />
+            ))}
+            <span className="flex-none w-6" aria-hidden="true" />
+          </div>
+        )}
       </div>
       <Link href={href} className="block link">
         <h1 className="mt-5 text-3xl">{name}</h1>
-        <h2 className="font-body text-xl opacity-50 line-clamp-3">{description}</h2>
+        <h2 className="font-body text-xl opacity-50 line-clamp-3">
+          {description}
+        </h2>
       </Link>
     </div>
   );

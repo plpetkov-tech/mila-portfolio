@@ -10,12 +10,17 @@ description: >-
 items:
   - jw
   - prestige-package-redesign
-# Pictures in the home page frame, cropped to portrait so they overlap neatly
+# Home page frame: whiskey shots on the left, hair dye shots on the right
 frameCrop: true
+framePairs: true
+frameFocus:
+  - "18% 50%"
+  - "6% 50%"
+  - "28% 70%"
+  - "12% 40%"
 gallery:
   - /img/arts/jw/ai.jpg
-  - /img/Prestige-Mock-Up/Prestige1.png
   - /img/arts/jw/illustrator.png
+  - /img/Prestige-Mock-Up/Prestige1.png
   - /img/Prestige-Mock-Up/Prestige3.png
-  - /img/arts/jw/illustrator2.png
 ---

@@ -36,6 +36,9 @@ export function getEntryBySlug(collection, slug) {
     // A folder lists other entries of the same collection by slug
     items: Array.isArray(data.items) ? data.items : [],
     frameCrop: Boolean(data.frameCrop),
+    framePairs: Boolean(data.framePairs),
+    // Optional crop focus per frame picture, e.g. "20% 50%" (matches gallery order)
+    frameFocus: Array.isArray(data.frameFocus) ? data.frameFocus : [],
     content,
   };
 }

@@ -76,6 +76,8 @@ export default function Home({ projects, lookbooks }) {
                 description={book.description}
                 images={book.gallery}
                 crop={book.frameCrop}
+                pairs={book.framePairs}
+                focus={book.frameFocus}
                 href={`/${book.collection}/${book.slug}/`}
               />
             </div>
