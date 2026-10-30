@@ -41,7 +41,7 @@ const WorkFolder = ({
         </div>
       </div>
       <h1 className="mt-5 text-3xl">{name}</h1>
-      <h2 className="font-body text-xl opacity-50">{description}</h2>
+      <h2 className="mt-3 font-body text-xl opacity-50">{description}</h2>
     </Link>
   );
 };
