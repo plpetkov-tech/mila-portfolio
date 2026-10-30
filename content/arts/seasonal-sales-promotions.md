@@ -9,6 +9,8 @@ description: >-
 # Home page card: sweaters, shirts (centre, uncropped) and shoes side by side
 frameLayout: natural
 frameOverlap: 0.2
+# On phones: two pictures per row instead of the sideways row
+frameMobileGrid: true
 frameFocus:
   - "50% 50%"
   - full

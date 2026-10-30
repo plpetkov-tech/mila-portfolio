@@ -99,6 +99,7 @@ export default function Home({ projects, lookbooks }) {
                 focus={book.frameFocus}
                 fit={book.frameFit}
                 overlap={book.frameOverlap}
+                mobileGrid={book.frameMobileGrid}
                 href={`/${book.collection}/${book.slug}/`}
               />
             </div>

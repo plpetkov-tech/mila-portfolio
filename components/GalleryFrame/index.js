@@ -25,9 +25,41 @@ const GalleryFrame = ({
   angle = 90,
   fit = false,
   overlap = 0,
+  mobileGrid = false,
 }) => {
   const router = useRouter();
   const height = large ? HEIGHT.large : HEIGHT.regular;
+
+  // Phones only: two whole pictures per row, each pair at the same height
+  const pairsOfTwo = [];
+  for (let i = 0; i < images.length; i += 2) {
+    pairsOfTwo.push(images.slice(i, i + 2).map((src, j) => [src, i + j]));
+  }
+  const mobileGridView = mobileGrid ? (
+    <div className="tablet:hidden flex flex-col gap-3 pt-14 pb-6 px-4">
+      {pairsOfTwo.map((pair) => (
+        <div key={pair[0][0]} className="flex gap-3 items-start">
+          {pair.map(([src, i]) => (
+            <div
+              key={src}
+              className="min-w-0"
+              style={{
+                flex: `${1 / (ratios[i] || 1)} 1 0%`,
+                aspectRatio: `${1 / (ratios[i] || 1)}`,
+              }}
+            >
+              <GalleryMedia
+                src={src}
+                alt={name}
+                width={800}
+                className="w-full h-full object-cover rounded-lg shadow-xl"
+              />
+            </div>
+          ))}
+        </div>
+      ))}
+    </div>
+  ) : null;
 
   return (
     <div className="p-2 laptop:p-4">
@@ -52,11 +84,12 @@ const GalleryFrame = ({
           View more →
         </Link>
 
+        {mobileGridView}
         {layout === "natural" ? (
           // Whole pictures side by side at one height; scroll sideways when
           // they don't all fit in the frame
           <div
-            className={`no-scrollbar flex pt-14 pb-6 px-6 tablet:px-8 ${overlap ? "[--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]" : "gap-4"} ${fit ? "items-start" : "overflow-x-auto"}`}
+            className={`no-scrollbar ${mobileGrid ? "hidden tablet:flex" : "flex"} pt-14 pb-6 px-6 tablet:px-8 ${overlap ? "[--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]" : "gap-4"} ${fit ? "items-start" : "overflow-x-auto"}`}
           >
             {images.map((src, i) => (
               <div

@@ -41,6 +41,8 @@ export function getEntryBySlug(collection, slug) {
     // Home card pictures overlap by this share of their width (e.g. 0.2)
     frameOverlap: Number(data.frameOverlap) || 0,
     framePairs: Boolean(data.framePairs),
+    // On phones, show the home card pictures two per row instead of a sideways row
+    frameMobileGrid: Boolean(data.frameMobileGrid),
     // Home card layout: "overlap" (default), "single" (one large picture) or
     // "row" (upright tiles side by side), with its own picture list if given
     frameLayout: data.frameLayout || "overlap",
