@@ -16,7 +16,7 @@ h3,
 h4,
 .font-heading {
   font-family: var(--font-heading), serif;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 /* Descriptions and small labels that use heading tags stay in body text */
