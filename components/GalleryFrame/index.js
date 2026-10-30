@@ -23,6 +23,7 @@ const GalleryFrame = ({
   large = false,
   focus = [],
   angle = 90,
+  fit = false,
 }) => {
   const router = useRouter();
   const height = large ? HEIGHT.large : HEIGHT.regular;
@@ -47,14 +48,25 @@ const GalleryFrame = ({
         </Link>
 
         {layout === "natural" ? (
-          // Side by side, widths in proportion to each picture, same height as
-          // every other card so the frames line up
-          <div className="flex gap-4 pt-14 pb-6 px-6 tablet:px-8">
+          // Whole pictures side by side at one height; scroll sideways when
+          // they don't all fit in the frame
+          <div
+            className={`no-scrollbar flex gap-4 pt-14 pb-6 px-6 tablet:px-8 ${fit ? "items-start" : "overflow-x-auto"}`}
+          >
             {images.map((src, i) => (
               <div
                 key={src}
-                className={`min-w-0 ${height}`}
-                style={{ flex: `${1 / (ratios[i] || 1)} 1 0%` }}
+                // fit: every picture shrinks to share the frame (no scrolling),
+                // widths in proportion so they end up the same height
+                className={fit ? "min-w-0" : `flex-none ${height}`}
+                style={
+                  fit
+                    ? {
+                        flex: `${1 / (ratios[i] || 1)} 1 0%`,
+                        aspectRatio: `${1 / (ratios[i] || 1)}`,
+                      }
+                    : { aspectRatio: `${1 / (ratios[i] || 1)}` }
+                }
               >
                 <GalleryMedia
                   src={src}

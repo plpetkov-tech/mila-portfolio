@@ -91,6 +91,7 @@ export default function Home({ projects, lookbooks }) {
                 crop={book.frameCrop}
                 pairs={book.framePairs}
                 focus={book.frameFocus}
+                fit={book.frameFit}
                 href={`/${book.collection}/${book.slug}/`}
               />
             </div>
@@ -105,7 +106,11 @@ export default function Home({ projects, lookbooks }) {
             />
           ))}
         </div>
-        <Button type="primary" href="/projects/" classes="mt-5">
+        <Button
+          type="primary"
+          href="/projects/"
+          classes="mt-10 laptop:mt-14 mb-6"
+        >
           See all work &amp; art →
         </Button>
       </div>

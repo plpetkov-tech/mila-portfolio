@@ -6,6 +6,22 @@ categories:
   - Commercial Works
 description: >-
   A lookbook of seasonal sales and promotion visuals for an established apparel brand. Each piece is adapted to its channel, from large-format mall screens and LED displays to social posts, while keeping one consistent, elegant visual language.
+# Home page card: sweaters, shirts (centre, uncropped) and shoes side by side
+frameLayout: natural
+frameFocus:
+  - "50% 50%"
+  - full
+  - "50% 50%"
+  - "50% 50%"
+  - "50% 50%"
+  - "50% 50%"
+frameImages:
+  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
+  - /img/seasonal-promotions/teodor-club-shirts.png
+  - /img/seasonal-promotions/teodor-shoes-sale.png
+  - /img/seasonal-promotions/teodor-coats-sale.png
+  - /img/MyLink-Mock-Up/mylink2.png
+  - /img/seasonal-promotions/fix-lead-popup.jpg
 gallery:
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
@@ -84,8 +100,10 @@ frameHide:
   - /img/seasonal-promotions/fix-lead-popup.jpg
 # Work page row: full shots, uncropped
 workImages:
+  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
+  - /img/seasonal-promotions/teodor-club-shirts.png
   - /img/seasonal-promotions/teodor-shoes-sale.png
-  - /img/seasonal-promotions/teodor-jackets-sale.jpg
-  - /img/seasonal-promotions/llaggi-grand-opening-post.png
+  - /img/seasonal-promotions/teodor-coats-sale.png
   - /img/MyLink-Mock-Up/mylink2.png
+  - /img/seasonal-promotions/fix-lead-popup.jpg
 ---

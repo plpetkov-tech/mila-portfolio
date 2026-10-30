@@ -12,6 +12,7 @@ items:
   - prestige-package-redesign
 # Home page card: hair dye boxes on the left, whiskey box on the right
 frameLayout: natural
+frameFit: true
 frameImages:
   - /img/arts/jw/ai.jpg
   - /img/Prestige-Mock-Up/prestige-duo.jpg

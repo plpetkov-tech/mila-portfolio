@@ -16,7 +16,7 @@ const Footer = () => {
             <h1 className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl text-bold text-gradient">
               TOGETHER
             </h1>
-            <Button type="primary" href="/contact/" classes="mt-5">
+            <Button type="primary" href="/contact/" classes="mt-10 laptop:mt-14 mb-6">
               Get in touch
             </Button>
             <div className="mt-10">

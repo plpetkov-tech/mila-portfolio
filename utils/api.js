@@ -36,6 +36,8 @@ export function getEntryBySlug(collection, slug) {
     // A folder lists other entries of the same collection by slug
     items: Array.isArray(data.items) ? data.items : [],
     frameCrop: Boolean(data.frameCrop),
+    // Home card pictures shrink to fit the frame instead of scrolling
+    frameFit: Boolean(data.frameFit),
     framePairs: Boolean(data.framePairs),
     // Home card layout: "overlap" (default), "single" (one large picture) or
     // "row" (upright tiles side by side), with its own picture list if given

@@ -20,7 +20,7 @@ const Button = ({
   // Gradient buttons are larger, with roomy padding; menu-style buttons stay compact
   const size =
     type === "primary"
-      ? "text-2xl laptop:text-3xl font-medium px-10 py-5 laptop:px-14 laptop:py-6 rounded-full"
+      ? "text-2xl laptop:text-3xl font-medium px-10 py-5 laptop:px-14 laptop:py-6 rounded-[28px]"
       : "text-sm tablet:text-base p-1 laptop:p-2 rounded-lg";
   const className = `${size} m-1 laptop:m-2 transition-all duration-300 ease-out hover:scale-105 active:scale-100 link ${
     STYLES[type] || STYLES.default
