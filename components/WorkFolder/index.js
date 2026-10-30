@@ -19,8 +19,8 @@ const WorkFolder = ({
     : 1;
   return (
     <Link href={href} className="block p-2 laptop:p-4 link group">
-      <div className="relative rounded-lg bg-[#ebe6e2] dark:bg-[#b9a897] pt-14 pb-6 px-4 tablet:px-8">
-        <span className="absolute top-4 right-5 text-base dark:text-black opacity-70 group-hover:opacity-100 transition-opacity">
+      <div className="relative rounded-lg bg-[#ebe6e2] dark:bg-transparent dark:bg-gradient-to-r dark:from-[#dda35a] dark:via-[#ec9594] dark:to-transparent pt-14 pb-6 px-4 tablet:px-8">
+        <span className="absolute top-4 right-5 text-base opacity-70 group-hover:opacity-100 transition-opacity">
           View more →
         </span>
         <div className="flex gap-3 tablet:gap-4 items-start overflow-x-auto tablet:overflow-visible">

@@ -34,12 +34,12 @@ const GalleryFrame = ({
         aria-label={`${name} – view more`}
         onClick={() => router.push(href)}
         onKeyDown={(e) => e.key === "Enter" && router.push(href)}
-        className="relative rounded-lg overflow-hidden bg-[#ebe6e2] dark:bg-[#b9a897] link"
+        className="relative rounded-lg overflow-hidden bg-[#ebe6e2] dark:bg-transparent dark:bg-gradient-to-r dark:from-[#dda35a] dark:via-[#ec9594] dark:to-transparent link"
       >
         <Link
           href={href}
           onClick={(e) => e.stopPropagation()}
-          className="absolute top-4 right-5 z-50 text-base dark:text-black opacity-70 hover:opacity-100 transition-opacity"
+          className="absolute top-4 right-5 z-50 text-base opacity-70 hover:opacity-100 transition-opacity"
         >
           View more →
         </Link>
