@@ -13,6 +13,7 @@ const GalleryFrame = ({
   crop = false,
   pairs = false,
   layout = "overlap",
+  ratios = [],
   focus = [],
 }) => {
   const router = useRouter();
@@ -35,7 +36,24 @@ const GalleryFrame = ({
           View more →
         </Link>
 
-        {layout === "single" ? (
+        {layout === "natural" ? (
+          // Side by side at their own proportions, nothing cropped
+          <div className="flex items-center gap-4 pt-14 pb-6 px-6 tablet:px-8">
+            {images.map((src, i) => (
+              <div
+                key={src}
+                className="min-w-0"
+                style={{ flex: `${1 / (ratios[i] || 1)} 1 0%` }}
+              >
+                <GalleryMedia
+                  src={src}
+                  alt={name}
+                  className="w-full h-auto rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+                />
+              </div>
+            ))}
+          </div>
+        ) : layout === "single" ? (
           // One large picture filling the frame
           <div className="pt-14 pb-6 px-6 tablet:px-8">
             <GalleryMedia

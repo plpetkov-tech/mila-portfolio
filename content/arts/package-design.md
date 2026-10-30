@@ -10,14 +10,11 @@ description: >-
 items:
   - jw
   - prestige-package-redesign
-# Home page frame: whiskey shots on the left, hair dye shots on the right
-frameCrop: true
-framePairs: true
-frameFocus:
-  - "18% 50%"
-  - "6% 50%"
-  - "28% 70%"
-  - "12% 40%"
+# Home page card: hair dye boxes on the left, whiskey box on the right
+frameLayout: natural
+frameImages:
+  - /img/Prestige-Mock-Up/prestige-boxes.jpg
+  - /img/arts/jw/jw-box.jpg
 gallery:
   - /img/arts/jw/ai.jpg
   - /img/arts/jw/illustrator.png

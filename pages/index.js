@@ -8,6 +8,8 @@ import GalleryFrame from "../components/GalleryFrame";
 import Button from "../components/Button";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
+import path from "path";
+import sharp from "sharp";
 import { getAllEntries, getStandaloneEntries, isFolder } from "../utils/api";
 
 // Local Data
@@ -82,6 +84,7 @@ export default function Home({ projects, lookbooks }) {
                       )
                 }
                 layout={book.frameLayout}
+                ratios={book.frameRatios}
                 crop={book.frameCrop}
                 pairs={book.framePairs}
                 focus={book.frameFocus}
@@ -133,6 +136,24 @@ export default function Home({ projects, lookbooks }) {
   );
 }
 
+// Height/width of each home card picture, for layouts that keep proportions
+const withRatios = async (book) => {
+  const list = book.frameImages.length ? book.frameImages : book.gallery;
+  const frameRatios = await Promise.all(
+    list.map(async (src) => {
+      try {
+        const { width, height } = await sharp(
+          path.join(process.cwd(), "public", src),
+        ).metadata();
+        return height / width;
+      } catch {
+        return 1;
+      }
+    }),
+  );
+  return { ...book, frameRatios };
+};
+
 export async function getStaticProps() {
   return {
     props: {
@@ -140,12 +161,16 @@ export async function getStaticProps() {
       projects: getStandaloneEntries("projects"),
       // Folders with a gallery get a scrollable frame on the home page
       // Newest first, whichever collection they come from
-      lookbooks: [
-        ...getAllEntries("arts").filter((entry) => entry.gallery.length),
-        ...getAllEntries("projects").filter(
-          (entry) => isFolder(entry) && entry.gallery.length,
-        ),
-      ].sort((a, b) => (a.date > b.date ? -1 : 1)),
+      lookbooks: await Promise.all(
+        [
+          ...getAllEntries("arts").filter((entry) => entry.gallery.length),
+          ...getAllEntries("projects").filter(
+            (entry) => isFolder(entry) && entry.gallery.length,
+          ),
+        ]
+          .sort((a, b) => (a.date > b.date ? -1 : 1))
+          .map(withRatios),
+      ),
     },
   };
 }
