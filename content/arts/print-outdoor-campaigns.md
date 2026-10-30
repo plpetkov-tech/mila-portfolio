@@ -17,4 +17,5 @@ gallery:
   - /img/print-outdoor/llaggi-black-week-led.jpg
   - /img/print-outdoor/llaggi-born-active-billboard.jpg
   - /img/print-outdoor/teodor-van-branding.jpg
+  - /img/arts/misc/lampata.png
 ---
