@@ -23,6 +23,7 @@ gallery:
   - /img/seasonal-promotions/llaggi-black-november.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
   - /img/seasonal-promotions/teodor-members-week.png
+  - /img/seasonal-promotions/teodor-corduroy-month.jpg
   - /img/seasonal-promotions/llaggi-grand-opening-post.png
   - /img/seasonal-promotions/llaggi-pleven-special-post.png
   - /img/seasonal-promotions/insta-post-1080x1350.png
@@ -43,6 +44,7 @@ gallery:
   - /img/seasonal-promotions/new-coffee-world-post.jpg
 # Shown inside the folder only, not on the home page card
 frameHide:
+  - /img/seasonal-promotions/teodor-corduroy-month.jpg
   - /img/seasonal-promotions/black-sea-gold-salty-hills.jpg
   - /img/seasonal-promotions/black-sea-gold-find-me-rose.jpg
   - /img/seasonal-promotions/black-sea-gold-burgas-63.jpg
