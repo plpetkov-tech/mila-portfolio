@@ -16,7 +16,9 @@ h3,
 h4,
 .font-heading {
   font-family: var(--font-heading), serif;
-  font-weight: 400;
+  /* Gilda has a single weight; let the browser draw a bolder version */
+  font-weight: 700;
+  font-synthesis: weight;
 }
 
 /* Descriptions and small labels that use heading tags stay in body text */
