@@ -7,5 +7,3 @@ categories:
 description: >-
   A vector illustration of a snarling lynx whose fur dissolves into flames, drawn in Adobe Illustrator with layered warm tones from golden yellow to deep ember red.
 ---
-
-![Fire Lynx](/img/arts/misc/fire-lynx.png)
