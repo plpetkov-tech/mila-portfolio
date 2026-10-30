@@ -8,9 +8,8 @@ description: >-
   A lookbook of seasonal sales and promotion visuals for an established apparel brand. Each piece is adapted to its channel, from large-format mall screens and LED displays to social posts, while keeping one consistent, elegant visual language.
 gallery:
   - /img/seasonal-promotions/teodor-shoes-sale.png
-  - /img/seasonal-promotions/teodor-black-member-month-social.jpg
+  - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
   - /img/seasonal-promotions/teodor-jackets-sale.jpg
-  - /img/seasonal-promotions/teodor-members-month-sweaters.png
   - /img/seasonal-promotions/teodor-club-shirts.png
   - /img/seasonal-promotions/teodor-club-trousers.png
   - /img/seasonal-promotions/teodor-coats-sale.png
@@ -23,7 +22,6 @@ gallery:
   - /img/seasonal-promotions/teodor-black-november-mall.png
   - /img/seasonal-promotions/teodor-corduroy-month.jpg
   - /img/seasonal-promotions/llaggi-grand-opening-post.png
-  - /img/seasonal-promotions/llaggi-pleven-special-post.png
   - /img/seasonal-promotions/insta-post-1080x1350.png
   - /img/MyLink-Mock-Up/mylink_post1_mockup.png
   - /img/MyLink-Mock-Up/mylink1.png
@@ -41,9 +39,8 @@ sections:
   - title: "TEODOR — Seasonal Sales & Members Club Campaigns"
     images:
       - /img/seasonal-promotions/teodor-shoes-sale.png
-      - /img/seasonal-promotions/teodor-black-member-month-social.jpg
+      - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
       - /img/seasonal-promotions/teodor-jackets-sale.jpg
-      - /img/seasonal-promotions/teodor-members-month-sweaters.png
       - /img/seasonal-promotions/teodor-club-shirts.png
       - /img/seasonal-promotions/teodor-club-trousers.png
       - /img/seasonal-promotions/teodor-coats-sale.png
@@ -58,7 +55,6 @@ sections:
       - /img/seasonal-promotions/llaggi-mountain.png
       - /img/seasonal-promotions/llaggi-black-november.png
       - /img/seasonal-promotions/llaggi-grand-opening-post.png
-      - /img/seasonal-promotions/llaggi-pleven-special-post.png
       - /img/seasonal-promotions/insta-post-1080x1350.png
   - title: "MyLink — Social Media Carousels & Post Mockups"
     images:
@@ -90,7 +86,6 @@ frameHide:
 workImages:
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-jackets-sale.jpg
-  - /img/seasonal-promotions/teodor-members-month-sweaters.png
   - /img/seasonal-promotions/llaggi-grand-opening-post.png
   - /img/MyLink-Mock-Up/mylink2.png
 ---
