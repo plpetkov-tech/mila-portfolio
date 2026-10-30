@@ -1,3 +1,5 @@
+import path from "path";
+import sharp from "sharp";
 import {
   getAllEntries,
   getEntryBySlug,
@@ -7,6 +9,22 @@ import {
 } from "./api";
 
 const squash = (text) => text.replace(/\s+/g, " ").trim();
+
+// Height/width of each gallery piece (videos use their cover .jpg), so the
+// folder grid can place each one in the shortest column.
+const ratioOf = async (src) => {
+  const file = path.join(
+    process.cwd(),
+    "public",
+    src.replace(/\.(mp4|webm|mov)$/i, ".jpg"),
+  );
+  try {
+    const { width, height } = await sharp(file).metadata();
+    return height / width;
+  } catch {
+    return 1;
+  }
+};
 
 // Shared getStaticProps/getStaticPaths for /projects/[slug] and /arts/[slug]
 export const makeStaticProps =
@@ -27,6 +45,7 @@ export const makeStaticProps =
         entry: {
           ...entry,
           html: await markdownToHtml(content),
+          galleryRatios: await Promise.all(entry.gallery.map(ratioOf)),
           // Many art bodies repeat the description; don't show it twice
           showDescription:
             Boolean(entry.description) &&

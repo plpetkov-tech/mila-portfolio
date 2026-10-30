@@ -11,6 +11,18 @@ import WorkCard from "../WorkCard";
 const truncate = (text, max = 30) =>
   text.length > max ? text.slice(0, max) + "..." : text;
 
+// Fill the grid in order, dropping each piece into the currently shortest column
+const masonry = (items, ratios = [], columns) => {
+  const cols = Array.from({ length: columns }, () => []);
+  const heights = new Array(columns).fill(0);
+  items.forEach((src, i) => {
+    const col = heights.indexOf(Math.min(...heights));
+    cols[col].push(src);
+    heights[col] += ratios[i] || 1;
+  });
+  return cols;
+};
+
 const EntryPage = ({ entry, previous, next, children = [] }) => {
   const textOne = useRef();
   // 1 column on phones, 2 on tablets, 3 on laptops (matches the site's breakpoints)
@@ -72,11 +84,10 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
         {entry.gallery?.length > 0 && !children.length && (
           // Masonry that reads left to right: piece 1, 2, 3 across the top, and so on
           <div className="mt-10 flex gap-4 p-2 laptop:p-0">
-            {Array.from({ length: columns }, (_, col) => (
-              <div key={col} className="flex-1 min-w-0 flex flex-col gap-4">
-                {entry.gallery
-                  .filter((_, i) => i % columns === col)
-                  .map((src) => (
+            {masonry(entry.gallery, entry.galleryRatios, columns).map(
+              (list, col) => (
+                <div key={col} className="flex-1 min-w-0 flex flex-col gap-4">
+                  {list.map((src) => (
                     <a
                       key={src}
                       href={src}
@@ -96,8 +107,9 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
                       )}
                     </a>
                   ))}
-              </div>
-            ))}
+                </div>
+              ),
+            )}
           </div>
         )}
         <ContentSection html={entry.html} />
