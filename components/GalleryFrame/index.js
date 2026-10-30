@@ -16,7 +16,7 @@ const GalleryFrame = ({ name, description, images, href }) => {
         aria-label={`${name} – view more`}
         onClick={() => router.push(href)}
         onKeyDown={(e) => e.key === "Enter" && router.push(href)}
-        className="relative rounded-lg overflow-hidden bg-[#c4b8af] dark:bg-[#2a221b] link"
+        className="relative rounded-lg overflow-hidden bg-[#ebe6e2] dark:bg-[#2a221b] link"
       >
         <Link
           href={href}
