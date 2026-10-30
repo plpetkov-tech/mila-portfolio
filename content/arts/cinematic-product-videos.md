@@ -13,6 +13,7 @@ gallery:
   - /img/cinematic-videos/green-suit.mp4
   - /img/cinematic-videos/discount.mp4
   - /img/cinematic-videos/teodor-black-november-mall.mp4
+  - /img/cinematic-videos/llaggi-black-november-mall.mp4
   - /img/cinematic-videos/llaggi-jacket.mp4
   - /img/cinematic-videos/llaggi-pleven-opening.mp4
   - /img/cinematic-videos/finally.mp4
