@@ -37,6 +37,10 @@ export function getEntryBySlug(collection, slug) {
     items: Array.isArray(data.items) ? data.items : [],
     frameCrop: Boolean(data.frameCrop),
     framePairs: Boolean(data.framePairs),
+    // Home card layout: "overlap" (default), "single" (one large picture) or
+    // "row" (upright tiles side by side), with its own picture list if given
+    frameLayout: data.frameLayout || "overlap",
+    frameImages: Array.isArray(data.frameImages) ? data.frameImages : [],
     // Gallery pictures kept off the home page frame (still shown in the folder)
     frameHide: Array.isArray(data.frameHide) ? data.frameHide : [],
     // Optional crop focus per frame picture, e.g. "20% 50%" (matches gallery order)

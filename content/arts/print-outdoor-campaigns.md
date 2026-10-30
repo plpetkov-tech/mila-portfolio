@@ -6,6 +6,10 @@ categories:
   - Commercial Works
 description: >-
   Posters, flyers, banners, and stickers that bring retail promotions to storefronts and city buses. Designed for each format, finished for print.
+# Home page card: just the billboard
+frameLayout: single
+frameImages:
+  - /img/print-outdoor/llaggi-born-active-billboard.jpg
 gallery:
   - /img/print-outdoor/llaggi-poster-stadium.jpg
   - /img/print-outdoor/llaggi-poster-indoor.jpg

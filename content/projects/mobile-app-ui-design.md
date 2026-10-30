@@ -10,11 +10,10 @@ description: >-
 items:
   - bags-app
   - event-app
-# Pictures in the home page frame, cropped to portrait so they overlap neatly
-frameCrop: true
+# Home page card: Pavel Handbags screens side by side
+frameLayout: row
 gallery:
-  - /img/Handbags-Mock-Up/1-Creative-Screens-Sections.png
-  - /img/Handbags-Mock-Up/11-Creative-Screens-Sections.png
-  - /img/Handbags-Mock-Up/10-Simple-Screens-Sections.png
-  - /img/Handbags-Mock-Up/2-Hero-Sections.png
+  - /img/Handbags-Mock-Up/pavel-screen-checkout.png
+  - /img/Handbags-Mock-Up/pavel-screen-home.png
+  - /img/Handbags-Mock-Up/pavel-screen-product.png
 ---

@@ -12,6 +12,7 @@ const GalleryFrame = ({
   href,
   crop = false,
   pairs = false,
+  layout = "overlap",
   focus = [],
 }) => {
   const router = useRouter();
@@ -34,7 +35,29 @@ const GalleryFrame = ({
           View more →
         </Link>
 
-        {pairs ? (
+        {layout === "single" ? (
+          // One large picture filling the frame
+          <div className="pt-14 pb-6 px-6 tablet:px-8">
+            <GalleryMedia
+              src={images[0]}
+              alt={name}
+              width={1600}
+              className="w-full h-64 tablet:h-80 laptop:h-96 object-cover rounded-lg shadow-xl"
+            />
+          </div>
+        ) : layout === "row" ? (
+          // Upright tiles side by side, no overlap
+          <div className="flex gap-3 tablet:gap-4 pt-14 pb-6 px-6 tablet:px-8">
+            {images.map((src) => (
+              <GalleryMedia
+                key={src}
+                src={src}
+                alt={name}
+                className="flex-1 min-w-0 h-64 tablet:h-80 laptop:h-96 object-cover object-top rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+              />
+            ))}
+          </div>
+        ) : pairs ? (
           // Two side-by-side pairs, e.g. one product on the left, another on the right
           <div className="grid grid-cols-2 gap-4 tablet:gap-6 pt-14 pb-6 px-6 tablet:px-8">
             {[0, 2].map((start) => (
