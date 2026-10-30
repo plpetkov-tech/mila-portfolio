@@ -22,4 +22,12 @@ gallery:
   - /img/seasonal-promotions/teodor-independent-style.png
   - /img/seasonal-promotions/llaggi-black-november.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
+  - /img/MyLink-Mock-Up/mylink_post1_mockup.png
+  - /img/MyLink-Mock-Up/mylink1.png
+  - /img/MyLink-Mock-Up/mylink2.png
+  - /img/MyLink-Mock-Up/mylink3.png
+  - /img/MyLink-Mock-Up/mylink_post2_mockup.png
+  - /img/arts/misc/Blog-Banner.png
+  - /img/arts/misc/magnifito.png
+  - /img/arts/misc/instagram.png
 ---
