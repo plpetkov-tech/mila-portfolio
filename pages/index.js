@@ -121,34 +121,20 @@ export default function Home({ projects, lookbooks }) {
 
       {/* Lined up with the Work cards: same edges, same title/body fonts */}
       <div className="relative mt-10 laptop:mt-40 p-2 laptop:p-4 pb-16 laptop:pb-24">
-        {/* Soft blurred Z, turned 90°, in the palette colors under the text */}
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 100 100"
-          className="pointer-events-none absolute -z-10 left-1/2 bottom-0 w-28 h-28 laptop:w-40 laptop:h-40 -translate-x-1/2 rotate-90 opacity-40 dark:opacity-30 blur-[18px]"
-        >
-          <defs>
-            <linearGradient id="about-glow" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#f5cd91" />
-              <stop offset="100%" stopColor="#ec9594" />
-            </linearGradient>
-          </defs>
-          <polyline
-            points="12,14 88,14 12,86 88,86"
-            fill="none"
-            stroke="url(#about-glow)"
-            strokeWidth="14"
-            strokeLinejoin="round"
-            strokeLinecap="round"
-          />
-        </svg>
         <h1 className="text-4xl laptop:text-6xl">About.</h1>
-        <p className="mt-5 font-body text-xl opacity-50 w-full">
-          {data.aboutpara}
-        </p>
+        <div className="relative mt-5">
+          <p className="relative font-body text-xl opacity-50 w-full">
+            {data.aboutpara}
+          </p>
+          {/* A soft line of light in the palette colors, just under the text */}
+          <div
+            aria-hidden="true"
+            className="pointer-events-none absolute -z-10 left-[5%] right-[5%] -bottom-5 h-6 rounded-full bg-gradient-to-r from-[#f5cd91] via-[#ec9594] to-[#f5cd91] opacity-50 dark:opacity-35 blur-xl"
+          />
+        </div>
         <Link
           href="/about/"
-          className="inline-block mt-4 font-body text-base underline opacity-70 hover:opacity-100 link"
+          className="inline-block mt-8 font-body text-base underline opacity-70 hover:opacity-100 link"
         >
           More about me →
         </Link>
