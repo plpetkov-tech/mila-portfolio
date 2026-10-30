@@ -36,9 +36,15 @@ collections:
       - label: "Description"
         name: "description"
         widget: "text"
+      - label: "Gallery (lookbook grid)"
+        name: "gallery"
+        widget: "list"
+        required: false
+        field: { label: "Image", name: "image", widget: "image", choose_url: false }
       - label: "Body"
         name: "body"
         widget: "markdown"
+        required: false
 
   - name: "projects"
     label: "Projects"

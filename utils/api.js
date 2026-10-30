@@ -31,6 +31,8 @@ export function getEntryBySlug(collection, slug) {
     image: data.featuredimage || null,
     description: data.description || "",
     category: data.categories?.[0] || "Uncategorized",
+    // Optional list of images shown as a lookbook grid on the entry page
+    gallery: Array.isArray(data.gallery) ? data.gallery : [],
     content,
   };
 }
