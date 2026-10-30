@@ -44,6 +44,13 @@ export function getEntryBySlug(collection, slug) {
     workImages: Array.isArray(data.workImages) ? data.workImages : [],
     // Show the Work page shots at one shared size instead of their own shapes
     workEqual: Boolean(data.workEqual),
+    // Optional grouping of the gallery on the folder page: [{ title, images }]
+    sections: Array.isArray(data.sections)
+      ? data.sections.map((sec) => ({
+          title: sec.title || "",
+          images: Array.isArray(sec.images) ? sec.images : [],
+        }))
+      : [],
     frameImages: Array.isArray(data.frameImages) ? data.frameImages : [],
     // Gallery pictures kept off the home page frame (still shown in the folder)
     frameHide: Array.isArray(data.frameHide) ? data.frameHide : [],

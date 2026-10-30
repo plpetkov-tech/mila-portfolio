@@ -41,7 +41,54 @@ gallery:
   - /img/seasonal-promotions/fix-renovation-post-1.jpg
   - /img/seasonal-promotions/fix-renovation-post-2.jpg
   - /img/seasonal-promotions/fix-lead-popup.jpg
-  - /img/seasonal-promotions/new-coffee-world-post.jpg
+# Folder page: the pictures grouped by brand and direction
+sections:
+  - title: "TEODOR — Seasonal Sales & Members Club Campaigns"
+    images:
+      - /img/seasonal-promotions/teodor-shoes-sale.png
+      - /img/seasonal-promotions/teodor-black-member-month-social.jpg
+      - /img/seasonal-promotions/teodor-jackets-sale.jpg
+      - /img/seasonal-promotions/teodor-members-month-sweaters.png
+      - /img/seasonal-promotions/teodor-club-shirts.png
+      - /img/seasonal-promotions/teodor-club-trousers.png
+      - /img/seasonal-promotions/teodor-coats-sale.png
+      - /img/seasonal-promotions/teodor-trench-print-a5.png
+      - /img/seasonal-promotions/teodor-app-registration.png
+      - /img/seasonal-promotions/teodor-black-member-month-screen.png
+      - /img/seasonal-promotions/teodor-independent-style.png
+      - /img/seasonal-promotions/teodor-black-november-mall.png
+      - /img/seasonal-promotions/teodor-members-week-a4.jpg
+      - /img/seasonal-promotions/teodor-corduroy-month.jpg
+  - title: "LLAGGI — Collection Launches & Store Openings"
+    images:
+      - /img/seasonal-promotions/llaggi-everyday.png
+      - /img/seasonal-promotions/llaggi-mountain.png
+      - /img/seasonal-promotions/llaggi-black-november.png
+      - /img/seasonal-promotions/llaggi-grand-opening-post.png
+      - /img/seasonal-promotions/llaggi-pleven-special-post.png
+      - /img/seasonal-promotions/insta-post-1080x1350.png
+  - title: "MyLink — Social Media Carousels & Post Mockups"
+    images:
+      - /img/MyLink-Mock-Up/mylink_post1_mockup.png
+      - /img/MyLink-Mock-Up/mylink1.png
+      - /img/MyLink-Mock-Up/mylink2.png
+      - /img/MyLink-Mock-Up/mylink3.png
+      - /img/MyLink-Mock-Up/mylink_post2_mockup.png
+  - title: "Magnifito & Echoes of the Sea — Web Banners & Social Covers"
+    images:
+      - /img/arts/misc/Blog-Banner.png
+      - /img/arts/misc/magnifito.png
+      - /img/arts/misc/instagram.png
+  - title: "Black Sea Gold — Wine & Spirits Product Visuals"
+    images:
+      - /img/seasonal-promotions/black-sea-gold-salty-hills.jpg
+      - /img/seasonal-promotions/black-sea-gold-find-me-rose.jpg
+      - /img/seasonal-promotions/black-sea-gold-burgas-63.jpg
+  - title: "FIX — Renovation Ads & Lead Pop-up"
+    images:
+      - /img/seasonal-promotions/fix-renovation-post-1.jpg
+      - /img/seasonal-promotions/fix-renovation-post-2.jpg
+      - /img/seasonal-promotions/fix-lead-popup.jpg
 # Shown inside the folder only, not on the home page card
 frameHide:
   - /img/seasonal-promotions/teodor-corduroy-month.jpg
@@ -51,7 +98,6 @@ frameHide:
   - /img/seasonal-promotions/fix-renovation-post-1.jpg
   - /img/seasonal-promotions/fix-renovation-post-2.jpg
   - /img/seasonal-promotions/fix-lead-popup.jpg
-  - /img/seasonal-promotions/new-coffee-world-post.jpg
 # Work page row: full shots, uncropped
 workImages:
   - /img/seasonal-promotions/teodor-shoes-sale.png

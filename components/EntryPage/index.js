@@ -84,37 +84,85 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
           </p>
         )}
         {/* A folder's gallery only feeds its home page frame */}
-        {entry.gallery?.length > 0 && !children.length && (
-          // Masonry that reads left to right: piece 1, 2, 3 across the top, and so on
-          <div className="mt-10 flex gap-4 p-2 laptop:p-0">
-            {masonry(entry.gallery, entry.galleryRatios, columns).map(
-              (list, col) => (
-                <div key={col} className="flex-1 min-w-0 flex flex-col gap-4">
-                  {list.map((src) => (
+        {entry.gallery?.length > 0 &&
+          !children.length &&
+          (entry.sections?.length
+            ? entry.sections
+            : [{ title: "", images: entry.gallery }]
+          ).map((section, s) => (
+            <section key={section.title || s} className={s ? "mt-16" : ""}>
+              {section.title && (
+                // "Brand — direction": brand in the heading font, direction below in the body font
+                <div className="mt-12 p-2 laptop:p-0">
+                  <h3 className="text-2xl laptop:text-3xl">
+                    {section.title.split(" — ")[0]}
+                  </h3>
+                  {section.title.includes(" — ") && (
+                    <p className="font-body mt-1 text-lg laptop:text-xl opacity-70">
+                      {section.title.split(" — ").slice(1).join(" — ")}
+                    </p>
+                  )}
+                </div>
+              )}
+              {section.title ? (
+                // Grouped folders: pieces lined up in rows of one height, from the left
+                <div className="mt-6 flex flex-wrap gap-4 p-2 laptop:p-0">
+                  {section.images.map((src) => (
                     <a
                       key={src}
                       href={src}
                       target="_blank"
                       rel="noreferrer"
-                      className="relative block overflow-hidden rounded-lg shadow-lg link"
+                      className="relative block h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg link"
                     >
                       <GalleryMedia
                         src={src}
                         alt={entry.title}
-                        className="w-full h-auto hover:scale-105 transition-all ease-out duration-300"
+                        className="h-full w-auto max-w-full object-cover hover:scale-105 transition-all ease-out duration-300"
                       />
-                      {isVideo(src) && (
-                        <span className="absolute bottom-3 right-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
-                          ▶ Full video
-                        </span>
-                      )}
                     </a>
                   ))}
                 </div>
-              ),
-            )}
-          </div>
-        )}
+              ) : (
+                <div className="mt-10 flex gap-4 p-2 laptop:p-0">
+                  {masonry(
+                    section.images,
+                    section.images.map(
+                      (src) =>
+                        entry.galleryRatios?.[entry.gallery.indexOf(src)],
+                    ),
+                    columns,
+                  ).map((list, col) => (
+                    <div
+                      key={col}
+                      className="flex-1 min-w-0 flex flex-col gap-4"
+                    >
+                      {list.map((src) => (
+                        <a
+                          key={src}
+                          href={src}
+                          target="_blank"
+                          rel="noreferrer"
+                          className="relative block overflow-hidden rounded-lg shadow-lg link"
+                        >
+                          <GalleryMedia
+                            src={src}
+                            alt={entry.title}
+                            className="w-full h-auto hover:scale-105 transition-all ease-out duration-300"
+                          />
+                          {isVideo(src) && (
+                            <span className="absolute bottom-3 right-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
+                              ▶ Full video
+                            </span>
+                          )}
+                        </a>
+                      ))}
+                    </div>
+                  ))}
+                </div>
+              )}
+            </section>
+          ))}
         {children.length > 0 && (
           <div className="mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {children.map((child) => (
