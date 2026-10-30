@@ -98,6 +98,7 @@ export default function Home({ projects, lookbooks }) {
                 pairs={book.framePairs}
                 focus={book.frameFocus}
                 fit={book.frameFit}
+                overlap={book.frameOverlap}
                 href={`/${book.collection}/${book.slug}/`}
               />
             </div>

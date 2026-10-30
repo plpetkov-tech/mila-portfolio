@@ -21,10 +21,14 @@ const WorkFolder = ({
   return (
     <Link href={href} className="block p-2 laptop:p-4 link group">
       <div
-        style={{ "--a": `${angle}deg` }}
+        style={{
+          "--a": `${angle}deg`,
+          "--sx": `${50 - 40 * Math.sin((angle * Math.PI) / 180)}%`,
+          "--sy": `${50 + 40 * Math.cos((angle * Math.PI) / 180)}%`,
+        }}
         className="frost-card relative rounded-lg bg-[#ebe6e2] dark:bg-transparent pt-14 pb-6 px-4 tablet:px-8"
       >
-        <span className="absolute top-4 right-5 text-base opacity-70 group-hover:opacity-100 transition-opacity">
+        <span className="absolute top-4 right-5 text-base dark:bg-black/45 dark:rounded-full dark:px-3 dark:py-0.5 dark:opacity-90 opacity-70 group-hover:opacity-100 transition-opacity">
           View more →
         </span>
         <div className="flex gap-3 tablet:gap-4 items-start overflow-x-auto tablet:overflow-visible">

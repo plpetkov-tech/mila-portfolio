@@ -8,6 +8,7 @@ description: >-
   A lookbook of seasonal sales and promotion visuals for an established apparel brand. Each piece is adapted to its channel, from large-format mall screens and LED displays to social posts, while keeping one consistent, elegant visual language.
 # Home page card: sweaters, shirts (centre, uncropped) and shoes side by side
 frameLayout: natural
+frameOverlap: 0.2
 frameFocus:
   - "50% 50%"
   - full

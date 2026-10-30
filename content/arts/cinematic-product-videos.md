@@ -25,8 +25,8 @@ gallery:
   - /img/cinematic-videos/finally.mp4
 # Work page row: full shots, uncropped
 workImages:
-  - /img/cinematic-videos/llaggi-shoes.mp4
   - /img/cinematic-videos/cotton.mp4
+  - /img/cinematic-videos/llaggi-shoes.mp4
   - /img/cinematic-videos/discount.mp4
   - /img/cinematic-videos/teodor-black-november-mall.mp4
   - /img/cinematic-videos/llaggi-pleven-opening.mp4

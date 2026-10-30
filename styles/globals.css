@@ -35,7 +35,7 @@ body {
 }
 
 body {
-  @apply bg-[#f7f5f5] text-black dark:bg-black dark:text-white;
+  @apply bg-[#f7f5f5] text-black dark:bg-black dark:text-[#f7efe6];
 }
 
 ::selection {
@@ -119,8 +119,35 @@ body {
 .frost-card {
   background-image: linear-gradient(var(--a, 90deg), #f8ede3, #fdfaf6);
 }
+/* Night: a soft glow of the palette (gold and pink, no brown) fading out */
+/* Night: pink-to-cream gradient (each card at its own angle), strongest in the
+   middle of the card and softer towards the sides */
 .dark .frost-card {
-  color: #000;
+  background-image: none;
+  isolation: isolate;
+}
+.dark .frost-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  pointer-events: none;
+  background-image: linear-gradient(
+    var(--a, 90deg),
+    rgba(255, 182, 193, 0.9),
+    rgba(255, 240, 225, 0.9)
+  );
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 70% at 50% 50%,
+    #000 35%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 70% at 50% 50%,
+    #000 35%,
+    rgba(0, 0, 0, 0.3) 100%
+  );
 }
 
 /* Gradient buttons: frosted glass in the palette colors */

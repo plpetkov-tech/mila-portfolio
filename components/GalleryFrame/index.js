@@ -24,6 +24,7 @@ const GalleryFrame = ({
   focus = [],
   angle = 90,
   fit = false,
+  overlap = 0,
 }) => {
   const router = useRouter();
   const height = large ? HEIGHT.large : HEIGHT.regular;
@@ -36,13 +37,17 @@ const GalleryFrame = ({
         aria-label={`${name} – view more`}
         onClick={() => router.push(href)}
         onKeyDown={(e) => e.key === "Enter" && router.push(href)}
-        style={{ "--a": `${angle}deg` }}
+        style={{
+          "--a": `${angle}deg`,
+          "--sx": `${50 - 40 * Math.sin((angle * Math.PI) / 180)}%`,
+          "--sy": `${50 + 40 * Math.cos((angle * Math.PI) / 180)}%`,
+        }}
         className="frost-card relative rounded-lg overflow-hidden bg-[#ebe6e2] dark:bg-transparent link"
       >
         <Link
           href={href}
           onClick={(e) => e.stopPropagation()}
-          className="absolute top-4 right-5 z-50 text-base opacity-70 hover:opacity-100 transition-opacity"
+          className="absolute top-4 right-5 z-50 text-base dark:bg-black/45 dark:rounded-full dark:px-3 dark:py-0.5 dark:opacity-90 opacity-70 hover:opacity-100 transition-opacity"
         >
           View more →
         </Link>
@@ -51,7 +56,7 @@ const GalleryFrame = ({
           // Whole pictures side by side at one height; scroll sideways when
           // they don't all fit in the frame
           <div
-            className={`no-scrollbar flex gap-4 pt-14 pb-6 px-6 tablet:px-8 ${fit ? "items-start" : "overflow-x-auto"}`}
+            className={`no-scrollbar flex pt-14 pb-6 px-6 tablet:px-8 ${overlap ? "[--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]" : "gap-4"} ${fit ? "items-start" : "overflow-x-auto"}`}
           >
             {images.map((src, i) => (
               <div
@@ -65,7 +70,22 @@ const GalleryFrame = ({
                         flex: `${1 / (ratios[i] || 1)} 1 0%`,
                         aspectRatio: `${1 / (ratios[i] || 1)}`,
                       }
-                    : { aspectRatio: `${1 / (ratios[i] || 1)}` }
+                    : {
+                        aspectRatio: `${1 / (ratios[i] || 1)}`,
+                        // overlap: each picture tucks under its neighbour by
+                        // that share of its width; the 2nd one sits on top
+                        ...(overlap && i > 0
+                          ? {
+                              marginLeft: `calc(var(--h) / ${ratios[i] || 1} * -${overlap})`,
+                            }
+                          : {}),
+                        ...(overlap
+                          ? {
+                              position: "relative",
+                              zIndex: 20 - Math.abs(i - 1) * 2,
+                            }
+                          : {}),
+                      }
                 }
               >
                 <GalleryMedia
