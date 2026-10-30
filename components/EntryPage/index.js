@@ -115,6 +115,19 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
             )}
           </div>
         )}
+        {children.length > 0 && (
+          <div className="mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+            {children.map((child) => (
+              <WorkCard
+                key={child.slug}
+                img={child.image}
+                name={child.title}
+                description={child.description}
+                href={`/${child.collection}/${child.slug}/`}
+              />
+            ))}
+          </div>
+        )}
         <ContentSection html={entry.html} />
 
         <nav className="flex items-center justify-between pt-8 p-2 laptop:p-0">
