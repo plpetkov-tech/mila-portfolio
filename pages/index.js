@@ -74,7 +74,9 @@ export default function Home({ projects, lookbooks }) {
               <GalleryFrame
                 name={book.title}
                 description={book.description}
-                images={book.gallery}
+                images={book.gallery.filter(
+                  (src) => !book.frameHide.includes(src),
+                )}
                 crop={book.frameCrop}
                 pairs={book.framePairs}
                 focus={book.frameFocus}

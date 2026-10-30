@@ -34,4 +34,20 @@ gallery:
   - /img/arts/misc/Blog-Banner.png
   - /img/arts/misc/magnifito.png
   - /img/arts/misc/instagram.png
+  - /img/seasonal-promotions/black-sea-gold-salty-hills.jpg
+  - /img/seasonal-promotions/black-sea-gold-find-me-rose.jpg
+  - /img/seasonal-promotions/black-sea-gold-burgas-63.jpg
+  - /img/seasonal-promotions/fix-renovation-post-1.jpg
+  - /img/seasonal-promotions/fix-renovation-post-2.jpg
+  - /img/seasonal-promotions/fix-lead-popup.jpg
+  - /img/seasonal-promotions/new-coffee-world-post.jpg
+# Shown inside the folder only, not on the home page card
+frameHide:
+  - /img/seasonal-promotions/black-sea-gold-salty-hills.jpg
+  - /img/seasonal-promotions/black-sea-gold-find-me-rose.jpg
+  - /img/seasonal-promotions/black-sea-gold-burgas-63.jpg
+  - /img/seasonal-promotions/fix-renovation-post-1.jpg
+  - /img/seasonal-promotions/fix-renovation-post-2.jpg
+  - /img/seasonal-promotions/fix-lead-popup.jpg
+  - /img/seasonal-promotions/new-coffee-world-post.jpg
 ---

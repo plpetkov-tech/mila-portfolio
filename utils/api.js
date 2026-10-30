@@ -37,6 +37,8 @@ export function getEntryBySlug(collection, slug) {
     items: Array.isArray(data.items) ? data.items : [],
     frameCrop: Boolean(data.frameCrop),
     framePairs: Boolean(data.framePairs),
+    // Gallery pictures kept off the home page frame (still shown in the folder)
+    frameHide: Array.isArray(data.frameHide) ? data.frameHide : [],
     // Optional crop focus per frame picture, e.g. "20% 50%" (matches gallery order)
     frameFocus: Array.isArray(data.frameFocus) ? data.frameFocus : [],
     content,
