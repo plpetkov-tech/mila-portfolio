@@ -35,11 +35,11 @@ body {
 }
 
 body {
-  @apply bg-[#f7f5f5] text-black dark:bg-black dark:text-[#f7efe6];
+  @apply bg-[#f7f5f5] text-[#0B0100] dark:bg-black dark:text-[#f7efe6];
 }
 
 ::selection {
-  @apply bg-pink text-black;
+  @apply bg-pink text-[#0B0100];
 }
 
 .gradient-circle {
@@ -66,6 +66,13 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  /* The gradient is painted only inside the text box, so letters that hang
+     below the line (g, y, p) were cut off. Extend the box down without
+     moving anything around it. */
+  padding-bottom: 0.2em;
+  margin-bottom: -0.2em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
 }
 
 /* Custom cursor (components/Cursor). Hide the native one everywhere,

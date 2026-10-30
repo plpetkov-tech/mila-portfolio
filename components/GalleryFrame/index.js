@@ -91,6 +91,8 @@ const GalleryFrame = ({
                 <GalleryMedia
                   src={src}
                   alt={name}
+                  // wide collages are shown at full resolution so they stay sharp
+                  width={(ratios[i] || 1) < 0.5 ? "orig" : 1600}
                   className="w-full h-full object-cover rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative"
                 />
               </div>

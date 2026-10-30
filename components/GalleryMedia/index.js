@@ -56,7 +56,7 @@ const GalleryMedia = ({
 
   return (
     <img
-      src={optimized(src, width)}
+      src={width === "orig" ? src : optimized(src, width)}
       alt={alt}
       loading="lazy"
       decoding="async"

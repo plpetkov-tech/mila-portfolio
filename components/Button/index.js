@@ -3,7 +3,7 @@ import Link from "next/link";
 
 // Colors come from Tailwind `dark:` variants, so there is no flash on load
 const STYLES = {
-  primary: "glass-btn inline-block text-black first:ml-0",
+  primary: "glass-btn inline-block text-[#0B0100] first:ml-0",
   default:
     "flex items-center hover:bg-blush/70 dark:hover:bg-white/10 tablet:first:ml-0",
 };
