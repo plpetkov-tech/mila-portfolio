@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import { Bodoni_Moda, Montserrat } from "next/font/google";
+import { Gilda_Display, Montserrat } from "next/font/google";
 
-// Headings: Bodoni Moda Black. Body text: Montserrat Regular.
-const heading = Bodoni_Moda({
+// Headings: Gilda Display (comes in one weight). Body text: Montserrat Regular.
+const heading = Gilda_Display({
   subsets: ["latin"],
-  weight: ["900"],
+  weight: ["400"],
   variable: "--font-heading",
 });
 
