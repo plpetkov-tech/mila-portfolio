@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
-import { optimized } from "../../utils/image";
+import GalleryMedia from "../GalleryMedia";
 
 // Home page frame for a lookbook folder: its pieces overlap in a row that
 // scrolls sideways, and the whole frame opens the folder's full grid.
@@ -28,14 +28,12 @@ const GalleryFrame = ({ name, description, images, href }) => {
 
         <div className="flex overflow-x-auto pt-14 pb-6 px-6 tablet:px-8 [scrollbar-width:thin]">
           {images.map((src, index) => (
-            <img
+            <GalleryMedia
               key={src}
-              src={optimized(src, 800)}
+              src={src}
               alt={name}
-              loading="lazy"
-              decoding="async"
               style={{ zIndex: index }}
-              className={`relative flex-none h-64 tablet:h-96 w-auto rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
+              className={`relative flex-none h-64 tablet:h-80 laptop:h-96 w-auto rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
                 index === 0 ? "" : "-ml-16 tablet:-ml-24"
               }`}
             />

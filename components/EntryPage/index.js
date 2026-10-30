@@ -5,6 +5,7 @@ import ContentSection from "../ContentSection";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import { optimized } from "../../utils/image";
+import GalleryMedia, { isVideo } from "../GalleryMedia";
 
 const truncate = (text, max = 30) =>
   text.length > max ? text.slice(0, max) + "..." : text;
@@ -63,15 +64,18 @@ const EntryPage = ({ entry, previous, next }) => {
                 href={src}
                 target="_blank"
                 rel="noreferrer"
-                className="block mb-4 break-inside-avoid overflow-hidden rounded-lg shadow-lg link"
+                className="relative block mb-4 break-inside-avoid overflow-hidden rounded-lg shadow-lg link"
               >
-                <img
-                  className="w-full h-auto hover:scale-105 transition-all ease-out duration-300"
-                  src={optimized(src, 800)}
+                <GalleryMedia
+                  src={src}
                   alt={entry.title}
-                  loading="lazy"
-                  decoding="async"
-                ></img>
+                  className="w-full h-auto hover:scale-105 transition-all ease-out duration-300"
+                />
+                {isVideo(src) && (
+                  <span className="absolute bottom-3 right-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
+                    ▶ Full video
+                  </span>
+                )}
               </a>
             ))}
           </div>

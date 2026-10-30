@@ -66,7 +66,10 @@ export default function Home({ projects, lookbooks }) {
 
         <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
           {lookbooks.map((book) => (
-            <div key={book.slug} className="tablet:col-span-2">
+            <div
+              key={book.slug}
+              className={lookbooks.length === 1 ? "tablet:col-span-2" : ""}
+            >
               <GalleryFrame
                 name={book.title}
                 description={book.description}
