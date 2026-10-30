@@ -17,9 +17,10 @@ gallery:
   - /img/print-outdoor/llaggi-poster-road.jpg
   - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
   - /img/print-outdoor/llaggi-opening-flyer-a6-2.jpg
-  - /img/print-outdoor/teodor-black-week-led.jpg
+  - /img/arts/llaggi/llaggi-black-november-web.png
   - /img/print-outdoor/llaggi-black-week-led.jpg
   - /img/print-outdoor/llaggi-born-active-billboard.jpg
   - /img/print-outdoor/teodor-van-branding.jpg
+  - /img/print-outdoor/teodor-black-week-led.jpg
   - /img/arts/misc/lampata.png
 ---

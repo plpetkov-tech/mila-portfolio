@@ -9,21 +9,21 @@ description: >-
 # The pieces inside this folder (shown as cards when it's opened)
 items:
   - fire-lynx
-  - llaggi-black-november-web
   - bear
-  - shells
   - waves
   - horse
   - winter
   - sea2
 # Home page card
-frameCrop: true
+frameLayout: row
+frameImages:
+  - /img/arts/misc/zimen.png
+  - /img/arts/sea/incanvas.png
 gallery:
   - /img/arts/misc/fire-lynx.png
   - /img/arts/misc/zimen.png
   - /img/arts/sea/incanvas.png
   - /img/arts/misc/bear.png
   - /img/arts/misc/horse.png
-  - /img/arts/shells/aShells.png
   - /img/arts/sea/waves.webp
 ---
