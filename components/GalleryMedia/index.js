@@ -6,13 +6,22 @@ import { optimized } from "../../utils/image";
 export const isVideo = (src) => /\.(mp4|webm|mov)$/i.test(src || "");
 export const posterFor = (src) => src.replace(/\.(mp4|webm|mov)$/i, ".jpg");
 
-const GalleryMedia = ({ src, alt, width = 800, className = "", style }) => {
+const GalleryMedia = ({
+  src,
+  alt,
+  width = 800,
+  className = "",
+  style,
+  hoverPlay = false,
+}) => {
   const video = useRef();
 
-  // Play videos only while they're on screen, so a row of them stays light
+  // Play videos only while they're on screen, so a row of them stays light.
+  // hoverPlay: on computers they play (muted) only while the mouse is over them.
   useEffect(() => {
     const el = video.current;
     if (!el || typeof IntersectionObserver === "undefined") return;
+    if (hoverPlay && window.matchMedia("(hover: hover)").matches) return;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) el.play().catch(() => {});
@@ -22,7 +31,7 @@ const GalleryMedia = ({ src, alt, width = 800, className = "", style }) => {
     );
     observer.observe(el);
     return () => observer.disconnect();
-  }, []);
+  }, [hoverPlay]);
 
   if (isVideo(src)) {
     return (
@@ -35,6 +44,10 @@ const GalleryMedia = ({ src, alt, width = 800, className = "", style }) => {
         playsInline
         preload="metadata"
         aria-label={alt}
+        onMouseEnter={
+          hoverPlay ? (e) => e.currentTarget.play().catch(() => {}) : undefined
+        }
+        onMouseLeave={hoverPlay ? (e) => e.currentTarget.pause() : undefined}
         className={className}
         style={style}
       />

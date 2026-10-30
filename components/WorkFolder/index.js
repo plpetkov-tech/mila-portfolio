@@ -37,7 +37,8 @@ const WorkFolder = ({
               <GalleryMedia
                 src={src}
                 alt={name}
-                className={`block h-64 w-auto tablet:h-auto tablet:w-full rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2${equal ? " object-cover" : ""}`}
+                hoverPlay
+                className={`block h-64 w-auto tablet:h-auto tablet:w-full rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative${equal ? " object-cover" : ""}`}
                 style={equal ? { aspectRatio: `${1 / avg}` } : undefined}
               />
             </div>

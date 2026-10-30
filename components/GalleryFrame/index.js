@@ -71,7 +71,7 @@ const GalleryFrame = ({
                 <GalleryMedia
                   src={src}
                   alt={name}
-                  className="w-full h-full object-cover rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+                  className="w-full h-full object-cover rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative"
                 />
               </div>
             ))}
@@ -94,7 +94,7 @@ const GalleryFrame = ({
                 key={src}
                 src={src}
                 alt={name}
-                className={`flex-1 min-w-0 ${height} object-cover object-top rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2`}
+                className={`flex-1 min-w-0 ${height} object-cover object-top rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative`}
               />
             ))}
           </div>
@@ -109,7 +109,7 @@ const GalleryFrame = ({
                     src={src}
                     alt={name}
                     style={{ objectPosition: focus[start + j] || "50% 50%" }}
-                    className={`w-full ${height} object-cover rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2`}
+                    className={`w-full ${height} object-cover rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative`}
                   />
                 ))}
               </div>
@@ -125,7 +125,7 @@ const GalleryFrame = ({
                 style={{ zIndex: index }}
                 className={`relative flex-none ${height} ${
                   crop ? "aspect-[3/4] object-cover" : "w-auto"
-                } rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
+                } rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative hover:!z-40 ${
                   index === 0 ? "" : "-ml-16 tablet:-ml-24"
                 }`}
               />
