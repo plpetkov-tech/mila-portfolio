@@ -107,7 +107,7 @@ export default function Home({ projects, lookbooks }) {
       </div>
 
       <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-        <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
+        <h1 className="tablet:m-10 text-3xl text-bold">Services.</h1>
         <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
           {data.services.map((service) => (
             <ServiceCard
@@ -121,7 +121,7 @@ export default function Home({ projects, lookbooks }) {
 
       {/* Lined up with the Work cards: same edges, same title/body fonts */}
       <div className="relative mt-10 laptop:mt-40 p-2 laptop:p-4 pb-16 laptop:pb-24">
-        <h1 className="text-4xl laptop:text-6xl">About.</h1>
+        <h1 className="text-3xl">About.</h1>
         <div className="relative mt-5">
           <p className="relative font-body text-xl opacity-50 w-full">
             {data.aboutpara}
