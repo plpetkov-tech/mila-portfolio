@@ -94,12 +94,15 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
               {section.title && (
                 // "Brand — direction": brand in the heading font, direction below in the body font
                 <div className="mt-12 p-2 laptop:p-0">
+                  {/* Direction on top in the heading style, brand below it */}
                   <h3 className="text-2xl laptop:text-3xl">
-                    {section.title.split(" — ")[0]}
+                    {section.title.includes(" — ")
+                      ? section.title.split(" — ").slice(1).join(" — ")
+                      : section.title}
                   </h3>
                   {section.title.includes(" — ") && (
                     <p className="font-body mt-1 text-lg laptop:text-xl opacity-70">
-                      {section.title.split(" — ").slice(1).join(" — ")}
+                      {section.title.split(" — ")[0]}
                     </p>
                   )}
                 </div>

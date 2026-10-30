@@ -18,7 +18,6 @@ gallery:
   - /img/seasonal-promotions/teodor-app-registration.png
   - /img/seasonal-promotions/llaggi-everyday.png
   - /img/seasonal-promotions/llaggi-mountain.png
-  - /img/seasonal-promotions/teodor-black-member-month-screen.png
   - /img/seasonal-promotions/teodor-independent-style.png
   - /img/seasonal-promotions/llaggi-black-november.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
@@ -53,7 +52,6 @@ sections:
       - /img/seasonal-promotions/teodor-coats-sale.png
       - /img/seasonal-promotions/teodor-trench-print-a5.png
       - /img/seasonal-promotions/teodor-app-registration.png
-      - /img/seasonal-promotions/teodor-black-member-month-screen.png
       - /img/seasonal-promotions/teodor-independent-style.png
       - /img/seasonal-promotions/teodor-black-november-mall.png
       - /img/seasonal-promotions/teodor-corduroy-month.jpg
