@@ -4,9 +4,9 @@ import Link from "next/link";
 // Colors come from Tailwind `dark:` variants, so there is no flash on load
 const STYLES = {
   primary:
-    "inline-block bg-black text-white dark:bg-white dark:text-black first:ml-0",
+    "inline-block bg-[linear-gradient(110deg,#f5cd91,#ec9594)] text-black first:ml-0",
   default:
-    "flex items-center hover:bg-slate-100 dark:hover:bg-slate-800 tablet:first:ml-0",
+    "flex items-center hover:bg-blush/70 dark:hover:bg-white/10 tablet:first:ml-0",
 };
 
 const Button = ({

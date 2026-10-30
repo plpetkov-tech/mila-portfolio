@@ -16,7 +16,7 @@ const GalleryFrame = ({ name, description, images, href }) => {
         aria-label={`${name} – view more`}
         onClick={() => router.push(href)}
         onKeyDown={(e) => e.key === "Enter" && router.push(href)}
-        className="relative rounded-lg overflow-hidden bg-slate-100 dark:bg-slate-800 link"
+        className="relative rounded-lg overflow-hidden bg-sand dark:bg-[#2a221b] link"
       >
         <Link
           href={href}
@@ -42,8 +42,8 @@ const GalleryFrame = ({ name, description, images, href }) => {
         </div>
       </div>
       <Link href={href} className="block link">
-        <h1 className="mt-5 text-3xl font-medium">{name}</h1>
-        <h2 className="text-xl opacity-50 line-clamp-3">{description}</h2>
+        <h1 className="mt-5 text-3xl">{name}</h1>
+        <h2 className="font-body text-xl opacity-50 line-clamp-3">{description}</h2>
       </Link>
     </div>
   );

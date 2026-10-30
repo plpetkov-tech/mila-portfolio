@@ -14,9 +14,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        purple: "#827fb9",
-        pink: "#aaafeb",
-        dp: "#525074",
+        // Accent palette (names kept so existing classes pick it up)
+        purple: "#ec9594",
+        pink: "#f5cd91",
+        dp: "#6e4e29",
+        sand: "#f2e5d2",
+        blush: "#f2dfd0",
       },
     },
   },

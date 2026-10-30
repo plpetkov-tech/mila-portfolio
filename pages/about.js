@@ -16,7 +16,7 @@ const experienceGroups = Object.entries(
 );
 
 const SectionLabel = ({ children }) => (
-  <h3 className="text-sm uppercase tracking-widest opacity-50">{children}</h3>
+  <h3 className="font-body text-sm uppercase tracking-widest opacity-50">{children}</h3>
 );
 
 const About = () => {
@@ -96,7 +96,7 @@ const About = () => {
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-4 gap-6">
           {Object.entries(about.skills).map(([group, items]) => (
             <div key={group}>
-              <h4 className="text-xl font-medium">{group}</h4>
+              <h4 className="text-xl">{group}</h4>
               <ul className="list-disc ml-5 mt-2">
                 {items.map((item) => (
                   <li key={item} className="py-1 opacity-80">
@@ -114,7 +114,7 @@ const About = () => {
         <div className="mt-5 grid grid-cols-1 tablet:grid-cols-2 gap-6">
           {about.certifications.map((cert) => (
             <div key={cert.title}>
-              <h4 className="text-xl font-medium">{cert.title}</h4>
+              <h4 className="text-xl">{cert.title}</h4>
               <p className="opacity-60">
                 {cert.issuer} · {cert.date}
               </p>
@@ -128,7 +128,7 @@ const About = () => {
           <SectionLabel>Education</SectionLabel>
           {about.education.map((item) => (
             <div key={item.title} className="mt-5">
-              <h4 className="text-xl font-medium">{item.title}</h4>
+              <h4 className="text-xl">{item.title}</h4>
               <p className="opacity-60">
                 {item.school} · {item.date}
               </p>

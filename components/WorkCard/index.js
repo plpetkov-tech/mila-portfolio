@@ -21,10 +21,10 @@ const WorkCard = ({ img, name, description, href, tall = true }) => {
           src={optimized(img, 800)}
         ></img>
       </div>
-      <h1 className="mt-5 text-3xl font-medium">
+      <h1 className="mt-5 text-3xl">
         {name ? name : "Project Name"}
       </h1>
-      <h2 className="text-xl opacity-50 line-clamp-3">
+      <h2 className="font-body text-xl opacity-50 line-clamp-3">
         {description ? description : "Description"}
       </h2>
     </Link>

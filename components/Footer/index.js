@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <h1 className="text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0 opacity-50">
+      <h1 className="font-body text-sm text-bold mt-2 laptop:mt-10 p-2 laptop:p-0 opacity-50">
         &copy; {new Date().getFullYear()} {data.name}. All Rights Reserved.
       </h1>
     </>

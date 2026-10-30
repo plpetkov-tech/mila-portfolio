@@ -3,8 +3,29 @@
 @tailwind utilities;
 @import "./markdown.css";
 
-* {
-  font-family: var(--font-hind), sans-serif;
+/* Body text: Montserrat Regular. Headings: Bodoni Moda Black. */
+body,
+.font-body {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-heading), serif;
+  font-weight: 900;
+}
+
+/* Descriptions and small labels that use heading tags stay in body text */
+h1.font-body,
+h2.font-body,
+h3.font-body,
+h4.font-body {
+  font-family: var(--font-body), sans-serif;
+  font-weight: 400;
 }
 
 /* The 100vw gradient glows otherwise cause sideways scrolling */
@@ -32,13 +53,16 @@ body {
   filter: blur(40px);
   background: radial-gradient(
     circle,
-    rgba(170, 175, 235, 1) 0%,
-    rgba(130, 127, 185, 0.8) 100%
+    rgba(245, 205, 145, 1) 0%,
+    rgba(236, 149, 148, 0.8) 100%
   );
 }
 
 .text-gradient {
-  @apply bg-gradient-to-r from-pink to-purple;
+  background-image: linear-gradient(90deg, #f5cd91, #ec9594, #6e4e29);
+  /* Stretch the gradient over the words, not the empty space after them */
+  width: fit-content;
+  max-width: 100%;
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

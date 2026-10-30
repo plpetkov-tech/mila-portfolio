@@ -33,7 +33,7 @@ const EntryPage = ({ entry, previous, next }) => {
         </h1>
         <h2
           ref={textTwo}
-          className="mt-2 text-xl max-w-4xl opacity-50 p-2 laptop:p-0"
+          className="font-body mt-2 text-xl max-w-4xl opacity-50 p-2 laptop:p-0"
         >
           {entry.category}
         </h2>
