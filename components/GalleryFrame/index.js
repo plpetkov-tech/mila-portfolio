@@ -5,6 +5,12 @@ import GalleryMedia from "../GalleryMedia";
 
 // Home page frame for a lookbook folder: its pieces overlap in a row that
 // scrolls sideways, and the whole frame opens the folder's full grid.
+// Picture height: regular on the home page, larger on the Work page
+const HEIGHT = {
+  regular: "h-64 tablet:h-80 laptop:h-96",
+  large: "h-72 tablet:h-[28rem] laptop:h-[34rem]",
+};
+
 const GalleryFrame = ({
   name,
   description,
@@ -14,9 +20,11 @@ const GalleryFrame = ({
   pairs = false,
   layout = "overlap",
   ratios = [],
+  large = false,
   focus = [],
 }) => {
   const router = useRouter();
+  const height = large ? HEIGHT.large : HEIGHT.regular;
 
   return (
     <div className="p-2 laptop:p-4">
@@ -37,18 +45,19 @@ const GalleryFrame = ({
         </Link>
 
         {layout === "natural" ? (
-          // Side by side at their own proportions, nothing cropped
-          <div className="flex items-center gap-4 pt-14 pb-6 px-6 tablet:px-8">
+          // Side by side, widths in proportion to each picture, same height as
+          // every other card so the frames line up
+          <div className="flex gap-4 pt-14 pb-6 px-6 tablet:px-8">
             {images.map((src, i) => (
               <div
                 key={src}
-                className="min-w-0"
+                className={`min-w-0 ${height}`}
                 style={{ flex: `${1 / (ratios[i] || 1)} 1 0%` }}
               >
                 <GalleryMedia
                   src={src}
                   alt={name}
-                  className="w-full h-auto rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+                  className="w-full h-full object-cover rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
                 />
               </div>
             ))}
@@ -60,7 +69,7 @@ const GalleryFrame = ({
               src={images[0]}
               alt={name}
               width={1600}
-              className="w-full h-64 tablet:h-80 laptop:h-96 object-cover rounded-lg shadow-xl"
+              className={`w-full ${height} object-cover rounded-lg shadow-xl`}
             />
           </div>
         ) : layout === "row" ? (
@@ -71,7 +80,7 @@ const GalleryFrame = ({
                 key={src}
                 src={src}
                 alt={name}
-                className="flex-1 min-w-0 h-64 tablet:h-80 laptop:h-96 object-cover object-top rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+                className={`flex-1 min-w-0 ${height} object-cover object-top rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2`}
               />
             ))}
           </div>
@@ -86,7 +95,7 @@ const GalleryFrame = ({
                     src={src}
                     alt={name}
                     style={{ objectPosition: focus[start + j] || "50% 50%" }}
-                    className="w-full h-64 tablet:h-80 laptop:h-96 object-cover rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2"
+                    className={`w-full ${height} object-cover rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2`}
                   />
                 ))}
               </div>
@@ -100,7 +109,7 @@ const GalleryFrame = ({
                 src={src}
                 alt={name}
                 style={{ zIndex: index }}
-                className={`relative flex-none h-64 tablet:h-80 laptop:h-96 ${
+                className={`relative flex-none ${height} ${
                   crop ? "aspect-[3/4] object-cover" : "w-auto"
                 } rounded-lg shadow-xl transition-transform ease-out duration-300 hover:-translate-y-2 hover:!z-40 ${
                   index === 0 ? "" : "-ml-16 tablet:-ml-24"
@@ -113,7 +122,9 @@ const GalleryFrame = ({
       </div>
       <Link href={href} className="block link">
         <h1 className="mt-5 text-3xl">{name}</h1>
-        <h2 className="font-body text-xl opacity-50 line-clamp-3">
+        <h2
+          className={`font-body text-xl opacity-50 ${large ? "" : "line-clamp-3"}`}
+        >
           {description}
         </h2>
       </Link>
