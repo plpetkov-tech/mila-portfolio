@@ -25,8 +25,8 @@ gallery:
   - /img/arts/misc/lampata.png
 # Work page row: full shots, uncropped
 workImages:
-  - /img/print-outdoor/llaggi-poster-stadium.jpg
-  - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
   - /img/print-outdoor/llaggi-born-active-billboard.jpg
+  - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
+  - /img/print-outdoor/llaggi-poster-stadium.jpg
   - /img/print-outdoor/teodor-black-week-led.jpg
 ---

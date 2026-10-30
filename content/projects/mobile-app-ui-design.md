@@ -16,7 +16,8 @@ gallery:
   - /img/Handbags-Mock-Up/pavel-screen-checkout.png
   - /img/Handbags-Mock-Up/pavel-screen-home.png
   - /img/Handbags-Mock-Up/pavel-screen-product.png
-# Work page row: full shots, uncropped
+# Work page row: the two apps side by side at the same size
+workEqual: true
 workImages:
   - /img/Handbags-Mock-Up/2-Hero-Sections.png
   - /img/Event-App-Mock-Up/1-Hero-Sections.png

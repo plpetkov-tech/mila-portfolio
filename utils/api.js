@@ -42,6 +42,8 @@ export function getEntryBySlug(collection, slug) {
     frameLayout: data.frameLayout || "overlap",
     // Full, uncropped shots shown in this folder's row on the Work page
     workImages: Array.isArray(data.workImages) ? data.workImages : [],
+    // Show the Work page shots at one shared size instead of their own shapes
+    workEqual: Boolean(data.workEqual),
     frameImages: Array.isArray(data.frameImages) ? data.frameImages : [],
     // Gallery pictures kept off the home page frame (still shown in the folder)
     frameHide: Array.isArray(data.frameHide) ? data.frameHide : [],
