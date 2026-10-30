@@ -1,16 +1,16 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import { Cormorant_Garamond, Montserrat } from "next/font/google";
+import { EB_Garamond, Manrope } from "next/font/google";
 
-// Headings: Cormorant Garamond. Body text: Montserrat Regular.
-const heading = Cormorant_Garamond({
+// Headings: Manrope. Body text: EB Garamond.
+const heading = Manrope({
   subsets: ["latin", "cyrillic"],
   weight: ["500", "600", "700"],
   variable: "--font-heading",
 });
 
-const body = Montserrat({
-  subsets: ["latin"],
+const body = EB_Garamond({
+  subsets: ["latin", "cyrillic"],
   weight: ["400", "500", "700"],
   variable: "--font-body",
 });

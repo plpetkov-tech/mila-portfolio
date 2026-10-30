@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import "./markdown.css";
 
-/* Body text: Montserrat Regular. Headings: Cormorant Garamond. */
+/* Body text: EB Garamond. Headings: Manrope. */
 body,
 .font-body {
   font-family: var(--font-body), sans-serif;
