@@ -3,7 +3,7 @@
 @tailwind utilities;
 @import "./markdown.css";
 
-/* Body text: Montserrat Regular. Headings: Gilda Display. */
+/* Body text: Montserrat Regular. Headings: Cormorant Garamond. */
 body,
 .font-body {
   font-family: var(--font-body), sans-serif;
@@ -16,9 +16,7 @@ h3,
 h4,
 .font-heading {
   font-family: var(--font-heading), serif;
-  /* Gilda has a single weight; let the browser draw a bolder version */
-  font-weight: 700;
-  font-synthesis: weight;
+  font-weight: 600;
 }
 
 /* Descriptions and small labels that use heading tags stay in body text */

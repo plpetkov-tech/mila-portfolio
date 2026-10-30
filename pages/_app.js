@@ -1,11 +1,11 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import { Gilda_Display, Montserrat } from "next/font/google";
+import { Cormorant_Garamond, Montserrat } from "next/font/google";
 
-// Headings: Gilda Display (comes in one weight). Body text: Montserrat Regular.
-const heading = Gilda_Display({
-  subsets: ["latin"],
-  weight: ["400"],
+// Headings: Cormorant Garamond. Body text: Montserrat Regular.
+const heading = Cormorant_Garamond({
+  subsets: ["latin", "cyrillic"],
+  weight: ["500", "600", "700"],
   variable: "--font-heading",
 });
 
