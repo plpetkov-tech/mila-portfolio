@@ -4,6 +4,7 @@ import Layout from "../components/Layout";
 import ServiceCard from "../components/ServiceCard";
 import Socials from "../components/Socials";
 import WorkCard from "../components/WorkCard";
+import GalleryFrame from "../components/GalleryFrame";
 import Button from "../components/Button";
 import { useIsomorphicLayoutEffect } from "../utils";
 import { stagger } from "../animations";
@@ -12,7 +13,7 @@ import { getAllEntries } from "../utils/api";
 // Local Data
 import data from "../data/portfolio.json";
 
-export default function Home({ projects }) {
+export default function Home({ projects, lookbooks }) {
   // Ref
   const textOne = useRef();
   const textTwo = useRef();
@@ -64,6 +65,16 @@ export default function Home({ projects }) {
         <h1 className="text-2xl text-bold">Work.</h1>
 
         <div className="mt-5 laptop:mt-10 grid grid-cols-1 tablet:grid-cols-2 gap-4">
+          {lookbooks.map((book) => (
+            <div key={book.slug} className="tablet:col-span-2">
+              <GalleryFrame
+                name={book.title}
+                description={book.description}
+                images={book.gallery}
+                href={`/${book.collection}/${book.slug}/`}
+              />
+            </div>
+          ))}
           {projects.map((project) => (
             <WorkCard
               key={project.slug}
@@ -112,6 +123,8 @@ export async function getStaticProps() {
   return {
     props: {
       projects: getAllEntries("projects"),
+      // Folders with a lookbook gallery get a scrollable frame on the home page
+      lookbooks: getAllEntries("arts").filter((entry) => entry.gallery.length),
     },
   };
 }
