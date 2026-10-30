@@ -5,10 +5,8 @@ import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import { getAllEntries, groupByCategory, isFolder } from "../../utils/api";
 import data from "../../data/portfolio.json";
-import { optimized } from "../../utils/image";
 
 const FIRST_SECTION = "Commercial Works";
-const HERO = "/images/work-hero-tsarevets.png";
 
 const Section = ({ group, collection, columns }) => (
   <div className="mt-16">
@@ -56,11 +54,6 @@ const Projects = ({ projects, arts }) => {
         >
           Work.
         </h1>
-        <img
-          className="mt-10 w-full max-h-[38rem] object-cover object-[50%_25%] rounded-lg shadow-lg"
-          src={optimized(HERO)}
-          alt="Line drawing of Tsarevets fortress by Mila"
-        ></img>
         {/* Commercial Works leads, then the UI/UX case studies, then the rest */}
         {arts
           .filter((group) => group.category === FIRST_SECTION)
