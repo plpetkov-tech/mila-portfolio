@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import GalleryMedia from "../GalleryMedia";
@@ -28,6 +28,24 @@ const GalleryFrame = ({
   mobileGrid = false,
 }) => {
   const router = useRouter();
+  const row = useRef();
+
+  // Overlapping row: start with the 2nd picture (the one on top) in the
+  // middle of the frame, so its neighbours peek out evenly on both sides
+  useEffect(() => {
+    const el = row.current;
+    if (!overlap || !el) return;
+    const center = () => {
+      const middle = el.children[1];
+      if (!middle) return;
+      const m = middle.getBoundingClientRect();
+      const r = el.getBoundingClientRect();
+      el.scrollLeft += m.left + m.width / 2 - (r.left + r.width / 2);
+    };
+    center();
+    window.addEventListener("resize", center);
+    return () => window.removeEventListener("resize", center);
+  }, [overlap, images]);
   const height = large ? HEIGHT.large : HEIGHT.regular;
 
   // Phones only: two whole pictures per row, each pair at the same height
@@ -89,6 +107,7 @@ const GalleryFrame = ({
           // Whole pictures side by side at one height; scroll sideways when
           // they don't all fit in the frame
           <div
+            ref={row}
             className={`no-scrollbar ${mobileGrid ? "hidden tablet:flex" : "flex"} pt-14 pb-6 px-6 tablet:px-8 ${overlap ? "[--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]" : "gap-4"} ${fit ? "items-start" : "overflow-x-auto"}`}
           >
             {images.map((src, i) => (
@@ -96,7 +115,11 @@ const GalleryFrame = ({
                 key={src}
                 // fit: every picture shrinks to share the frame (no scrolling),
                 // widths in proportion so they end up the same height
-                className={fit ? "min-w-0" : `flex-none ${height}`}
+                className={
+                  fit
+                    ? "min-w-0"
+                    : `flex-none ${height} ${overlap ? "first:ml-auto last:mr-auto" : ""}`
+                }
                 style={
                   fit
                     ? {

@@ -1,6 +1,6 @@
 ---
 title: Mobile App UI Design
-date: 2026-10-26T10:00:00.000Z
+date: 2026-10-28T12:00:00.000Z
 featuredimage: /img/Handbags-Mock-Up/1-Creative-Screens-Sections.png
 categories:
   - UI/UX Projects - Complete App Flows & Prototypes
