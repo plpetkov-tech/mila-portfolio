@@ -1,7 +1,7 @@
 ---
 title: Echoes of the Sea | Obzor R&B
 date: 2024-03-30T18:18:16.118Z
-featuredimage: /img/Event-App-Mock-Up/Thumbnail.png
+featuredimage: /img/Event-App-Mock-Up/echoes-card-2x.jpg
 categories:
   - UI/UX Projects - Complete App Flows & Prototypes
 description: >-

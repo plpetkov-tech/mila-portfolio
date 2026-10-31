@@ -6,22 +6,16 @@ categories:
   - Commercial Works
 description: >-
   A lookbook of seasonal sales and promotion visuals for an established apparel brand. Each piece is adapted to its channel, from large-format mall screens and LED displays to social posts, while keeping one consistent, elegant visual language.
-# Home page card: sweaters, shirts (centre, uncropped) and shoes side by side
+# Home page card: overlapping row, every 2nd piece on top (jackets, shirts, shoes, ...)
 frameLayout: natural
-frameOverlap: 0.2
+frameOverlap: 0.3
 # On phones: two pictures per row instead of the sideways row
 frameMobileGrid: true
-frameFocus:
-  - "50% 50%"
-  - full
-  - "50% 50%"
-  - "50% 50%"
-  - "50% 50%"
-  - "50% 50%"
 frameImages:
-  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
+  - /img/seasonal-promotions/teodor-jackets-sale.jpg
   - /img/seasonal-promotions/teodor-club-shirts.png
   - /img/seasonal-promotions/teodor-shoes-sale.png
+  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
   - /img/seasonal-promotions/teodor-coats-sale.png
   - /img/MyLink-Mock-Up/mylink2.png
   - /img/seasonal-promotions/fix-lead-popup.jpg
@@ -36,7 +30,7 @@ gallery:
   - /img/seasonal-promotions/teodor-app-registration.png
   - /img/seasonal-promotions/llaggi-everyday.png
   - /img/seasonal-promotions/llaggi-mountain.png
-  - /img/seasonal-promotions/teodor-independent-style.png
+  - /img/seasonal-promotions/teodor-independent-style-a4.jpg
   - /img/seasonal-promotions/llaggi-black-november.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
   - /img/seasonal-promotions/teodor-corduroy-month.jpg
@@ -66,7 +60,7 @@ sections:
       - /img/seasonal-promotions/teodor-trench-print-a5.png
       - /img/seasonal-promotions/teodor-shoes-sale.png
       - /img/seasonal-promotions/teodor-corduroy-month.jpg
-      - /img/seasonal-promotions/teodor-independent-style.png
+      - /img/seasonal-promotions/teodor-independent-style-a4.jpg
       - /img/seasonal-promotions/teodor-black-november-mall.png
   - title: "LLAGGI — Collection Launches & Store Openings"
     images:

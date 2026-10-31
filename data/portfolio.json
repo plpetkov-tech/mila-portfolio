@@ -1,11 +1,11 @@
 {
   "name": "Mila",
-  "siteTitle": "Mila | Graphic & UI/UX Designer",
-  "siteDescription": "Graphic and UI/UX Designer creating social media, web, outdoor and print visuals. Passionate about user-centered digital design, backed by a strong corporate business background.",
+  "siteTitle": "Mila | Graphic & Digital Designer",
+  "siteDescription": "Graphic & Digital Designer creating product advertisements, social media visuals, web and print designs. Backed by a strong corporate business background.",
   "siteUrl": "https://i-love-figma.com",
-  "shareImage": "/images/share-card.jpg",
+  "shareImage": "/images/share-card-2.jpg",
   "headerTaglineOne": "Hello, I'm Mila",
-  "headerTaglineTwo": "Graphic & UI/UX Designer",
+  "headerTaglineTwo": "Graphic & Digital Designer",
   "headerTaglineThree": "creating social media, web,",
   "headerTaglineFour": "outdoor and print visuals.",
   "showCursor": true,
@@ -39,36 +39,35 @@
   "services": [
     {
       "id": "1",
-      "title": "UI/UX & Web Design",
-      "description": "User-centered interfaces, web assets and banners. Personas, wireframes, interactive Figma prototypes and design systems built with components and tokens."
+      "title": "Product Advertising Visuals",
+      "description": "Remarkable product visuals and AI-created feature videos for every format, from social posts to non-standard LED screens. Storytelling that lifts how people see a product, not just beautiful images."
     },
     {
       "id": "2",
       "title": "Social Media Campaigns",
-      "description": "Campaign visuals for social media, from static posts to video stories, designed to stay consistent across every format."
+      "description": "Campaign visuals for social media, from static posts to video stories. Designed in Photoshop and Figma and kept consistent across every format, so the brand feels the same wherever it appears."
     },
     {
       "id": "3",
-      "title": "Branding & Illustration",
-      "description": "Logos, icons and illustrations drawn by hand on a Wacom tablet and finished in Adobe Illustrator."
+      "title": "UI/UX & Web Design",
+      "description": "User-centered websites, banners and app screens designed in Figma. Wireframes, interactive prototypes and design systems, shaped by business thinking and real empathy for users."
     },
     {
       "id": "4",
-      "title": "Outdoor & Print",
-      "description": "Billboards, large-format outdoor advertising and non-standard print and sticker materials, delivered as print-ready files."
+      "title": "Print, Outdoor & Illustration",
+      "description": "Billboards, large-format outdoor and non-standard print, delivered as print-ready files. Plus logos, icons and illustrations drawn by hand on a Wacom tablet and finished in Adobe Illustrator."
     }
   ],
-  "aboutpara": "Graphic and UI/UX designer creating social media, web and print visuals. I design with empathy for users and an eye for detail, from typography and iconography to design systems in Figma. My background in procurement at IBM and sales at Cisco taught me to balance business goals, stakeholders and deadlines. Next up: video editing.",
+  "aboutpara": "Graphic & Digital Designer creating product advertisements, social media visuals, web and print designs. I design with empathy and an eye for detail, from color and typography to design systems, working hands-on in Figma, Illustrator and Photoshop, with AI tools where they help. My background in procurement at IBM and sales at Cisco taught me to balance business goals, stakeholders and deadlines. Next up: video editing.",
   "about": {
-    "tagline": "Graphic & UI/UX Designer, backed by a strong corporate business background",
+    "tagline": "Graphic & Digital Designer, backed by a strong corporate business background",
     "banner": "/images/Banner.png",
     "sections": [
       {
         "label": "Professional Summary",
-        "title": "Graphic Designer & UI/UX Designer",
+        "title": "Graphic & Digital Designer",
         "body": [
-          "I’m a graphic and UI/UX designer creating social media, web and print visuals. I’m passionate about designs that are both beautiful and memorable, the kind that lift how people see a product. I love every part of the process, from color, typography, button styles and iconography to responsive layouts, interactive prototypes and design systems in Figma.",
-          "I work hands-on in Figma, Illustrator and Photoshop, and use AI tools where they help me move faster on concepts, imagery and video. My social and soft skills and my natural empathy help me understand what users really need and respond to it professionally, which is a win for the business, for the customer and for me as a designer.",
+          "I’m a Graphic & Digital Designer creating product advertisements, social media visuals, web and print designs. I’m passionate about designs that are both beautiful and memorable, the kind that lift how people see a product. I love every part of the process, from color, typography, button styles and iconography to responsive layouts, interactive prototypes and design systems in Figma. I work hands-on in Figma, Illustrator and Photoshop, and use AI tools where they help me move faster on concepts, imagery and video. My social and soft skills and my natural empathy help me understand what users really need and respond to it professionally, which is a win for the business, for the customer and for me as a designer.",
           "Before design, I worked in procurement at IBM and in sales at Cisco, where I learned to understand stakeholders, business requirements and deadlines. Next, I’m growing my video editing skills."
         ]
       },

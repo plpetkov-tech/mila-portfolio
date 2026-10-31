@@ -1,7 +1,7 @@
 ---
 title: Pavel Handbags
 date: 2024-03-30T18:18:16.118Z
-featuredimage: /img/Handbags-Mock-Up/1-Creative-Screens-Sections.png
+featuredimage: /img/Handbags-Mock-Up/pavel-card-2x.jpg
 categories:
   - UI/UX Projects - Complete App Flows & Prototypes
 description: >-

@@ -18,7 +18,7 @@ const WorkCard = ({ img, name, description, href, tall = true }) => {
           loading="lazy"
           className="h-full w-full object-cover hover:scale-110 transition-all ease-out duration-300"
           decoding="async"
-          src={optimized(img, 800)}
+          src={optimized(img, 1600)}
         ></img>
       </div>
       <h1 className="mt-5 text-3xl">

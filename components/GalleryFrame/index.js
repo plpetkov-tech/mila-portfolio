@@ -106,7 +106,7 @@ const GalleryFrame = ({
                     : {
                         aspectRatio: `${1 / (ratios[i] || 1)}`,
                         // overlap: each picture tucks under its neighbour by
-                        // that share of its width; the 2nd one sits on top
+                        // that share of its width; every 2nd one sits on top of both neighbours
                         ...(overlap && i > 0
                           ? {
                               marginLeft: `calc(var(--h) / ${ratios[i] || 1} * -${overlap})`,
@@ -115,7 +115,7 @@ const GalleryFrame = ({
                         ...(overlap
                           ? {
                               position: "relative",
-                              zIndex: 20 - Math.abs(i - 1) * 2,
+                              zIndex: i % 2 ? 20 : 10,
                             }
                           : {}),
                       }
