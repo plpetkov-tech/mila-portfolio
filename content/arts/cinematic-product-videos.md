@@ -9,10 +9,12 @@ description: >-
 # Home page card: these four, left to right
 frameImages:
   - /img/cinematic-videos/dark-brown-suit.mp4
+  - /img/cinematic-videos/llaggi-olive-tracksuit.mp4
   - /img/cinematic-videos/llaggi-shoes.mp4
   - /img/cinematic-videos/discount.mp4
   - /img/cinematic-videos/green-suit.mp4
 gallery:
+  - /img/cinematic-videos/llaggi-olive-tracksuit.mp4
   - /img/cinematic-videos/llaggi-shoes.mp4
   - /img/cinematic-videos/cotton.mp4
   - /img/cinematic-videos/dark-brown-suit.mp4
