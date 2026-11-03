@@ -50,11 +50,15 @@ export default function Home({ projects, lookbooks }) {
           </h1>
           <h1
             ref={textTwo}
-            // keep the room under the gradient line so "g" doesn't touch the next line
-            style={{ marginBottom: 0 }}
-            className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl leading-[1.15] p-1 tablet:p-2 text-bold w-full text-gradient"
+            // extra room below so the tails of "g" never touch the next line
+            style={{ marginBottom: "0.12em" }}
+            className="text-3xl tablet:text-6xl laptop:text-6xl laptopl:text-8xl leading-[1.15] p-1 tablet:p-2 text-bold w-full"
           >
-            {data.headerTaglineTwo}
+            {/* Gradient on an inline span so every wrapped line gets room
+                below it for the tail of "g" */}
+            <span className="text-gradient" style={{ paddingBottom: "0.25em" }}>
+              {data.headerTaglineTwo}
+            </span>
           </h1>
           <h1
             ref={textThree}
