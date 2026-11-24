@@ -10,6 +10,7 @@ description: >-
 # overlapping the one before, row scrolls sideways), cropped to the videos' 9:16 shape
 frameCrop: "9/16"
 frameImages:
+  - /img/seasonal-promotions/teodor-trench-print-a5.png
   - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-independent-style-a4.jpg
