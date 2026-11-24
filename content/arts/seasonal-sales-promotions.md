@@ -14,9 +14,9 @@ frameFit: true
 # On phones: two pictures per row instead of the sideways row
 frameMobileGrid: true
 frameImages:
-  - /img/seasonal-promotions/teodor-jackets-sale.jpg
+  - /img/seasonal-promotions/teodor-club-shirts.png
+  - /img/seasonal-promotions/teodor-coats-sale.png
   - /img/seasonal-promotions/teodor-shoes-sale.png
-  - /img/seasonal-promotions/fix-renovation-post-1.jpg
   - /img/seasonal-promotions/llaggi-mountain.png
   - /img/MyLink-Mock-Up/mylink1.png
 gallery:
