@@ -11,6 +11,7 @@ const WorkFolder = ({
   images,
   ratios = [],
   equal = false,
+  shape = "",
   href,
   angle = 90,
 }) => {
@@ -36,15 +37,21 @@ const WorkFolder = ({
             <div
               key={src}
               className="flex-none tablet:min-w-0 tablet:[flex:var(--grow)_1_0%]"
-              style={{ "--grow": equal ? 1 : 1 / (ratios[i] || 1) }}
+              style={{ "--grow": equal || shape ? 1 : 1 / (ratios[i] || 1) }}
             >
               <GalleryMedia
                 src={src}
                 alt={name}
                 width={1600}
                 hoverPlay
-                className={`block h-64 w-auto tablet:h-auto tablet:w-full rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative${equal ? " object-cover" : ""}`}
-                style={equal ? { aspectRatio: `${1 / avg}` } : undefined}
+                className={`block h-64 w-auto tablet:h-auto tablet:w-full rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative${equal || shape ? " object-cover" : ""}`}
+                style={
+                  shape
+                    ? { aspectRatio: shape }
+                    : equal
+                      ? { aspectRatio: `${1 / avg}` }
+                      : undefined
+                }
               />
             </div>
           ))}
