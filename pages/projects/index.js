@@ -1,12 +1,15 @@
 import { useRef } from "react";
 import Layout from "../../components/Layout";
-import Link from "next/link";
-import FolderGallery from "../../components/FolderGallery";
+import WorkFolder from "../../components/WorkFolder";
 import { useIsomorphicLayoutEffect } from "../../utils";
 import { stagger } from "../../animations";
 import { getLookbooks } from "../../utils/lookbooks";
 
-// The Work page: the same folders as the home page, each one opened up so all of its work shows right away, one folder under the other.
+// Each card sees the same palette gradient from its own angle
+const ANGLES = [90, 270, 180, 0, 135, 315];
+
+// The Work page: the same folders as the home page, one per row, each with a
+// few full shots of its projects and the full description.
 const Projects = ({ lookbooks }) => {
   const text = useRef();
 
@@ -30,21 +33,18 @@ const Projects = ({ lookbooks }) => {
         >
           Work.
         </h1>
-        {/* Every folder opened up: its name, then everything inside it */}
-        <div className="mt-10 flex flex-col gap-24 max-w-5xl mx-auto">
-          {lookbooks.map((book) => (
-            <section key={book.slug}>
-              <Link
-                href={`/${book.collection}/${book.slug}/`}
-                className="block p-2 laptop:p-0 link"
-              >
-                <h2 className="text-3xl laptop:text-5xl">{book.title}</h2>
-                <p className="mt-3 font-body text-xl opacity-50">
-                  {book.description}
-                </p>
-              </Link>
-              <FolderGallery entry={book} items={book.children} />
-            </section>
+        <div className="mt-10 flex flex-col gap-10">
+          {lookbooks.map((book, i) => (
+            <WorkFolder
+              angle={ANGLES[i % ANGLES.length]}
+              key={book.slug}
+              name={book.title}
+              description={book.description}
+              images={book.workImages}
+              ratios={book.workRatios}
+              equal={book.workEqual}
+              href={`/${book.collection}/${book.slug}/`}
+            />
           ))}
         </div>
       </div>

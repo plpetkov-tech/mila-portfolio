@@ -25,20 +25,6 @@ const withRatios = async (book) => {
     ...book,
     frameRatios: await Promise.all(list.map(ratioOf)),
     workRatios: await Promise.all(book.workImages.map(ratioOf)),
-    // For the Work page, which lists what's inside every folder
-    galleryRatios: await Promise.all(book.gallery.map(ratioOf)),
-    children: book.items
-      .map((slug) =>
-        getAllEntries(book.collection).find((item) => item.slug === slug),
-      )
-      .filter(Boolean)
-      .map(({ slug, title, description, image, collection }) => ({
-        slug,
-        title,
-        description,
-        image,
-        collection,
-      })),
   };
 };
 

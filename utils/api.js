@@ -53,8 +53,6 @@ export function getEntryBySlug(collection, slug) {
     workImages: Array.isArray(data.workImages) ? data.workImages : [],
     // Show the Work page shots at one shared size instead of their own shapes
     workEqual: Boolean(data.workEqual),
-    // Work page row: every shot cropped to one shape, e.g. "3/4" (same size as the videos row)
-    workShape: data.workShape || "",
     // Optional grouping of the gallery on the folder page: [{ title, images }]
     sections: Array.isArray(data.sections)
       ? data.sections.map((sec) => ({

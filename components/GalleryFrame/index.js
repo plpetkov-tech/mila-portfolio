@@ -234,12 +234,7 @@ const GalleryFrame = ({
                 className={`relative flex-none ${height} ${
                   crop ? "object-cover" : "w-auto"
                 } rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative hover:!z-40 ${
-                  index === 0
-                    ? ""
-                    : crop && images.length >= 5
-                      ? // Five or more cropped pictures: tucked in tighter so all show at once
-                        "-ml-20 tablet:-ml-28 laptop:-ml-32"
-                      : "-ml-16 tablet:-ml-24"
+                  index === 0 ? "" : "-ml-16 tablet:-ml-24"
                 }`}
               />
             ))}
