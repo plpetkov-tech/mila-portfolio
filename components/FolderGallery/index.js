@@ -80,7 +80,7 @@ const FolderGallery = ({ entry, items = [] }) => {
                 return (
                   <div
                     key={item}
-                    className="relative flex h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10"
+                    className="relative flex h-40 tablet:h-44 laptop:h-48 max-w-full overflow-hidden rounded-lg shadow-lg transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10"
                   >
                     {sides.map((src, side) => (
                       <a
