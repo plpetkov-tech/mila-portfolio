@@ -107,14 +107,12 @@ frameHide:
   - /img/seasonal-promotions/fix-renovation-post-1.jpg
   - /img/seasonal-promotions/fix-renovation-post-2.jpg
   - /img/seasonal-promotions/fix-lead-popup.jpg
-# Work page row: full shots, uncropped
+# Work page row: five shots, each cropped to the same 3:4 shape as the videos row below it
+workShape: "3/4"
 workImages:
-  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
+  - /img/seasonal-promotions/teodor-trench-print-a5.png
   - /img/print-outdoor/llaggi-poster-stadium.jpg
-  - /img/seasonal-promotions/teodor-club-shirts.png
-  - /img/print-outdoor/llaggi-born-active-billboard.jpg
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-black-november-mall.png
   - /img/MyLink-Mock-Up/mylink2.png
-  - /img/seasonal-promotions/fix-lead-popup.jpg
 ---

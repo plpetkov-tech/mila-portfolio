@@ -43,6 +43,7 @@ const Projects = ({ lookbooks }) => {
               images={book.workImages}
               ratios={book.workRatios}
               equal={book.workEqual}
+              shape={book.workShape}
               href={`/${book.collection}/${book.slug}/`}
             />
           ))}
