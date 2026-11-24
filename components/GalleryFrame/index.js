@@ -25,6 +25,7 @@ const GalleryFrame = ({
   angle = 90,
   fit = false,
   overlap = 0,
+  topFirst = false,
   mobileGrid = false,
 }) => {
   const router = useRouter();
@@ -130,6 +131,7 @@ const GalleryFrame = ({
                         aspectRatio: `${1 / (ratios[i] || 1)}`,
                         // overlap: each picture tucks under its neighbour by
                         // that share of its width; every 2nd one sits on top of both neighbours
+                        // (topFirst: the 1st, 3rd, 5th... instead)
                         ...(overlap && i > 0
                           ? {
                               marginLeft: `calc(var(--h) / ${ratios[i] || 1} * -${overlap})`,
@@ -138,7 +140,7 @@ const GalleryFrame = ({
                         ...(overlap
                           ? {
                               position: "relative",
-                              zIndex: i % 2 ? 20 : 10,
+                              zIndex: (i % 2 === 1) !== topFirst ? 20 : 10,
                             }
                           : {}),
                       }

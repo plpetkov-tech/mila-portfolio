@@ -40,6 +40,8 @@ export function getEntryBySlug(collection, slug) {
     frameFit: Boolean(data.frameFit),
     // Home card pictures overlap by this share of their width (e.g. 0.2)
     frameOverlap: Number(data.frameOverlap) || 0,
+    // Overlapping row: the 1st, 3rd, 5th... picture sits on top instead of the 2nd, 4th...
+    frameTopFirst: Boolean(data.frameTopFirst),
     framePairs: Boolean(data.framePairs),
     // On phones, show the home card pictures two per row instead of a sideways row
     frameMobileGrid: Boolean(data.frameMobileGrid),
