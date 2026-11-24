@@ -6,15 +6,15 @@ categories:
   - Commercial Works
 description: >-
   A lookbook of seasonal sales, promotions and print campaigns for retail brands. Each piece is adapted to its channel, from large-format mall screens, LED displays and city billboards to posters, flyers and social posts, while keeping one consistent, elegant visual language.
-# Home page card: six pieces in an overlapping row; the 1st, 3rd and 5th sit on top
+# Home page card: five pieces in an overlapping row, sized so all of them fit
+# in the frame; the 2nd and 4th sit on top
 frameLayout: natural
 frameOverlap: 0.3
-frameTopFirst: true
+frameFit: true
 # On phones: two pictures per row instead of the sideways row
 frameMobileGrid: true
 frameImages:
   - /img/seasonal-promotions/teodor-jackets-sale.jpg
-  - /img/seasonal-promotions/teodor-coats-sale.png
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/fix-renovation-post-1.jpg
   - /img/seasonal-promotions/llaggi-mountain.png

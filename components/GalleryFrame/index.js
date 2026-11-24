@@ -49,6 +49,15 @@ const GalleryFrame = ({
   }, [overlap, images]);
   const height = large ? HEIGHT.large : HEIGHT.regular;
 
+  // fit + overlap: each picture's width as a share of the frame, so the whole
+  // overlapping row is exactly as wide as the frame (all at one height)
+  const shares = images.map((_, i) => 1 / (ratios[i] || 1));
+  const rowShare = shares.reduce(
+    (sum, w, i) => sum + (i ? w * (1 - overlap) : w),
+    0,
+  );
+  const widthOf = (i) => (shares[i] / rowShare) * 100;
+
   // Phones only: two whole pictures per row, each pair at the same height
   const pairsOfTwo = [];
   for (let i = 0; i < images.length; i += 2) {
@@ -109,7 +118,13 @@ const GalleryFrame = ({
           // they don't all fit in the frame
           <div
             ref={row}
-            className={`no-scrollbar ${mobileGrid ? "hidden tablet:flex" : "flex"} pt-14 pb-6 px-6 tablet:px-8 ${overlap ? "[--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]" : "gap-4"} ${fit ? "items-start" : "overflow-x-auto"}`}
+            className={`no-scrollbar ${mobileGrid ? "hidden tablet:flex" : "flex"} pt-14 pb-6 px-6 tablet:px-8 ${overlap ? "[--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]" : "gap-4"} ${fit ? (overlap ? "items-center" : "items-start") : "overflow-x-auto"}`}
+            // fit + overlap: the frame keeps the height of its neighbours' frames
+            style={
+              fit && overlap
+                ? { minHeight: "calc(var(--h) + 5rem)" }
+                : undefined
+            }
           >
             {images.map((src, i) => (
               <div
@@ -118,32 +133,42 @@ const GalleryFrame = ({
                 // widths in proportion so they end up the same height
                 className={
                   fit
-                    ? "min-w-0"
+                    ? overlap
+                      ? "flex-none"
+                      : "min-w-0"
                     : `flex-none ${height} ${overlap ? "first:ml-auto last:mr-auto" : ""}`
                 }
                 style={
-                  fit
+                  fit && overlap
                     ? {
-                        flex: `${1 / (ratios[i] || 1)} 1 0%`,
+                        width: `${widthOf(i)}%`,
+                        marginLeft: i ? `-${widthOf(i) * overlap}%` : 0,
                         aspectRatio: `${1 / (ratios[i] || 1)}`,
+                        position: "relative",
+                        zIndex: (i % 2 === 1) !== topFirst ? 20 : 10,
                       }
-                    : {
-                        aspectRatio: `${1 / (ratios[i] || 1)}`,
-                        // overlap: each picture tucks under its neighbour by
-                        // that share of its width; every 2nd one sits on top of both neighbours
-                        // (topFirst: the 1st, 3rd, 5th... instead)
-                        ...(overlap && i > 0
-                          ? {
-                              marginLeft: `calc(var(--h) / ${ratios[i] || 1} * -${overlap})`,
-                            }
-                          : {}),
-                        ...(overlap
-                          ? {
-                              position: "relative",
-                              zIndex: (i % 2 === 1) !== topFirst ? 20 : 10,
-                            }
-                          : {}),
-                      }
+                    : fit
+                      ? {
+                          flex: `${1 / (ratios[i] || 1)} 1 0%`,
+                          aspectRatio: `${1 / (ratios[i] || 1)}`,
+                        }
+                      : {
+                          aspectRatio: `${1 / (ratios[i] || 1)}`,
+                          // overlap: each picture tucks under its neighbour by
+                          // that share of its width; every 2nd one sits on top of both neighbours
+                          // (topFirst: the 1st, 3rd, 5th... instead)
+                          ...(overlap && i > 0
+                            ? {
+                                marginLeft: `calc(var(--h) / ${ratios[i] || 1} * -${overlap})`,
+                              }
+                            : {}),
+                          ...(overlap
+                            ? {
+                                position: "relative",
+                                zIndex: (i % 2 === 1) !== topFirst ? 20 : 10,
+                              }
+                            : {}),
+                        }
                 }
               >
                 <GalleryMedia
