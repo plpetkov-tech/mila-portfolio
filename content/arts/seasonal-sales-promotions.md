@@ -12,11 +12,11 @@ frameOverlap: 0.3
 # On phones: two pictures per row instead of the sideways row
 frameMobileGrid: true
 frameImages:
-  - /img/seasonal-promotions/teodor-trench-print-a5.png
   - /img/seasonal-promotions/teodor-club-shirts.png
+  - /img/seasonal-promotions/teodor-coats-sale.png
   - /img/seasonal-promotions/teodor-shoes-sale.png
+  - /img/seasonal-promotions/llaggi-mountain.png
   - /img/MyLink-Mock-Up/mylink1.png
-  - /img/seasonal-promotions/fix-renovation-post-1.jpg
 gallery:
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
