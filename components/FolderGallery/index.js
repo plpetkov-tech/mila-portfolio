@@ -71,58 +71,40 @@ const FolderGallery = ({ entry, items = [] }) => {
             </div>
           )}
           {section.title ? (
-            // Grouped folders: rows of four laid out like the home page cards:
-            // each piece overlaps the one before it and lifts to the front on hover
-            <div className="mt-4 flex flex-col gap-6 p-2 laptop:p-0">
-              {section.images
-                .reduce(
-                  (rows, item, i) =>
-                    i % 4
-                      ? [...rows.slice(0, -1), [...rows[rows.length - 1], item]]
-                      : [...rows, [item]],
-                  [],
-                )
-                .map((row) => (
+            // Grouped folders: pieces side by side at one height with a small gap,
+            // wrapping onto the next line; each one zooms and lifts on hover
+            <div className="mt-4 flex flex-wrap gap-2 p-2 laptop:p-0">
+              {section.images.map((item) => {
+                // "front.jpg + back.jpg": two sides of one print piece, shown as one card
+                const sides = item.split(" + ");
+                return (
                   <div
-                    key={row[0]}
-                    className="flex overflow-x-auto tablet:overflow-visible py-2 [scrollbar-width:thin]"
+                    key={item}
+                    className="relative flex h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10"
                   >
-                    {row.map((item, i) => {
-                      // "front.jpg + back.jpg": two sides of one print piece, shown as one card
-                      const sides = item.split(" + ");
-                      return (
-                        <div
-                          key={item}
-                          style={{ zIndex: i }}
-                          className={`relative flex flex-none h-56 tablet:h-64 laptop:h-72 overflow-hidden rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:!z-40 ${
-                            i ? "-ml-6 tablet:-ml-8" : ""
-                          }`}
-                        >
-                          {sides.map((src, side) => (
-                            <a
-                              key={src}
-                              href={src}
-                              target="_blank"
-                              rel="noreferrer"
-                              className="relative block h-full flex-none link"
-                            >
-                              <GalleryMedia
-                                src={src}
-                                alt={entry.title}
-                                className="block h-full w-auto max-w-none"
-                              />
-                              {sides.length > 1 && (
-                                <span className="absolute bottom-3 left-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
-                                  {side ? "Back" : "Front"}
-                                </span>
-                              )}
-                            </a>
-                          ))}
-                        </div>
-                      );
-                    })}
+                    {sides.map((src, side) => (
+                      <a
+                        key={src}
+                        href={src}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="relative block h-full overflow-hidden link"
+                      >
+                        <GalleryMedia
+                          src={src}
+                          alt={entry.title}
+                          className="h-full w-auto max-w-full object-cover"
+                        />
+                        {sides.length > 1 && (
+                          <span className="absolute bottom-3 left-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
+                            {side ? "Back" : "Front"}
+                          </span>
+                        )}
+                      </a>
+                    ))}
                   </div>
-                ))}
+                );
+              })}
             </div>
           ) : (
             <div className="mt-10 flex gap-4 p-2 laptop:p-0">
