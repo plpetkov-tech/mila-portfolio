@@ -90,10 +90,10 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
             ? entry.sections
             : [{ title: "", images: entry.gallery }]
           ).map((section, s) => (
-            <section key={section.title || s} className={s ? "mt-16" : ""}>
+            <section key={section.title || s} className={s ? "mt-2" : ""}>
               {section.title && (
                 // "Brand — direction": brand in the heading font, direction below in the body font
-                <div className="mt-12 p-2 laptop:p-0">
+                <div className="mt-8 p-2 laptop:p-0">
                   {/* Direction on top in the heading style, brand below it */}
                   <h3 className="text-2xl laptop:text-3xl">
                     {section.title.includes(" — ")
@@ -109,14 +109,14 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
               )}
               {section.title ? (
                 // Grouped folders: pieces lined up in rows of one height, from the left
-                <div className="mt-6 flex flex-wrap gap-4 p-2 laptop:p-0">
+                <div className="mt-4 flex flex-wrap gap-4 p-2 laptop:p-0">
                   {section.images.map((item) => {
                     // "front.jpg + back.jpg": two sides of one print piece, shown as one card
                     const sides = item.split(" + ");
                     return (
                       <div
                         key={item}
-                        className="relative flex h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg"
+                        className="relative flex h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10"
                       >
                         {sides.map((src, side) => (
                           <a
@@ -129,7 +129,7 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
                             <GalleryMedia
                               src={src}
                               alt={entry.title}
-                              className="h-full w-auto max-w-full object-cover hover:scale-105 transition-all ease-out duration-300"
+                              className="h-full w-auto max-w-full object-cover"
                             />
                             {sides.length > 1 && (
                               <span className="absolute bottom-3 left-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">

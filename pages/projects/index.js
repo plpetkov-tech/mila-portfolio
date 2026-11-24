@@ -33,7 +33,7 @@ const Projects = ({ lookbooks }) => {
         >
           Work.
         </h1>
-        <div className="mt-10 flex flex-col gap-10">
+        <div className="mt-6 flex flex-col gap-2">
           {lookbooks.map((book, i) => (
             <WorkFolder
               angle={ANGLES[i % ANGLES.length]}
