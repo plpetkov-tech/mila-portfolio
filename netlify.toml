@@ -10,6 +10,12 @@
   to = "/projects/"
   status = 301
 
+# Print & Outdoor now lives inside the combined campaigns folder
+[[redirects]]
+  from = "/arts/print-outdoor-campaigns/"
+  to = "/arts/seasonal-sales-promotions/"
+  status = 301
+
 [[headers]]
   for = "/*"
   [headers.values]

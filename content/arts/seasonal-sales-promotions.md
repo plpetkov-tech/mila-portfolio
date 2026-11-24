@@ -1,11 +1,11 @@
 ---
-title: Seasonal Sales & Promotions Visuals
+title: Seasonal Promotions, Print & Outdoor Campaigns
 date: 2026-10-30T10:00:00.000Z
 featuredimage: /img/seasonal-promotions/teodor-shoes-sale.png
 categories:
   - Commercial Works
 description: >-
-  A lookbook of seasonal sales and promotion visuals for an established apparel brand. Each piece is adapted to its channel, from large-format mall screens and LED displays to social posts, while keeping one consistent, elegant visual language.
+  A lookbook of seasonal sales, promotions and print campaigns for retail brands. Each piece is adapted to its channel, from large-format mall screens, LED displays and city billboards to posters, flyers and social posts, while keeping one consistent, elegant visual language.
 # Home page card: overlapping row, every 2nd piece on top (jackets, shirts, shoes, ...)
 frameLayout: natural
 frameOverlap: 0.3
@@ -13,10 +13,13 @@ frameOverlap: 0.3
 frameMobileGrid: true
 frameImages:
   - /img/seasonal-promotions/teodor-jackets-sale.jpg
+  - /img/seasonal-promotions/llaggi-mountain.png
   - /img/seasonal-promotions/teodor-club-shirts.png
   - /img/seasonal-promotions/teodor-shoes-sale.png
+  - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
   - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
   - /img/seasonal-promotions/teodor-coats-sale.png
+  - /img/print-outdoor/teodor-black-week-led.jpg
   - /img/MyLink-Mock-Up/mylink2.png
   - /img/seasonal-promotions/fix-lead-popup.jpg
 gallery:
@@ -47,28 +50,51 @@ gallery:
   - /img/seasonal-promotions/fix-renovation-post-1.jpg
   - /img/seasonal-promotions/fix-renovation-post-2.jpg
   - /img/seasonal-promotions/fix-lead-popup.jpg
+  - /img/print-outdoor/llaggi-poster-stadium.jpg
+  - /img/print-outdoor/llaggi-poster-indoor.jpg
+  - /img/print-outdoor/llaggi-poster-tunnel.jpg
+  - /img/print-outdoor/llaggi-poster-road.jpg
+  - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
+  - /img/print-outdoor/llaggi-opening-flyer-a6-2.jpg
+  - /img/arts/llaggi/llaggi-black-november-web.png
+  - /img/print-outdoor/llaggi-black-week-led.jpg
+  - /img/print-outdoor/llaggi-born-active-billboard.jpg
+  - /img/print-outdoor/teodor-van-branding.jpg
+  - /img/print-outdoor/teodor-black-week-led.jpg
+  - /img/arts/misc/lampata.png
 # Folder page: the pictures grouped by brand and direction
 sections:
-  - title: "TEODOR — Seasonal Sales & Members Club Campaigns"
+  - title: "TEODOR — Seasonal Sales, Members Club & Outdoor Campaigns"
     images:
       - /img/seasonal-promotions/teodor-app-registration.png
       - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
       - /img/seasonal-promotions/teodor-jackets-sale.jpg
+      - /img/print-outdoor/teodor-van-branding.jpg
       - /img/seasonal-promotions/teodor-club-shirts.png
       - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg
       - /img/seasonal-promotions/teodor-coats-sale.png
+      - /img/print-outdoor/teodor-black-week-led.jpg
       - /img/seasonal-promotions/teodor-trench-print-a5.png
       - /img/seasonal-promotions/teodor-shoes-sale.png
       - /img/seasonal-promotions/teodor-corduroy-month.jpg
       - /img/seasonal-promotions/teodor-independent-style-a4.jpg
       - /img/seasonal-promotions/teodor-black-november-mall.png
-  - title: "LLAGGI — Collection Launches & Store Openings"
+  - title: "LLAGGI — Collection Launches, Store Openings & Print Campaigns"
     images:
+      - /img/print-outdoor/llaggi-born-active-billboard.jpg
       - /img/seasonal-promotions/llaggi-everyday.png
+      - /img/print-outdoor/llaggi-poster-stadium.jpg
       - /img/seasonal-promotions/llaggi-mountain.png
-      - /img/seasonal-promotions/llaggi-black-november.png
+      - /img/print-outdoor/llaggi-poster-indoor.jpg
+      - /img/print-outdoor/llaggi-poster-tunnel.jpg
+      - /img/print-outdoor/llaggi-poster-road.jpg
       - /img/seasonal-promotions/llaggi-grand-opening-post.png
+      - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
+      - /img/print-outdoor/llaggi-opening-flyer-a6-2.jpg
       - /img/seasonal-promotions/insta-post-1080x1350.png
+      - /img/seasonal-promotions/llaggi-black-november.png
+      - /img/arts/llaggi/llaggi-black-november-web.png
+      - /img/print-outdoor/llaggi-black-week-led.jpg
   - title: "MyLink — Social Media Carousels & Post Mockups"
     images:
       - /img/MyLink-Mock-Up/mylink_post2_mockup.png
@@ -86,6 +112,9 @@ sections:
       - /img/seasonal-promotions/fix-renovation-post-1.jpg
       - /img/seasonal-promotions/fix-renovation-post-2.jpg
       - /img/seasonal-promotions/fix-lead-popup.jpg
+  - title: "Lampata — Restaurant Flyer"
+    images:
+      - /img/arts/misc/lampata.png
 # Shown inside the folder only, not on the home page card
 frameHide:
   - /img/seasonal-promotions/teodor-corduroy-month.jpg
@@ -98,9 +127,11 @@ frameHide:
 # Work page row: full shots, uncropped
 workImages:
   - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
+  - /img/print-outdoor/llaggi-poster-stadium.jpg
   - /img/seasonal-promotions/teodor-club-shirts.png
+  - /img/print-outdoor/llaggi-born-active-billboard.jpg
   - /img/seasonal-promotions/teodor-shoes-sale.png
-  - /img/seasonal-promotions/teodor-coats-sale.png
+  - /img/print-outdoor/teodor-black-week-led.jpg
   - /img/MyLink-Mock-Up/mylink2.png
   - /img/seasonal-promotions/fix-lead-popup.jpg
 ---
