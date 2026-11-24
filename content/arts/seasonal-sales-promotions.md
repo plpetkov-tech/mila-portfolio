@@ -6,17 +6,16 @@ categories:
   - Commercial Works
 description: >-
   A lookbook of seasonal sales, promotions and print campaigns for retail brands. Each piece is adapted to its channel, from large-format mall screens, LED displays and city billboards to posters, flyers and social posts, while keeping one consistent, elegant visual language.
-# Home page card: five pieces in an overlapping row, every 2nd one on top
+# Home page card: four pieces in an overlapping row, every 2nd one on top
 frameLayout: natural
 frameOverlap: 0.3
 # On phones: two pictures per row instead of the sideways row
 frameMobileGrid: true
 frameImages:
-  - /img/print-outdoor/llaggi-opening-flyer-a6-1.jpg
-  - /img/seasonal-promotions/teodor-shoes-sale.png
-  - /img/seasonal-promotions/llaggi-mountain.png
-  - /img/seasonal-promotions/teodor-members-month-sweaters-tall.jpg
-  - /img/print-outdoor/teodor-black-week-led.jpg
+  - /img/seasonal-promotions/teodor-trench-print-a5.png
+  - /img/seasonal-promotions/teodor-club-shirts.png
+  - /img/MyLink-Mock-Up/mylink1.png
+  - /img/seasonal-promotions/fix-lead-popup.jpg
 gallery:
   - /img/seasonal-promotions/teodor-shoes-sale.png
   - /img/seasonal-promotions/teodor-black-member-month-social-bow.jpg

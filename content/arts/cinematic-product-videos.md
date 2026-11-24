@@ -6,8 +6,7 @@ categories:
   - Commercial Works
 description: >-
   Ten-second cinematic videos for LED screens and social media, created with Higgsfield. Each piece treats a product promotion like a movie scene, using dynamic camera motion and a product-centered composition to reveal its features in a sophisticated, high-impact way.
-# Home page card: these five, left to right, all showing at once
-frameShowAll: true
+# Home page card: these four, left to right
 frameImages:
   - /img/cinematic-videos/dark-brown-suit.mp4
   - /img/cinematic-videos/llaggi-olive-tracksuit-2.mp4
