@@ -24,6 +24,7 @@ const GalleryFrame = ({
   focus = [],
   angle = 90,
   fit = false,
+  showAll = false,
   overlap = 0,
   mobileGrid = false,
 }) => {
@@ -103,7 +104,43 @@ const GalleryFrame = ({
         </Link>
 
         {mobileGridView}
-        {layout === "natural" ? (
+        {showAll ? (
+          // Every picture stays in the frame: each one gets an equal slot and
+          // spills over the next, so they overlap exactly as much as needed
+          <div
+            className={`${mobileGrid ? "hidden tablet:flex" : "flex"} no-scrollbar overflow-x-auto tablet:overflow-visible tablet:justify-center pt-14 pb-6 px-6 tablet:px-8 [--h:16rem] tablet:[--h:20rem] laptop:[--h:24rem]`}
+          >
+            {images.map((src, i) => (
+              <div
+                key={src}
+                className={
+                  // phones: slices stay wide enough to read, the row scrolls instead
+                  i === images.length - 1
+                    ? "flex-none"
+                    : "flex-1 min-w-[6rem] tablet:min-w-0"
+                }
+                style={{
+                  height: "var(--h)",
+                  maxWidth: `calc(var(--h) / ${ratios[i] || 1})`,
+                  position: "relative",
+                  // each one covers the one before it
+                  zIndex: i,
+                }}
+              >
+                <div
+                  className="h-full"
+                  style={{ aspectRatio: `${1 / (ratios[i] || 1)}` }}
+                >
+                  <GalleryMedia
+                    src={src}
+                    alt={name}
+                    className="w-full h-full object-cover rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 relative"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : layout === "natural" ? (
           // Whole pictures side by side at one height; scroll sideways when
           // they don't all fit in the frame
           <div

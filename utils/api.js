@@ -38,6 +38,8 @@ export function getEntryBySlug(collection, slug) {
     frameCrop: Boolean(data.frameCrop),
     // Home card pictures shrink to fit the frame instead of scrolling
     frameFit: Boolean(data.frameFit),
+    // Home card pictures overlap just enough that all of them show in the frame
+    frameShowAll: Boolean(data.frameShowAll),
     // Home card pictures overlap by this share of their width (e.g. 0.2)
     frameOverlap: Number(data.frameOverlap) || 0,
     framePairs: Boolean(data.framePairs),
