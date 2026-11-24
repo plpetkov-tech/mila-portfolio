@@ -31,6 +31,6 @@ workImages:
   - /img/cinematic-videos/cotton.mp4
   - /img/cinematic-videos/llaggi-shoes.mp4
   - /img/cinematic-videos/discount.mp4
-  - /img/cinematic-videos/teodor-black-november-mall.mp4
+  - /img/cinematic-videos/llaggi-olive-tracksuit-2.mp4
   - /img/cinematic-videos/finally.mp4
 ---

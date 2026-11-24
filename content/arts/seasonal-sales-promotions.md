@@ -111,8 +111,8 @@ frameHide:
 workShape: "3/4"
 workImages:
   - /img/seasonal-promotions/teodor-trench-print-a5.png
-  - /img/print-outdoor/llaggi-poster-stadium.jpg
   - /img/seasonal-promotions/teodor-shoes-sale.png
-  - /img/seasonal-promotions/teodor-black-november-mall.png
   - /img/MyLink-Mock-Up/mylink2.png
+  - /img/seasonal-promotions/teodor-black-november-mall.png
+  - /img/print-outdoor/llaggi-poster-stadium.jpg
 ---
