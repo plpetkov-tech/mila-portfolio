@@ -35,7 +35,8 @@ export function getEntryBySlug(collection, slug) {
     gallery: Array.isArray(data.gallery) ? data.gallery : [],
     // A folder lists other entries of the same collection by slug
     items: Array.isArray(data.items) ? data.items : [],
-    frameCrop: Boolean(data.frameCrop),
+    // Home card pictures cropped to one upright shape: true = 3/4, or a shape like "9/16"
+    frameCrop: data.frameCrop === true ? "3/4" : data.frameCrop || "",
     // Home card pictures shrink to fit the frame instead of scrolling
     frameFit: Boolean(data.frameFit),
     // Home card pictures overlap by this share of their width (e.g. 0.2)

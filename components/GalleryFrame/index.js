@@ -227,9 +227,12 @@ const GalleryFrame = ({
                 key={src}
                 src={src}
                 alt={name}
-                style={{ zIndex: index }}
+                style={{
+                  zIndex: index,
+                  ...(crop ? { aspectRatio: crop } : {}),
+                }}
                 className={`relative flex-none ${height} ${
-                  crop ? "aspect-[3/4] object-cover" : "w-auto"
+                  crop ? "object-cover" : "w-auto"
                 } rounded-lg shadow-xl transition-transform ease-out duration-500 hover:scale-110 hover:-translate-y-1 hover:z-10 relative hover:!z-40 ${
                   index === 0 ? "" : "-ml-16 tablet:-ml-24"
                 }`}
