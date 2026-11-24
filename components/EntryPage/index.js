@@ -110,21 +110,37 @@ const EntryPage = ({ entry, previous, next, children = [] }) => {
               {section.title ? (
                 // Grouped folders: pieces lined up in rows of one height, from the left
                 <div className="mt-6 flex flex-wrap gap-4 p-2 laptop:p-0">
-                  {section.images.map((src) => (
-                    <a
-                      key={src}
-                      href={src}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="relative block h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg link"
-                    >
-                      <GalleryMedia
-                        src={src}
-                        alt={entry.title}
-                        className="h-full w-auto max-w-full object-cover hover:scale-105 transition-all ease-out duration-300"
-                      />
-                    </a>
-                  ))}
+                  {section.images.map((item) => {
+                    // "front.jpg + back.jpg": two sides of one print piece, shown as one card
+                    const sides = item.split(" + ");
+                    return (
+                      <div
+                        key={item}
+                        className="relative flex h-56 tablet:h-64 laptop:h-72 max-w-full overflow-hidden rounded-lg shadow-lg"
+                      >
+                        {sides.map((src, side) => (
+                          <a
+                            key={src}
+                            href={src}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="relative block h-full overflow-hidden link"
+                          >
+                            <GalleryMedia
+                              src={src}
+                              alt={entry.title}
+                              className="h-full w-auto max-w-full object-cover hover:scale-105 transition-all ease-out duration-300"
+                            />
+                            {sides.length > 1 && (
+                              <span className="absolute bottom-3 left-3 rounded-full bg-black/60 text-white text-sm px-3 py-1">
+                                {side ? "Back" : "Front"}
+                              </span>
+                            )}
+                          </a>
+                        ))}
+                      </div>
+                    );
+                  })}
                 </div>
               ) : (
                 <div className="mt-10 flex gap-4 p-2 laptop:p-0">
